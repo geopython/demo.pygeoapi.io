@@ -2,6 +2,9 @@
 ansible/roles
 ansible/vars/vars.yml
 
+# ansible retries
+deploy.retry
+
 # LetsEncrypt Key files
 acme.json
 

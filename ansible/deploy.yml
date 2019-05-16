@@ -21,6 +21,7 @@
         owner: "{{ my_admin_user }}"
         group: "{{ my_admin_user }}"
         mode: 0644
+      tags: update
 
   tasks:
     - name: "home"

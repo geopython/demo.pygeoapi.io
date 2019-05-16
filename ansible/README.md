@@ -13,6 +13,13 @@ ansible-galaxy install --roles-path ./roles -r requirements.yml
 
 ```
 
+## Make credentials files
+
+These are not in this repo for obvious reasons... You need to create/populate these locally. 
+
+* vars/vars.yml (see [example](vars/vars.example.yml))
+* dockerhub env file in service/dockerhub/docker.env (see [example](../services/dockerhub/dockerhub.example.env))
+
 
 ## Bootstrap
 

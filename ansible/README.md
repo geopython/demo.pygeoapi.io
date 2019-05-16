@@ -61,25 +61,6 @@ ansible-playbook -vv service.yml  -i hosts/demo.pygeoapi.io  --tags status
 
 ```
 
-## Backup/Restore
-
-```
-
-# list backups
-ansible-playbook -vv backup.yml -i hosts/demo.pygeoapi.io  --tags list
-
-# Backup all
-ansible-playbook -vv backup.yml -i hosts/demo.pygeoapi.io  --tags backup_all
-
-# Restore
-ansible-playbook -vv backup.yml -i hosts/demo.pygeoapi.io  --tags restore --extra-vars "db=ghc_smartem_postgis f=/backup/2019/01/ghc_smartem_postgis-190108-2300.sql.gz"
-
-# copy remote file to local: backup/test/pygeoapi_postgis-190108-2300.sql.gz
-# ./restore.sh [test|prod] [db container] [local file]
-# Example ./restore.sh test pygeoapi_postgis pygeoapi_postgis-190108-2300.sql.gz
-
-```
-
 
 ## Other
 

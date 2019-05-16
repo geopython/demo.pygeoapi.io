@@ -50,9 +50,9 @@
     - name: "Setup dirs and ownerships"
       shell: "mkdir -p {{ logs_dir }}; chown -R {{ my_admin_user }}:{{ my_admin_user }} {{ var_dir }} {{ my_git_home }}"
 
-#    - name: "Build All Docker Images"
-#      shell: "cd {{ platform_home }}; ./build.sh"
-#      become_user: "{{ my_admin_user }}"
-#
-#    - name: "Install PyGeoAPI System Service"
-#      shell: "{{ platform_home }}/install.sh"
+    - name: "Build All Docker Images"
+      shell: "cd {{ platform_home }}; ./build.sh"
+      become_user: "{{ my_admin_user }}"
+
+    - name: "Install PyGeoAPI System Service"
+      shell: "{{ platform_home }}/install.sh"

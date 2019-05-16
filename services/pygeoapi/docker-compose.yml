@@ -7,6 +7,9 @@ services:
 
     container_name: pygeoapi
 
+    expose:
+      - "80"
+
     env_file:
       - pygeoapi.env
 

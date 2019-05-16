@@ -3,6 +3,8 @@
 Demo setup for https://demo.pygeoapi.io. Includes Ansible playbooks for bootstrapping (provisioning)
 an empty Ubuntu server, installing all (Docker) services.
 
+All services can be started/stopped as a Ubuntu system service `pygeoapi` as well.
+
 ## Common setup with Ansible
 
 ```
@@ -52,6 +54,19 @@ vagrant init geerlingguy/ubuntu1604
 vagrant up
 vagrant ssh
 vagrant halt
+
+```
+
+## Start stop services
+
+All services can be started/stopped as a Ubuntu system service `pygeoapi` as well.
+Login as admin user and issue:
+
+```
+
+sudo service pygeoapi stop
+sudo service pygeoapi start
+sudo service pygeoapi status
 
 ```
 

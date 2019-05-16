@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+
+  pygeoapi:
+    image: pygeoapi/pygeoapi
+
+    container_name: pygeoapi
+
+    env_file:
+      - pygeoapi.env
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io;PathPrefix:/pygeoapi"
+      - "traefik.backend=pygeoapi"
+      - "traefik.frontend.priority=100"
+      - "traefik.docker.network=pygeoapi-network"
+
+networks:
+  default:
+    external:
+      name: pygeoapi-network

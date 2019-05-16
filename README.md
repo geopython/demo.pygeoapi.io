@@ -3,7 +3,7 @@
 Demo setup for https://demo.pygeoapi.io. Includes Ansible playbooks for bootstrapping (provisioning)
 an empty Ubuntu server, installing all (Docker) services.
 
-All services can be started/stopped as a Ubuntu system service `pygeoapi` as well.
+All services can be started/stopped as a Ubuntu system service `pygeoapi` on the server as well.
 
 ## Common setup with Ansible
 
@@ -23,8 +23,8 @@ ansible-galaxy install --roles-path ./roles -r requirements.yml
 
 These are not in this repo for obvious reasons... You need to create/populate these locally. 
 
-* vars/vars.yml (see [example](ansible/vars/vars.example.yml))
-* dockerhub env file in `service/dockerhub/docker.env` with TOKEN (see [example](services/dockerhub/dockerhub.example.env))
+* `ansible/vars/vars.yml` (see [example](ansible/vars/vars.example.yml))
+* `service/dockerhub/docker.env` dockerhub env file with your `TOKEN` set in DockerHub  (see [example](services/dockerhub/dockerhub.example.env))
 
 ## Remote Setup with Ansible.
 
@@ -59,7 +59,7 @@ vagrant halt
 
 ## Start stop services
 
-All services can be started/stopped as a Ubuntu system service `pygeoapi` as well.
+All services can be started/stopped as a Ubuntu system service named `pygeoapi` as well.
 Login as admin user and issue:
 
 ```

@@ -7,7 +7,7 @@
 
 SCRIPT_DIR=${0%/*}
 
-SERVICES="dockerhub home traefik"
+SERVICES="dockerhub pygeoapi home traefik"
 
 for SERVICE in ${SERVICES}
 do

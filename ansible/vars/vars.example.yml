@@ -1,0 +1,23 @@
+---
+my_ssh_pubkey_file: ~/.ssh/id_rsa.pub
+my_email: you@domain.com
+my_admin_user: <admin username>
+my_admin_home: "/home/{{ my_admin_user }}"
+my_git_home: "{{ my_admin_home }}/git"
+my_github_repo: https://github.com/geopython/demo.pygeoapi.io.git
+var_dir: /var/pygeoapi
+logs_dir: "{{ var_dir }}/log"
+services_home: "{{ my_git_home }}/services"
+platform_home: "{{ my_git_home }}/platform"
+pip_install_packages:
+  - name: docker
+postfix_aliases:
+  - user: root
+    alias: <yourname>@gmail.com
+postfix_relayhost: smtp.gmail.com
+postfix_relaytls: true
+postfix_smtp_tls_cafile: /etc/ssl/certs/ca-certificates.crt
+postfix_sasl_user: '<yourname>@gmail.com'
+postfix_sasl_password: 'the gmail password in quotes'
+timezone: Europe/Amsterdam
+ufw_open_ports: ['22', '80', '443']

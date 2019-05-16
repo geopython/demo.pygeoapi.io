@@ -1,9 +1,11 @@
-# demo.pygeoapi.io
-Demo setup for https://demo.pygeoapi.io
+# demo.pygeoapi.io server setup
+
+Demo setup for https://demo.pygeoapi.io. Includes Ansible playbooks for bootstrapping (provisioning)
+an empty Ubuntu server, installing all (Docker) services.
 
 ## Common setup with Ansible
 
-```bash
+```
 
 # get code
 git clone https://github.com/geopython/demo.pygeoapi.io
@@ -23,7 +25,7 @@ Have a remote Ubuntu VM installed with root access via pub/private key.
 
 # Installs entire system
 cd ansible
-ansible-playbook -vv bootstrap.yml -i hosts/prod
+ansible-playbook -vv bootstrap.yml -i hosts/demo.pygeoapi.io
 
 
 ```
@@ -38,19 +40,11 @@ Have Ansible, Vagrant and VBox installed.
 cd demo.pygeoapi.io
 vagrant box add geerlingguy/ubuntu1604
 vagrant init geerlingguy/ubuntu1604
+
+# Will use Vagrantfile for auto-provisioning via Ansible
 vagrant up
 vagrant ssh
 vagrant halt
-
-# Provisioning configuration for Ansible. 
-# In Vagrantfile add:
-
-config . vm . provision "ansible" do | ansible | 
-   ansible . playbook = "ansible/bootstrap.yml" 
-end
-
-# when up and running provision
-vagrant provision
 
 ```
 

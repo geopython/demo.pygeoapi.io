@@ -1,0 +1,20 @@
+# Runs Home app
+version: '3.1'
+
+services:
+  geoqos:
+    image: pygeoapi/home:latest
+
+    container_name: home
+
+    labels:
+      - "traefik.backend=home_app"
+      - "traefik.enable=true"
+      - "traefik.frontend.priority=5"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io; PathPrefixStrip:/"
+      - "traefik.docker.network=pygeoapi-network"
+
+networks:
+  default:
+    external:
+      name: pygeoapi-network

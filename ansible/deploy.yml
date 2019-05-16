@@ -1,0 +1,28 @@
+# Inspired from https://github.com/5car1z/ansible-debian-provisioning
+- name: "Update and (Re)Deploy Services"
+  hosts: all
+  gather_facts: yes
+
+  vars_files:
+    - vars/vars.yml
+
+  vars:
+    ansible_ssh_user: "{{ my_admin_user }}"
+
+  pre_tasks:
+    - name: "Clone or Update Git Repo"
+      git: "repo={{ my_github_repo }} dest={{ my_git_home }} version=master clone=yes force=yes accept_hostkey=True"
+      tags: update
+
+  tasks:
+    - name: "home"
+      shell: "cd {{ services_home }}/home; ./stop.sh; ./build.sh; ./start.sh"
+      tags: home
+
+    - name: "pygeoapi"
+      shell: "cd {{ services_home }}/pygeoapi; ./start.sh"
+      tags: pygeoapi
+
+    - name: "traefik"
+      shell: "cd {{ services_home }}/traefik; ./start.sh"
+      tags: traefik

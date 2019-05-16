@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+    <p>Home page.</p>
+    <table style="width: auto;" class="table table-bordered table-condensed table-responsive">
+        <thead>
+        <tr>
+            <th width="80%">Name</th>
+            <th>Link</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>MyGeoQoS Django Admin</td>
+            <td><a target="_blank" href="https://my.geoqos.com/qadmin" class="btn btn-success" role="button">Link</a></td>
+        </tr>
+        <tr>
+            <td>Documentation</td>
+            <td><a target="_blank" href="/adm/static/docs/index.html" class="btn btn-success" role="button">Link</a></td>
+        </tr>
+        <tr>
+            <td>Logs and Backups</td>
+            <td><a target="_blank" href="/vargeoqos/" class="btn btn-success" role="button">Link</a></td>
+        </tr>
+    </table>
+
+
+</div>
+
+{% endblock %}

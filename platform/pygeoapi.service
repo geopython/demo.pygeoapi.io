@@ -1,0 +1,14 @@
+[Unit]
+Description=Runs all pygeoapi related processes
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/padmin/git/platform/start.sh
+ExecStop=/home/padmin/git/platform/stop.sh
+TimeoutStartSec=300
+TimeoutStopSec=300
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+- name: "Start/Stop Service"
+  hosts: all
+  gather_facts: yes
+
+  vars_files:
+    - vars/vars.yml
+
+  tasks:
+    - name: "stop"
+      shell: "service pygeoapi stop; docker ps"
+      tags: stop
+
+    - name: "start"
+      shell: "service pygeoapi start; docker ps"
+      tags: start
+
+    - name: "status"
+      shell: "service pygeoapi status; docker ps"
+      tags: status
+
+    # https://docs.ansible.com/ansible/latest/modules/reboot_module.html
+    - name: "Reboot"
+      shell: "shutdown -r now"
+      tags: reboot

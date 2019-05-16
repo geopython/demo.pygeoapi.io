@@ -1,0 +1,6 @@
+.vagrant
+ansible/roles
+ansible/vars/vars.yml
+
+# LetsEncrypt Key files
+acme.json

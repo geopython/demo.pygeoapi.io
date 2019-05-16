@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PyGeoAPI Demo Server</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">-->
+    <!--<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Just van den Broecke - Just Objects">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/bootstrap/3.3.7/css/bootstrap-united.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app/css/style.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home">PyGeoAPI Home</a>
+        </div>
+        <div id="tabs">
+            <ul class="nav navbar-nav" id="navtabs">
+                <li><a href="home">Home</a></li>
+                <!--<li><a href="docs" >Documentatie</a></li>-->
+            </ul>
+            <!--<div class="nav navbar-nav navbar-right site-logo">-->
+                <!--<img src="{{ url_for('static', filename='app/media/geoqos-logo-s.png') }}"/>-->
+            <!--</div>-->
+        </div>
+    </div>
+</nav>
+
+<div id="page">
+    {% block body %}
+    {% endblock %}
+</div>
+<div id="footer" style="padding-top: 50px;">
+    <hr/>
+    <div class="container text-center">
+        <p>Footer</p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='lib/jquery/1.11.3/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/bootstrap/3.3.7/js/bootstrap.min.js') }}"></script>
+
+</body>
+</html>

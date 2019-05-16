@@ -1,0 +1,58 @@
+# Inspired from https://github.com/5car1z/ansible-debian-provisioning
+- name: "PyGeoAPI Ubuntu Server Setup"
+  hosts: all
+  become: true
+  gather_facts: yes
+
+  vars_files:
+    - vars/vars.yml
+
+  roles:
+    # https://github.com/sansible/users_and_groups
+    - name: sansible.users_and_groups
+      tags: users
+      sansible_users_and_groups_users:
+        - name: "{{ my_admin_user }}"
+          system: yes
+          shell: /bin/bash
+          ssh_key: ~/.ssh/id_rsa.pub
+          append: yes
+      sansible_users_and_groups_sudoers:
+         - name: "{{ my_admin_user }}"
+           user: "%{{ my_admin_user }}"
+           runas: "ALL=(ALL)"
+           commands: "NOPASSWD: ALL"
+           append: yes
+
+    - name: justb4.ubuntu-base
+      tags: ubuntu-base
+
+    - name: justb4.ubuntu-ntp
+      tags: ubuntu-ntp
+
+    - name: oefenweb.postfix
+      tags: postfix
+
+    - name: geerlingguy.pip
+      tags: pip
+
+    # https://github.com/geerlingguy/ansible-role-docker
+    - name: geerlingguy.docker
+      tags: docker
+      docker_users:
+        - "{{ my_admin_user }}"
+
+  tasks:
+
+    - name: "Clone or Update Git Repo"
+      git: "repo={{ my_github_repo }} dest={{ my_git_home }} version=master clone=yes force=yes accept_hostkey=True"
+
+    - name: "Setup dirs and ownerships"
+      shell: "mkdir -p {{ logs_dir }}; chown -R {{ my_admin_user }}:{{ my_admin_user }} {{ var_dir }} {{ my_git_home }}"
+
+    - name: "Build All Docker Images"
+      shell: "cd {{ platform_home }}; ./build.sh"
+      become_user: "{{ my_admin_user }}"
+
+    - name: "Install PyGeoAPI System Service"
+      shell: "{{ platform_home }}/install.sh"

@@ -1,0 +1,49 @@
+# defaultEntryPoints must be at the top because it should not be in any table below
+# Initial from:
+# https://github.com/containerize-my-server/reverse-proxy/blob/master/traefik.toml
+defaultEntryPoints = ["http", "https"]
+
+
+# Entrypoints, http and https
+[entryPoints]
+
+# http should be redirected to https
+  [entryPoints.http]
+  address = ":80"
+    [entryPoints.http.redirect]
+    entryPoint = "https"
+
+  [entryPoints.https]
+  address = ":443"
+    [entryPoints.https.tls]
+
+#	[entryPoints.monitor]
+#	   address=":8080"
+#	   [entryPoints.monitor.auth]
+#	     [entryPoints.monitor.auth.basic]
+#	       users = [
+#	         "padmin:$apr1$gVo/HcPx$2AudzGfyX7Xxg7aD/b1zf."
+#	       ]
+
+[acme]
+email = "just@justobjects.nl"
+storage = "/acme.json"
+entryPoint = "https"
+onHostRule = false
+onDemand = false
+
+[acme.tlsChallenge] #enables the TLS ALPN Challenge
+
+[[acme.domains]]
+  main = "demo.pygeoapi.io"
+
+[retry]
+
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+domain = "pygeoapi.io"
+watch = true
+exposedbydefault = false
+
+[accessLog]
+  filePath = "/var/log/traefik/access.log"

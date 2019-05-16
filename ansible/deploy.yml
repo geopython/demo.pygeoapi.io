@@ -14,6 +14,14 @@
       git: "repo={{ my_github_repo }} dest={{ my_git_home }} version=master clone=yes force=yes accept_hostkey=True"
       tags: update
 
+    - name: copy DockerHub env file
+      copy:
+        src: ./../services/dockerhub/dockerhub.env
+        dest: /home/{{ my_admin_user }}/git/services/dockerhub
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: 0644
+
   tasks:
     - name: "home"
       shell: "cd {{ services_home }}/home; ./stop.sh; ./build.sh; ./start.sh"

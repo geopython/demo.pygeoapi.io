@@ -53,6 +53,7 @@ Uses admin user account as configured in `vars/vars.yml`.
 
 # Update git and deploy a service
 ansible-playbook -vv deploy.yml  -i hosts/demo.pygeoapi.io  --tags update,home
+ansible-playbook -vv deploy.yml  -i hosts/demo.pygeoapi.io  --tags update,dockerhub
 ansible-playbook -vv deploy.yml  -i hosts/demo.pygeoapi.io  --tags update,pygeoapi
 ansible-playbook -vv deploy.yml  -i hosts/demo.pygeoapi.io  --tags update,traefik
 

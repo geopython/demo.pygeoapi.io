@@ -4,3 +4,6 @@ ansible/vars/vars.yml
 
 # LetsEncrypt Key files
 acme.json
+
+# DockerHub token and paths
+dockerhub.env

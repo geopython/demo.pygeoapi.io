@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+
+  #  See https://github.com/maccyber/micro-dockerhub-hook
+  dockerhub:
+    image: maccyber/micro-dockerhub-hook
+    container_name: dockerhub
+
+    ports:
+      - "3000:3000"
+
+    env_file: dockerhub.env
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io;PathPrefixStrip:${DOCKER_HUB_PATH}"
+      - "traefik.backend=dockerhub"
+      - "traefik.frontend.priority=100"
+      - "traefik.docker.network=pygeoapi-network"
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./scripts:/src/scripts
+      # Path to docker-compose files who are triggered by scripts:
+      - ./../pygeoapi:/srv/pygeoapi
+
+
+networks:
+  default:
+    external:
+      name: pygeoapi-network

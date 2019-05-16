@@ -11,7 +11,7 @@ SCRIPT_DIR=${0%/*}
 # first create the Docker network
 docker network create --driver bridge pygeoapi-network
 
-SERVICES="home traefik"
+SERVICES="dockerhub home traefik"
 
 for SERVICE in ${SERVICES}
 do

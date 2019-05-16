@@ -1,0 +1,10 @@
+{
+  "push_data": {
+    "tag": "latest"
+  },
+  "repository": {
+    "name": "pygeoapi",
+    "namespace": "geopython",
+    "repo_name": "geopython/pygeoapi"
+  }
+}

@@ -19,6 +19,10 @@
       shell: "cd {{ services_home }}/home; ./stop.sh; ./build.sh; ./start.sh"
       tags: home
 
+    - name: "dockerhub"
+      shell: "cd {{ services_home }}/dockerhub; ./start.sh"
+      tags: dockerhub
+
     - name: "pygeoapi"
       shell: "cd {{ services_home }}/pygeoapi; ./start.sh"
       tags: pygeoapi

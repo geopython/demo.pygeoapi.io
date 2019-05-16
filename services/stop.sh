@@ -7,7 +7,7 @@
 
 SCRIPT_DIR=${0%/*}
 
-SERVICES="traefik home"
+SERVICES="dockerhub home traefik"
 
 for SERVICE in ${SERVICES}
 do

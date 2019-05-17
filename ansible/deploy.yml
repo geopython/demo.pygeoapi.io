@@ -33,7 +33,7 @@
       tags: dockerhub
 
     - name: "pygeoapi"
-      shell: "cd {{ services_home }}/pygeoapi; ./start.sh"
+      shell: "cd {{ services_home }}/pygeoapi; ./stop.sh; ./build.sh; ./start.sh"
       tags: pygeoapi
 
     - name: "traefik"

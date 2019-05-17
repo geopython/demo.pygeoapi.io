@@ -410,45 +410,45 @@ datasets:
             id_field: osm_id
             layer: poi_portugal
 
-
-    sf_311incidents:
-        title: SF 311Incidents via OGR ESRI Feature Server
-        description: OGR Provider - ESRI Feature Server - SF 311Incidents
-        keywords:
-            - USA
-            - ESRI
-        crs:
-            - CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/SanFrancisco/311Incidents/FeatureServer/0
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-180, -90, 180, 90]
-            temporal:
-                begin: None
-                end: now  # or empty
-        provider:
-            name: OGR
-            data:
-                source_type: ESRIJSON
-                source: ESRIJSON:http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/SanFrancisco/311Incidents/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&f=json
-                source_srs: EPSG:4326
-                target_srs: EPSG:4326
-                source_capabilities:
-                    paging: True
-
-                gdal_ogr_options:
-                    EMPTY_AS_NULL: NO
-                    GDAL_CACHEMAX: 64
-                    # GDAL_HTTP_PROXY: (optional proxy)
-                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
-                    CPL_DEBUG: NO
-
-            id_field: objectid
+# NEEDS GDAL >= 2.3 !
+#    sf_311incidents:
+#        title: SF 311Incidents via OGR ESRI Feature Server
+#        description: OGR Provider - ESRI Feature Server - SF 311Incidents
+#        keywords:
+#            - USA
+#            - ESRI
+#        crs:
+#            - CRS84
+#        links:
+#            - type: text/html
+#              rel: canonical
+#              title: information
+#              href: http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/SanFrancisco/311Incidents/FeatureServer/0
+#              hreflang: en-US
+#        extents:
+#            spatial:
+#                bbox: [-180, -90, 180, 90]
+#            temporal:
+#                begin: None
+#                end: now  # or empty
+#        provider:
+#            name: OGR
+#            data:
+#                source_type: ESRIJSON
+#                source: ESRIJSON:http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/SanFrancisco/311Incidents/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&f=json
+#                source_srs: EPSG:4326
+#                target_srs: EPSG:4326
+#                source_capabilities:
+#                    paging: True
+#
+#                gdal_ogr_options:
+#                    EMPTY_AS_NULL: NO
+#                    GDAL_CACHEMAX: 64
+#                    # GDAL_HTTP_PROXY: (optional proxy)
+#                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+#                    CPL_DEBUG: NO
+#
+#            id_field: objectid
 
 processes:
     hello-world:

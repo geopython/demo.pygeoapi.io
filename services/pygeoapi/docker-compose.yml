@@ -14,7 +14,7 @@ services:
       - pygeoapi.env
 
     volumes:
-      - local.config.yml:/pygeoapi/local.config.yml
+      - ./local.config.yml:/pygeoapi/local.config.yml
 
     labels:
       - "traefik.enable=true"

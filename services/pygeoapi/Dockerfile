@@ -11,7 +11,7 @@ ARG LOCALE="en_US.UTF-8"
 # ARG ADD_PYTHON_DEB_PACKAGES="python-scipy python-seaborn python-matplotlib"
 ARG ADD_PYTHON_DEB_PACKAGES=""
 # ARG ADD_PYTHON_PIP_PACKAGES="scikit-learn==0.18"
-ARG ADD_PYTHON_PIP_PACKAGES=""
+ARG ADD_PYTHON_PIP_PACKAGES="gunicorn"
 
 # Tricky: must match installed GDAL version (2.1.2 on Stretch)
 ARG GDAL_PYTHON_BINDINGS_VERSION="2.1.3"
@@ -20,15 +20,21 @@ ARG GDAL_PYTHON_BINDINGS_VERSION="2.1.3"
 # ENV settings
 #
 ENV TZ=${TIMEZONE} \
-   DEBIAN_FRONTEND="noninteractive" \
-   BUILD_DEPS="tzdata build-essential apt-utils libgdal-dev git" \
-   PYTHON_CORE_PACKAGES="locales python3-setuptools python3-pip gdal-bin" \
-   PYTHON_EXTRA_DEB_PACKAGES="${ADD_PYTHON_DEB_PACKAGES}"  \
-   PYTHON_EXTRA_PIP_PACKAGES="${ADD_PYTHON_PIP_PACKAGES}" \
-   PYGEOAPI_GITHUB="https://github.com/justb4/pygeoapi.git" \
-   PYGEOAPI_HOME="/pygeoapi" \
-   PYGEOAPI_CONFIG="${PYGEOAPI_HOME}/local.config.yml" \
-   PYGEOAPI_OPENAPI="${PYGEOAPI_HOME}/local.openapi.yml"
+	DEBIAN_FRONTEND="noninteractive" \
+	BUILD_DEPS="tzdata build-essential apt-utils libgdal-dev git" \
+	PYTHON_CORE_PACKAGES="locales python3-setuptools python3-pip gdal-bin" \
+	PYTHON_EXTRA_DEB_PACKAGES="${ADD_PYTHON_DEB_PACKAGES}"  \
+	PYTHON_EXTRA_PIP_PACKAGES="${ADD_PYTHON_PIP_PACKAGES}" \
+	PYGEOAPI_GITHUB="https://github.com/justb4/pygeoapi.git" \
+	PYGEOAPI_HOME="/pygeoapi" \
+	PYGEOAPI_CONFIG="${PYGEOAPI_HOME}/local.config.yml" \
+	PYGEOAPI_OPENAPI="${PYGEOAPI_HOME}/local.openapi.yml" \
+	CONTAINER_NAME="pygeoapi" \
+	CONTAINER_HOST=0.0.0.0 \
+	CONTAINER_PORT=80 \
+	WSGI_WORKERS=4 \
+	WSGI_WORKER_TIMEOUT=6000 \
+	WSGI_WORKER_CLASS="sync"
 
 # All RUNs
 RUN \

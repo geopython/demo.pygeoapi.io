@@ -3,7 +3,7 @@ version: "3"
 services:
 
   pygeoapi:
-    image: pygeoapi/pygeoapi
+    image: geopython/pygeoapi
 
     container_name: pygeoapi
 
@@ -12,6 +12,9 @@ services:
 
     env_file:
       - pygeoapi.env
+
+    volumes:
+      - local.config.yml:/pygeoapi/local.config.yml
 
     labels:
       - "traefik.enable=true"

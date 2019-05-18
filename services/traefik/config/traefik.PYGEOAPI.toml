@@ -17,14 +17,6 @@ defaultEntryPoints = ["http", "https"]
   address = ":443"
     [entryPoints.https.tls]
 
-#	[entryPoints.monitor]
-#	   address=":8080"
-#	   [entryPoints.monitor.auth]
-#	     [entryPoints.monitor.auth.basic]
-#	       users = [
-#	         "padmin:$apr1$gVo/HcPx$2AudzGfyX7Xxg7aD/b1zf."
-#	       ]
-
 [acme]
 email = "just@justobjects.nl"
 storage = "/acme.json"

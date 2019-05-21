@@ -22,8 +22,8 @@ ARG GDAL_PYTHON_BINDINGS_VERSION="2.4.0"
 #
 ENV TZ=${TIMEZONE} \
 	DEBIAN_FRONTEND="noninteractive" \
-	BUILD_DEPS="tzdata build-essential apt-utils libgdal-dev git" \
-	PYTHON_CORE_PACKAGES="locales python3-setuptools python3-pip gdal-bin python3-gdal" \
+	BUILD_DEPS="tzdata build-essential python3-setuptools python3-pip apt-utils libgdal-dev git" \
+	PYTHON_CORE_PACKAGES="locales gdal-bin python3-gdal" \
 	PYTHON_EXTRA_DEB_PACKAGES="${ADD_PYTHON_DEB_PACKAGES}"  \
 	PYTHON_EXTRA_PIP_PACKAGES="${ADD_PYTHON_PIP_PACKAGES}" \
 	PYGEOAPI_GITHUB="-b issue-127-ogrpaging https://github.com/geopython/pygeoapi.git" \
@@ -59,6 +59,7 @@ RUN \
 	&& pip3 install -r requirements.txt \
 	&& pip3 install -r requirements-dev.txt \
 	&& pip3 install -e . \
+	&& pip3 uninstall --yes wheel \
 	&& apt-get remove --purge ${BUILD_DEPS} -y \
 	&& apt autoremove -y  \
     && rm -rf /var/lib/apt/lists/*

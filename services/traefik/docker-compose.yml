@@ -6,6 +6,8 @@ services:
 
     container_name: traefik
 
+    restart: unless-stopped
+
     command: --docker --logLevel=INFO
 
     ports:

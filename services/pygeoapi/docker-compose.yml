@@ -7,6 +7,8 @@ services:
 
     container_name: pygeoapi
 
+    restart: unless-stopped
+
     expose:
       - "80"
 

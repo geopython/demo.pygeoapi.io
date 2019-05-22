@@ -1,11 +1,7 @@
 # pygeoapi service
 
-Runs latest GitHub master branch of `pygeoapi` using Docker.
+Runs latest GitHub master branch of `pygeoapi` using
+[Docker Image from DockerHub](https://cloud.docker.com/u/geopython/repository/docker/geopython/pygeoapi).
+with a [local config file](local.config.yml).
 
-## Running Tests
 
-By default this Image will start `pygeoapi` using `gunicorn`, but you can also run tests:
-
-```
-	docker run -it geopython/pygeoapi test
-```

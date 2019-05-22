@@ -17,7 +17,7 @@ LABEL maintainer="Just van den Broecke <justb4@gmail.com>"
 # Contains some test data. Also allows you to verify by running all unit tests.
 # Simply run: docker run -it geopython/pygeoapi test
 # Override the default config file /pygeoapi/local.config.yml
-# via Docker Volume mapping or doceker-compose.yml file (see sample).
+# via Docker Volume mapping or docker-compose.yml file (see sample).
 
 
 #

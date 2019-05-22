@@ -2,4 +2,4 @@
 
 #
 # Build geoapi Docker image
-docker build -t geopython/pygeoapi:latest .
+docker build $@ -t geopython/pygeoapi:latest .

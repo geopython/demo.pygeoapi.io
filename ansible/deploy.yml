@@ -25,17 +25,17 @@
 
   tasks:
     - name: "home"
-      shell: "cd {{ services_home }}/home; ./stop.sh; ./build.sh; ./start.sh"
+      shell: "cd {{ services_home }}/home && ./build.sh && ./stop.sh && ./start.sh"
       tags: home
 
     - name: "dockerhub"
-      shell: "cd {{ services_home }}/dockerhub; ./start.sh"
+      shell: "cd {{ services_home }}/dockerhub && ./start.sh"
       tags: dockerhub
 
     - name: "pygeoapi"
-      shell: "cd {{ services_home }}/pygeoapi; ./stop.sh; ./build.sh; ./start.sh"
+      shell: "cd {{ services_home }}/pygeoapi && ./build.sh --no-cache && ./stop.sh && ./start.sh"
       tags: pygeoapi
 
     - name: "traefik"
-      shell: "cd {{ services_home }}/traefik; ./start.sh"
+      shell: "cd {{ services_home }}/traefik && ./start.sh"
       tags: traefik

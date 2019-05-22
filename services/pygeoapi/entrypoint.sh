@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Runs the pygeoapi app with gunicorn
+# pygeoapi entry script
 
 echo "START /entrypoint.sh"
 
@@ -71,7 +71,7 @@ case ${entry_cmd} in
 				pygeoapi.flask_app:APP
 	  ;;
 	*)
-	  error "unknown command arg: userun or test"
+	  error "unknown command arg: must be run (default) or test"
 	  ;;
 esac
 

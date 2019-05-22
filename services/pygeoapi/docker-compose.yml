@@ -20,7 +20,7 @@ services:
 
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io;PathPrefix:/pygeoapi"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/pygeoapi"
       - "traefik.backend=pygeoapi"
       - "traefik.frontend.priority=100"
       - "traefik.docker.network=pygeoapi-network"

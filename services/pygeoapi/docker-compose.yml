@@ -3,7 +3,7 @@ version: "3"
 services:
 
   pygeoapi:
-    image: geopython/pygeoapi
+    image: geopython/pygeoapi:latest
 
     container_name: pygeoapi
 

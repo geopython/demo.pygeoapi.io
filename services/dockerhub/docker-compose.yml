@@ -5,10 +5,14 @@ services:
   #  See https://github.com/maccyber/micro-dockerhub-hook
   dockerhub:
     image: maccyber/micro-dockerhub-hook
+
     container_name: dockerhub
 
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
+
+#    ports:
+#      - "3000:3000"
 
     env_file: dockerhub.env
 
@@ -22,8 +26,9 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./scripts:/src/scripts
-      # Path to docker-compose files who are triggered by scripts:
+      # Paths to docker-compose files who are triggered by scripts:
       - ./../pygeoapi:/srv/pygeoapi
+      - ./../home:/srv/home
 
 
 networks:

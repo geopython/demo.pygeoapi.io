@@ -3,7 +3,8 @@ version: '3.1'
 
 services:
   geoqos:
-    image: pygeoapi/home:latest
+    image: geopython/demo.pygeoapi.io:latest
+    # OLD pygeoapi/home:latest
 
     container_name: home
 

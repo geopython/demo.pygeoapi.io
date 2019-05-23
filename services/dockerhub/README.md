@@ -6,3 +6,4 @@ It is based on [micro-dockerhub-hook](https://github.com/maccyber/micro-dockerhu
 For now this applies to DockerHub Images:
 
 * [geopython/pygeoapi:latest](https://cloud.docker.com/u/geopython/repository/docker/geopython/pygeoapi)
+* [geopython/demo.pygeoapi.io:latest](https://cloud.docker.com/u/geopython/repository/docker/geopython/demo.pygeoapi.io) - the `home` app

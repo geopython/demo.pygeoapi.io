@@ -1,11 +1,11 @@
 import logging
 import os
 import sys
+from datetime import datetime
+from functools import wraps, update_wrapper
 
 from config import config
-from datetime import datetime
 from flask import Flask, render_template, make_response
-from functools import wraps, update_wrapper
 
 if __name__ != '__main__':
     # When run with WSGI in Apache we need to extend the PYTHONPATH to find Python modules relative to index.py
@@ -48,8 +48,13 @@ def home():
 @app.route('/<string:page_name>')
 @nocache
 def page(page_name):
+    if page_name.endswith('.html'):
+        page_file = page_name
+    else:
+        page_file = '%s%s' % (page_name, '.html')
+
     # Let Flask/Jinja2 render the page
-    return render_template('%s%s' % (page_name, '.html'))
+    return render_template(page_file)
 
 
 if __name__ == '__main__':

@@ -134,31 +134,6 @@ datasets:
             data: tests/data/ne_110m_lakes.geojson
             id_field: id
 
-    countries:
-        title: Countries in the world (SpatialLite Provider)
-        description: Countries of the world (SpatialLite)
-        keywords:
-            - countries
-            - natural eart
-        crs:
-            - CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: http://www.naturalearthdata.com/
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-180,-90,180,90]
-            temporal:
-                begin: None
-                end: now  # or empty
-        provider:
-            name: SQLite
-            data: tests/data/ne_110m_admin_0_countries.sqlite
-            id_field: ogc_fid
-            table: ne_110m_admin_0_countries
 #    poi:
 #        title: Portuguese point of interrest
 #        description: Portuguese points of interrest obtained from OpenStreetMap. Dataset includes Madeira and Azores islands
@@ -532,6 +507,33 @@ datasets:
             id_field: id
             layer: OGRGeoJSON
 
+
+    countries:
+        title: Countries in the world (SpatialLite Provider)
+        description: Countries of the world (SpatialLite)
+        keywords:
+            - countries
+            - natural eart
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: http://www.naturalearthdata.com/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+            temporal:
+                begin: None
+                end: now  # or empty
+        provider:
+            name: SQLite
+            data: tests/data/ne_110m_admin_0_countries.sqlite
+            id_field: ogc_fid
+            table: ne_110m_admin_0_countries
+
 # NEEDS GDAL >= 2.3 !
 #    sf_311incidents:
 #        title: SF 311Incidents via OGR ESRI Feature Server
@@ -571,6 +573,7 @@ datasets:
 #                    CPL_DEBUG: NO
 #
 #            id_field: objectid
+#            layer: 311Incidents
 
 processes:
     hello-world:

@@ -2,4 +2,4 @@
 
 echo "Updating pygeoapi..."
 
-cd /srv/pygeoapi && docker-compose pull && docker-compose up -d
+cd /srv/pygeoapi && docker pull geopython/pygeoapi:latest && ./build.sh && ./stop.sh && ./start.sh

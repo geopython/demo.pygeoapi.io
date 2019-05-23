@@ -3,7 +3,8 @@ version: "3"
 services:
 
   pygeoapi:
-    image: geopython/pygeoapi:latest
+    
+    image: geopython/pygeoapi_demo:latest
 
     container_name: pygeoapi
 
@@ -12,11 +13,11 @@ services:
     expose:
       - "80"
 
-    env_file:
-      - pygeoapi.env
+    ports:
+      - "5000:80"
 
-    volumes:
-      - ./local.config.yml:/pygeoapi/local.config.yml
+    environment:
+     - SCRIPT_NAME=/pygeoapi
 
     labels:
       - "traefik.enable=true"

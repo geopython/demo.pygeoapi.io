@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t geopython/pygeoapi_demo:latest .
+docker build -t geopython/pygeoapi_master:latest .

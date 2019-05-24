@@ -2,7 +2,7 @@ server:
     bind:
         host: 0.0.0.0
         port: 80
-    url: https://demo.pygeoapi.io/pygeoapi
+    url: https://demo.pygeoapi.io/master
     mimetype: application/json; charset=UTF-8
     encoding: utf-8
     language: en-US
@@ -13,7 +13,7 @@ server:
 
 logging:
     level: ERROR
-    #logfile: /tmp/pygeoapi.log
+    #logfile: /tmp/master.log
 
 metadata:
     identification:

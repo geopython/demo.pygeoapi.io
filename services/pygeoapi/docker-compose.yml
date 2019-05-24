@@ -2,11 +2,11 @@ version: "3"
 
 services:
 
-  pygeoapi:
+  pygeoapi_master:
     
-    image: geopython/pygeoapi_demo:latest
+    image: geopython/pygeoapi_master:latest
 
-    container_name: pygeoapi
+    container_name: pygeoapi_master
 
     restart: unless-stopped
 
@@ -17,12 +17,12 @@ services:
 #      - "5000:80"
 
     environment:
-     - SCRIPT_NAME=/pygeoapi
+     - SCRIPT_NAME=/master
 
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/pygeoapi"
-      - "traefik.backend=pygeoapi"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/master"
+      - "traefik.backend=pygeoapi_master"
       - "traefik.frontend.priority=100"
       - "traefik.docker.network=pygeoapi-network"
 

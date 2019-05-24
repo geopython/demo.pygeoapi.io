@@ -54,8 +54,12 @@ def page(page_name):
         page_file = '%s%s' % (page_name, '.html')
 
     # Let Flask/Jinja2 render the page
-    return render_template(page_file)
+    try:
+        result = render_template(page_file)
+    except Exception as e:
+        result = render_template('error.html')
 
+    return result
 
 if __name__ == '__main__':
     # Run as main via python index.py

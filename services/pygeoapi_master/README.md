@@ -1,4 +1,4 @@
-# pygeoapi demo service
+# pygeoapi demo service - master
 
 Runs latest GitHub master branch of `pygeoapi` using
 [Docker Image from DockerHub](https://cloud.docker.com/u/geopython/repository/docker/geopython/pygeoapi).
@@ -12,3 +12,5 @@ restart the service (as the webhook is done within a Docker container and Volume
 
 This service is restarted pulling the latest `pygeoapi` Docker Image whenever a new Image is built (via DockerHub autobuild on
 the [pygeoapi GitHub master](https://github.com/geopython/pygeoapi) commit or explicitly).
+
+There is also a [stable](../pygeoapi_stable) version that runs the latest `pygeoapi` version also from DockerHub.

@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+
+  pygeoapi_stable:
+    
+    image: geopython/pygeoapi:0.6.0
+
+    container_name: pygeoapi_stable
+
+    restart: unless-stopped
+
+    expose:
+      - "80"
+
+#    ports:
+#      - "5000:80"
+
+    volumes:
+      - ./local.config.yml:/pygeoapi/local.config.yml
+
+    environment:
+     - SCRIPT_NAME=/stable
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/stable"
+      - "traefik.backend=pygeoapi_stable"
+      - "traefik.frontend.priority=100"
+      - "traefik.docker.network=pygeoapi-network"
+
+networks:
+  default:
+    external:
+      name: pygeoapi-network

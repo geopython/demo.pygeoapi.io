@@ -32,8 +32,12 @@
       shell: "cd {{ services_home }}/dockerhub && ./start.sh"
       tags: dockerhub
 
-    - name: "pygeoapi"
-      shell: "cd {{ services_home }}/pygeoapi && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+    - name: "pygeoapi_master"
+      shell: "cd {{ services_home }}/pygeoapi_master && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+      tags: pygeoapi
+
+    - name: "pygeoapi_stable"
+      shell: "cd {{ services_home }}/pygeoapi_stable && ./build.sh --no-cache && ./stop.sh && ./start.sh"
       tags: pygeoapi
 
     - name: "traefik"

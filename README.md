@@ -3,20 +3,21 @@
 Demo setup for https://demo.pygeoapi.io. Includes Ansible playbooks for bootstrapping (provisioning)
 an empty Ubuntu server, installing all (Docker) services.
 
-All services can be started/stopped as a Ubuntu system service `pygeoapi` on the server as well.
+All services can be started/stopped as a Ubuntu system service named `pygeoapi` on the server as well.
 
 ## Services
 
 The demo server runs the following apps/services:
 
 * [home](services/home) - simple Flask app for landing page and demo viewers
-* [pygeoapi](services/pygeoapi) - (latest GitHub `master` version of) `pygeoapi` service with test data
-* [traefik](services/traefik) - edge/proxy server routing incoming HTTP(S) managing SSL-certificates
-* [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi](services/pygeoapi)
+* [pygeoapi_master](services/pygeoapi_master) - (latest GitHub `master` version of) `pygeoapi` service with test data
+* [pygeoapi_stable](services/pygeoapi_stable) - (last stable version of) `pygeoapi` service with test data
+* [traefik](services/traefik) - edge/proxy server routing incoming HTTP(S) and managing SSL-certificates (via Let's Encrypt)
+* [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi_master](services/pygeoapi_master)
 
 ## Auto Update 
 
-The [home](services/home) and [pygeoapi](services/pygeoapi) services are automatically
+The [home](services/home) and [pygeoapi_master](services/pygeoapi_master) services are automatically
 redeployed by [dockerhub listener](services/dockerhub). The full chain is:
  
 ```
@@ -26,7 +27,7 @@ redeployed by [dockerhub listener](services/dockerhub). The full chain is:
 
 The [home](services/home) app is redeployed after any git push to the `master` of this GitHub repo.
 
-The [pygeoapi](services/pygeoapi) service is redeployed after any git push 
+The [pygeoapi_master](services/pygeoapi_master) service is redeployed after any git push 
 to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
  
 ## Common setup with Ansible

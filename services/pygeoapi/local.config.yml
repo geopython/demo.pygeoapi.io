@@ -204,6 +204,54 @@ datasets:
 #            id_field: osm_id
 #            table: hotosm_bdi_waterways
 
+    dutch_castles:
+        title: Castles within The Netherlands
+        description: Locations of castles within the Netherlands from Rijksdienst voor het Cultureel Erfgoed (RCE) INSPIRE WFS. Uses GeoServer WFS v2 backend via OGRProvider.
+        keywords:
+            - Netherlands
+            - INSPIRE
+            - Castles
+            - Heritage
+            - Holland
+            - RD
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: http://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/e1bfb504-78c6-4186-9365-72f42c5fb0ee
+              hreflang: nl-NL
+        extents:
+            spatial:
+                bbox: [50.75, 3.37, 53.47, 7.21]
+            temporal:
+                begin: None
+                end: now  # or empty
+        provider:
+            name: OGR
+            data:
+                source_type: WFS
+                source: WFS:https://services.rce.geovoorziening.nl/landschapsatlas/wfs?
+                source_srs: EPSG:28992
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+
+                source_options:
+#                    OGR_WFS_VERSION: 1.1.0
+                    OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
+
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+
+            id_field: gml_id
+            layer: landschapsatlas:kastelen
+
     dutch_georef_stations:
         title: Dutch Georef Stations via OGR WFS
         description: Locations of RD/GNSS-reference stations from Dutch Kadaster PDOK a.k.a RDInfo. Uses MapServer WFS v2 backend via OGRProvider.
@@ -223,7 +271,7 @@ datasets:
               hreflang: nl-NL
         extents:
             spatial:
-                bbox: [50.7539, 7.21097, 53.4658, 3.37087]
+                bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
                 begin: None
                 end: now  # or empty
@@ -444,7 +492,7 @@ datasets:
               hreflang: nl-NL
         extents:
             spatial:
-                bbox: [50.7539, 7.21097, 53.4658, 3.37087]
+                bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
                 begin: None
                 end: now  # or empty
@@ -486,7 +534,7 @@ datasets:
               hreflang: nl-NL
         extents:
             spatial:
-                bbox: [50.7539, 7.21097, 53.4658, 3.37087]
+                bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
                 begin: None
                 end: now  # or empty

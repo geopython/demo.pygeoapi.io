@@ -204,6 +204,54 @@ datasets:
 #            id_field: osm_id
 #            table: hotosm_bdi_waterways
 
+    dutch_windmills:
+        title: Windmills within The Netherlands
+        description: Locations of windmills within the Netherlands from Rijksdienst voor het Cultureel Erfgoed (RCE) INSPIRE WFS. Uses GeoServer WFS v2 backend via OGRProvider.
+        keywords:
+            - Netherlands
+            - INSPIRE
+            - Windmills
+            - Heritage
+            - Holland
+            - RD
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/291afe4b-4f4b-497c-8026-fb437c4e9c7e
+              hreflang: nl-NL
+        extents:
+            spatial:
+                bbox: [50.75, 3.37, 53.47, 7.21]
+            temporal:
+                begin: None
+                end: now  # or empty
+        provider:
+            name: OGR
+            data:
+                source_type: WFS
+                source: WFS:https://services.rce.geovoorziening.nl/landschapsatlas/wfs?
+                source_srs: EPSG:28992
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+
+                source_options:
+#                    OGR_WFS_VERSION: 1.1.0
+                    OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
+
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+
+            id_field: gml_id
+            layer: landschapsatlas:Molens
+
     dutch_castles:
         title: Castles within The Netherlands
         description: Locations of castles within the Netherlands from Rijksdienst voor het Cultureel Erfgoed (RCE) INSPIRE WFS. Uses GeoServer WFS v2 backend via OGRProvider.

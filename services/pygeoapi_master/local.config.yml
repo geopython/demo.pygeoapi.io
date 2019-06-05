@@ -607,31 +607,31 @@ datasets:
             layer: OGRGeoJSON
 
 
-    countries:
-        title: Countries in the world (SpatialLite Provider)
-        description: Countries of the world (SpatialLite)
-        keywords:
-            - countries
-            - natural eart
-        crs:
-            - CRS84
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: http://www.naturalearthdata.com/
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-180,-90,180,90]
-            temporal:
-                begin: None
-                end: now  # or empty
-        provider:
-            name: SQLite
-            data: tests/data/ne_110m_admin_0_countries.sqlite
-            id_field: ogc_fid
-            table: ne_110m_admin_0_countries
+#    countries:
+#        title: Countries in the world (SpatialLite Provider)
+#        description: Countries of the world (SpatialLite)
+#        keywords:
+#            - countries
+#            - natural eart
+#        crs:
+#            - CRS84
+#        links:
+#            - type: text/html
+#              rel: canonical
+#              title: information
+#              href: http://www.naturalearthdata.com/
+#              hreflang: en-US
+#        extents:
+#            spatial:
+#                bbox: [-180,-90,180,90]
+#            temporal:
+#                begin: None
+#                end: now  # or empty
+#        provider:
+#            name: SQLite
+#            data: tests/data/ne_110m_admin_0_countries.sqlite
+#            id_field: ogc_fid
+#            table: ne_110m_admin_0_countries
 
 # NEEDS GDAL >= 2.3 !
 #    sf_311incidents:

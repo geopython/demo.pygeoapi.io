@@ -6,3 +6,4 @@ LABEL maintainer="Just van den Broecke <justb4@gmail.com>"
 # https://github.com/maccyber/micro-dockerhub-hook
 # simply copy config into Image.
 COPY ./local.config.yml /pygeoapi/local.config.yml
+ADD ./data /pygeoapi/data

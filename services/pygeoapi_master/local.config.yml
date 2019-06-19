@@ -523,6 +523,92 @@ datasets:
             id_field: id
             layer: ne_110m_lakes
 
+    ogr_gpkg_wales_railway_lines:
+        title: Railway lines in Wales (UK) via OGR GPKG
+        description: Railway lines in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
+        keywords:
+            - United Kingdom
+            - Wales
+            - Train
+            - Station
+            - Ordnance Survey
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.ordnancesurvey.co.uk/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [51.6 -4.5 52.0 -4.0]
+            temporal:
+                begin: None
+                end: now  # or empty
+        provider:
+            name: OGR
+            data:
+                source_type: GPKG
+                source: data/wales_railway_lines.gpkg
+                source_srs: EPSG:27700
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+
+            id_field: id
+            layer: rail
+
+    ogr_gpkg_wales_stations:
+        title: Railway stations in Wales (UK) via OGR GPKG
+        description: Railway stations in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
+        keywords:
+            - United Kingdom
+            - Wales
+            - Train
+            - Station
+            - Ordnance Survey
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.ordnancesurvey.co.uk/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [51.6 -4.5 52.0 -4.0]
+            temporal:
+                begin: None
+                end: now  # or empty
+        provider:
+            name: OGR
+            data:
+                source_type: GPKG
+                source: data/wales_railway_stations.gpkg
+                source_srs: EPSG:27700
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+
+            id_field: id
+            layer: railway_stations
+
     ogr_addresses_sqlite:
         title: Dutch addresses (subset Otterlo). OGR SQLite Driver
         description: Dutch addresses subset.

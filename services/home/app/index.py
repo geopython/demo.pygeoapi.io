@@ -48,13 +48,18 @@ def home():
 @app.route('/<string:page_name>')
 @nocache
 def page(page_name):
-    if page_name.endswith('.html'):
-        page_file = page_name
-    else:
-        page_file = '%s%s' % (page_name, '.html')
 
     # Let Flask/Jinja2 render the page
     try:
+        # Suppress trickeries..
+        page_name = page_name.split('/')[-1]
+        page_end = page_name.split('.')[-1]
+        
+        if page_end in ['html', 'txt', 'xml']:
+            page_file = page_name
+        else:
+            page_file = '%s%s' % (page_name, '.html')
+
         result = render_template(page_file)
     except Exception as e:
         result = render_template('error.html')

@@ -55,7 +55,7 @@ def page(page_name):
         page_name = page_name.split('/')[-1]
         page_end = page_name.split('.')[-1]
         
-        if page_end in ['html', 'txt', 'xml']:
+        if page_end in ['html', 'txt', 'xml', 'ico', 'png', 'jpg']:
             page_file = page_name
         else:
             page_file = '%s%s' % (page_name, '.html')

@@ -5,7 +5,8 @@ from datetime import datetime
 from functools import wraps, update_wrapper
 
 from config import config
-from flask import Flask, render_template, make_response
+from flask import Flask, render_template, make_response, send_from_directory
+
 
 if __name__ != '__main__':
     # When run with WSGI in Apache we need to extend the PYTHONPATH to find Python modules relative to index.py
@@ -51,11 +52,19 @@ def page(page_name):
 
     # Let Flask/Jinja2 render the page
     try:
+        # Handle favicon
+        # https://flask.palletsprojects.com/en/1.0.x/patterns/favicon/
+        if page_name == 'favicon.ico':
+            return send_from_directory(
+                os.path.join(app.root_path, 'static'),
+                'favicon.ico',
+                mimetype='image/vnd.microsoft.icon')
+
         # Suppress trickeries..
         page_name = page_name.split('/')[-1]
         page_end = page_name.split('.')[-1]
-        
-        if page_end in ['html', 'txt', 'xml', 'ico', 'png', 'jpg']:
+
+        if page_end in ['html', 'txt', 'xml']:
             page_file = page_name
         else:
             page_file = '%s%s' % (page_name, '.html')

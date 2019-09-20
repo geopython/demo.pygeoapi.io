@@ -159,9 +159,9 @@ datasets:
 #              hreflang: en-US
 #        extents:
 #            spatial:
-#                bbox: [-31.2687 32.5898 -6.18992 42.152]
+#                bbox: [-31.2687, 32.5898, -6.18992, 42.152]
 #            temporal:
-#                begin: None
+#                begin:
 #                end: now  # or empty
 #        provider:
 #            name: GeoPackage
@@ -188,9 +188,9 @@ datasets:
 #              hreflang: en-US
 #        extents:
 #            spatial:
-#                bbox: [28.9845376683957 -4.48174334765485,30.866396969019 -2.3096796]
+#                bbox: [28.9845376683957, -4.48174334765485, 30.866396969019, -2.3096796]
 #            temporal:
-#                begin: None
+#                begin:
 #                end: now  # or empty
 #        provider:
 #            name: PostgreSQL
@@ -226,7 +226,7 @@ datasets:
             spatial:
                 bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -274,7 +274,7 @@ datasets:
             spatial:
                 bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -321,7 +321,7 @@ datasets:
             spatial:
                 bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -367,7 +367,7 @@ datasets:
             spatial:
                 bbox: [-112.108489, 39.854053, -111.028628, 40.460098]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -412,7 +412,7 @@ datasets:
             spatial:
                 bbox: [36.0, 17.0, 46.0, 18.0]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -460,9 +460,9 @@ datasets:
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-31.2687 32.5898 -6.18992 42.152]
+                bbox: [-31.2687, 32.5898, -6.18992, 42.152]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -499,7 +499,7 @@ datasets:
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [-180, -90, 180, 90]
             temporal:
                 begin: 2011-11-11
                 end: now  # or empty
@@ -544,7 +544,7 @@ datasets:
             spatial:
                 bbox: [51.6, -4.5, 52.0, -4.0]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -587,7 +587,7 @@ datasets:
             spatial:
                 bbox: [51.6, -4.5, 52.0, -4.0]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -628,7 +628,7 @@ datasets:
             spatial:
                 bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -670,7 +670,7 @@ datasets:
             spatial:
                 bbox: [50.75, 3.37, 53.47, 7.21]
             temporal:
-                begin: None
+                begin:
                 end: now  # or empty
         provider:
             name: OGR
@@ -709,9 +709,9 @@ datasets:
 #              hreflang: en-US
 #        extents:
 #            spatial:
-#                bbox: [-180,-90,180,90]
+#                bbox: [-180, -90, 180, 90]
 #            temporal:
-#                begin: None
+#                begin:
 #                end: now  # or empty
 #        provider:
 #            name: SQLite
@@ -738,7 +738,7 @@ datasets:
 #            spatial:
 #                bbox: [-180, -90, 180, 90]
 #            temporal:
-#                begin: None
+#                begin:
 #                end: now  # or empty
 #        provider:
 #            name: OGR

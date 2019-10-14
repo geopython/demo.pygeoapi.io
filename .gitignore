@@ -10,3 +10,6 @@ acme.json
 
 # DockerHub token and paths
 dockerhub.env
+
+# dev artifacts
+__pycache__

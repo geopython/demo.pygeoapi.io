@@ -29,6 +29,7 @@ services:
       # Paths to docker-compose files who are triggered by scripts:
       - ./../pygeoapi_master:/srv/pygeoapi_master
       - ./../home:/srv/home
+      - ./../pygeoapi_cite:/srv/pygeoapi_cite
 
 
 networks:

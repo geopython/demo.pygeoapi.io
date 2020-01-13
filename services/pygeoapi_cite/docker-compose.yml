@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+
+  pygeoapi_cite:
+    build: ./pygeoapi
+
+    container_name: pygeoapi_cite
+
+    depends_on:
+      - elasticsearch
+
+    links:
+      - elasticsearch
+
+    restart: unless-stopped
+
+    expose:
+      - "80"
+
+#    ports:
+#      - "5000:80"
+
+    environment:
+     - SCRIPT_NAME=/cite
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/cite"
+      - "traefik.backend=pygeoapi_cite"
+      - "traefik.frontend.priority=100"
+      - "traefik.docker.network=pygeoapi-network"
+
+  elasticsearch:
+    build: ./elasticsearch
+
+    container_name: elasticsearch
+    
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+volumes:
+  elasticsearch_data: {}
+
+networks:
+  default:
+    external:
+      name: pygeoapi-network

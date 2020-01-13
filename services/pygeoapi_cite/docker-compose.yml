@@ -4,16 +4,18 @@ services:
 
   elasticsearch_cite:
     image: geopython/elasticsearch_cite:latest
-
+    # image: docker.elastic.co/elasticsearch/elasticsearch:7.5.1
     build: ./elasticsearch
 
     container_name: elasticsearch_cite
 
     environment:
+      - node.name=elasticsearch_cite
+      - cluster.name=es-docker-cluster
+#      - discovery.seed_hosts=es02,es03
       - cluster.initial_master_nodes=elasticsearch_cite
-      - discovery.type=single-node
-      - xpack.security.enabled=false
-      - ES_JAVA_OPTS=-Xms1G -Xmx1G -Des.enforce.bootstrap.checks=true
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
 
     ulimits:
       nofile:
@@ -35,10 +37,10 @@ services:
     container_name: pygeoapi_cite
 
     depends_on:
-      - elasticsearch
+      - elasticsearch_cite
 
     links:
-      - elasticsearch
+      - elasticsearch_cite
 
     restart: unless-stopped
 

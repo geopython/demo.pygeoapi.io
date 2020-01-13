@@ -63,6 +63,9 @@ COPY add_data.sh /add_data.sh
 RUN chmod +x /*.sh
 
 USER elasticsearch
+# CMD ["elasticsearch"]
+
+# EXPOSE 9200 9300
 
 # CMD ["/usr/share/elasticsearch/bin/elasticsearch"]
 

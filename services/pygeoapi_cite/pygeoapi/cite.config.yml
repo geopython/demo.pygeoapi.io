@@ -94,6 +94,6 @@ datasets:
 
         provider:
             name: Elasticsearch
-            data: http://elasticsearch:9200/canada-hydat-daily-mean-02hc003/FeatureCollection
+            data: http://elasticsearch_cite:9200/canada-hydat-daily-mean-02hc003
             id_field: IDENTIFIER
             time_field: DATE

@@ -2,7 +2,34 @@ version: "3"
 
 services:
 
+  elasticsearch_cite:
+    image: geopython/elasticsearch_cite:latest
+
+    build: ./elasticsearch
+
+    container_name: elasticsearch_cite
+
+    environment:
+      - cluster.initial_master_nodes=elasticsearch_cite
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1G -Xmx1G -Des.enforce.bootstrap.checks=true
+
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
+      memlock:
+        soft: -1
+        hard: -1
+
+    ports:
+      - 9200:9200
+      - 9300:9300
+
   pygeoapi_cite:
+    image: geopython/pygeoapi_cite:latest
+
     build: ./pygeoapi
 
     container_name: pygeoapi_cite
@@ -18,8 +45,8 @@ services:
     expose:
       - "80"
 
-#    ports:
-#      - "5000:80"
+    ports:
+      - "5000:80"
 
     environment:
      - SCRIPT_NAME=/cite
@@ -30,17 +57,6 @@ services:
       - "traefik.backend=pygeoapi_cite"
       - "traefik.frontend.priority=100"
       - "traefik.docker.network=pygeoapi-network"
-
-  elasticsearch:
-    build: ./elasticsearch
-
-    container_name: elasticsearch
-    
-    volumes:
-      - elasticsearch_data:/usr/share/elasticsearch/data
-
-volumes:
-  elasticsearch_data: {}
 
 networks:
   default:

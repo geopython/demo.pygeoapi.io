@@ -41,14 +41,13 @@ USER root
 COPY docker-entrypoint.sh  /docker-entrypoint.sh
 COPY add_data.sh /add_data.sh
 
-RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/cite/ogcapi-features/canada-hydat-daily-mean-02HC003.geojson -O ${DATA_FOLDER}/canada-hydat-daily-mean-02HC003.geojson
-RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/load_es_data.py -O /load_es_data.py
+RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/cite/ogcapi-features/canada-hydat-daily-mean-02HC003.geojson -O ${DATA_FOLDER}/canada-hydat-daily-mean-02HC003.geojson \
+	&& wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/load_es_data.py -O /load_es_data.py \
+	&& RUN wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O bin/wait-for-it.sh \
+	&& RUN chmod +x bin/wait-for-it.sh
 
-RUN wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O bin/wait-for-it.sh
-RUN chmod +x bin/wait-for-it.sh
-
-RUN echo "xpack.security.enabled: false" >> config/elasticsearch.yml
-RUN echo "http.host: 0.0.0.0" >> config/elasticsearch.yml
+RUN echo "xpack.security.enabled: false" >> config/elasticsearch.yml \
+	&& echo "http.host: 0.0.0.0" >> config/elasticsearch.yml
 
 RUN yum --enablerepo=extras -y install epel-release \
 	&& yum install -y python-pip \

@@ -13,13 +13,14 @@ The demo server runs the following apps/services:
 * [pygeoapi_master](services/pygeoapi_master) - (latest GitHub `master` version of) `pygeoapi` service with test data
 * [pygeoapi_stable](services/pygeoapi_stable) - (last stable version of) `pygeoapi` service with test data
 * [pygeoapi_cite](services/pygeoapi_cite) - (latest GitHub `master` version of) `pygeoapi` service with CITE configuration
+* [pygeoapi_covid19](services/pygeoapi_covid19) - (latest GitHub `master` version of) `pygeoapi` service with Covid-19 configuration
 * [traefik](services/traefik) - edge/proxy server routing incoming HTTP(S) and managing SSL-certificates (via Let's Encrypt)
 * [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi_master](services/pygeoapi_master)
 
 ## Auto Update 
 
-The [home](services/home), [pygeoapi_master](services/pygeoapi_master) and [pygeoapi_cite](services/pygeoapi_cite)
-services are automatically redeployed by [dockerhub listener](services/dockerhub). The full chain is:
+The [home](services/home), [pygeoapi_master](services/pygeoapi_master), [pygeoapi_cite](services/pygeoapi_cite)
+and [pygeoapi_cite](services/pygeoapi_covid19) services are automatically redeployed by [dockerhub listener](services/dockerhub). The full chain is:
  
 ```
  (git push to GitHub master) --> (DockerHub Image autobuild) --> (demo server redeploy by dockerhub listener)
@@ -32,6 +33,9 @@ The [pygeoapi_master](services/pygeoapi_master) service is redeployed after any 
 to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
  
 The [pygeoapi_cite](services/pygeoapi_cite) service is redeployed after any git push 
+to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
+
+The [pygeoapi_cite](services/pygeoapi_covid19) service is redeployed after any git push 
 to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
  
 ## Common setup with Ansible

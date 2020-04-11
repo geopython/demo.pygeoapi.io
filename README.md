@@ -20,7 +20,7 @@ The demo server runs the following apps/services:
 ## Auto Update 
 
 The [home](services/home), [pygeoapi_master](services/pygeoapi_master), [pygeoapi_cite](services/pygeoapi_cite)
-and [pygeoapi_cite](services/pygeoapi_covid19) services are automatically redeployed by [dockerhub listener](services/dockerhub). The full chain is:
+and [pygeoapi_covid19](services/pygeoapi_covid19) services are automatically redeployed by [dockerhub listener](services/dockerhub). The full chain is:
  
 ```
  (git push to GitHub master) --> (DockerHub Image autobuild) --> (demo server redeploy by dockerhub listener)

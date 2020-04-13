@@ -153,3 +153,93 @@ datasets:
                     CPL_DEBUG: NO
             id_field: OBJECTID
             layer: ESRIJSON
+
+    cases_netherlands_per_municipality:
+        title: "Cases in The Netherlands - Per Municipality"
+        description: "Current situation within The Netherlands, number of cases per Municipaility, provided by ESRI NL."
+        keywords: [Daily, Cases, Municipality]
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: "ArcGIS instance with the current situation for number of COVID-19 cases per municipality in The Netherlands"
+              href: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/CoronavirusPunten/FeatureServer/0?f=html
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "ArcGIS instance with the current situation for number of COVID-19 cases per municipality in The Netherlands"
+              href: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/CoronavirusPunten/FeatureServer
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2020-01-01
+                end: null # or empty
+
+        provider:
+            name: OGR
+            data:
+                source_type: ESRIJSON
+                source: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/CoronavirusPunten/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=OBJECTID+ASC&f=json
+                source_srs: EPSG:28992
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+                open_options:
+                    FEATURE_SERVER_PAGING: YES
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+            id_field: OBJECTID
+            layer: ESRIJSON
+
+    cases_netherlands_hospitalized_per_municipality:
+        title: "Cases in The Netherlands - Hospitalized Per Municipality"
+        description: "Current situation within The Netherlands, number of patients hospitalized per Municipaility, provided by ESRI NL."
+        keywords: [Daily, Cases, Municipality, Hospital]
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: "ArcGIS instance with the current situation for number of COVID-19 cases hospitalized per municipality in The Netherlands"
+              href: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/Coronavirus_ziekenhuisopnamen_punt/FeatureServer/0?f=html
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "ArcGIS instance with the current situation for number of COVID-19 cases hospitalized per municipality in The Netherlands"
+              href: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/Coronavirus_ziekenhuisopnamen_punt/FeatureServer
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2020-01-01
+                end: null # or empty
+
+        provider:
+            name: OGR
+            data:
+                source_type: ESRIJSON
+                source: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/Coronavirus_ziekenhuisopnamen_punt/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=OBJECTID+ASC&f=json
+                source_srs: EPSG:28992
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+                open_options:
+                    FEATURE_SERVER_PAGING: YES
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+            id_field: OBJECTID
+            layer: ESRIJSON

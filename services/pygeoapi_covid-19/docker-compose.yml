@@ -3,11 +3,11 @@ version: "3"
 services:
 
   pygeoapi_cite:
-    image: geopython/pygeoapi_covid19:latest
+    image: geopython/pygeoapi_covid-19:latest
 
     build: ./pygeoapi
 
-    container_name: pygeoapi_covid
+    container_name: pygeoapi_covid-19
 
     restart: unless-stopped
 
@@ -23,7 +23,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/covid-19"
-      - "traefik.backend=pygeoapi_covid19"
+      - "traefik.backend=pygeoapi_covid-19"
       - "traefik.frontend.priority=100"
       - "traefik.docker.network=pygeoapi-network"
 

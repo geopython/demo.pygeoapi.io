@@ -2,10 +2,10 @@
 
 Runs latest GitHub master branch of `pygeoapi` using
 [Docker Image from DockerHub](https://cloud.docker.com/u/geopython/repository/docker/geopython/pygeoapi).
-with a [local config file](covid19.config.yml).
+with a [local config file](covid-19.config.yml).
 
-A local [Docker Image](Dockerfile) is [built](build.sh) named `geopython/pygeoapi_covid19:latest` 
-that mainly copies in the [COVID-19 config](covid19.config.yml).
+A local [Docker Image](Dockerfile) is [built](build.sh) named `geopython/pygeoapi_covid-19:latest` 
+that mainly copies in the [COVID-19 config](covid-19.config.yml).
 
 This was needed (i.s.o. Volume mapping) to have [micro-dockerhub-hook](https://github.com/maccyber/micro-dockerhub-hook)
 restart the service (as the webhook is done within a Docker container and Volume mapping within a Volume map does not work).

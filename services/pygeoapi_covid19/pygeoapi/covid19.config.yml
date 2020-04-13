@@ -156,7 +156,7 @@ datasets:
 
     cases_netherlands_per_municipality:
         title: "Cases in The Netherlands - Per Municipality"
-        description: "Current situation within The Netherlands, number of patients hospitalized per Municipaility, provided by ESRI NL, source data from RIVM."
+        description: "Current situation within The Netherlands, number of cases per Municipaility, provided by ESRI NL, source data from RIVM."
         keywords: [Daily, Cases, Municipality]
         crs:
             - CRS84

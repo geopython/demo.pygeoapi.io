@@ -55,7 +55,7 @@ metadata:
 
 datasets:
     cases:
-        title: "Cases - Coronavirus 2019 nCoV Cases"
+        title: "Global - Cases by Country and Province - Coronavirus 2019 nCoV Cases"
         description: "Current situation for the noval coronavirus starting from Wuhan, China"
         keywords: [Daily, Cases, Country, Province, State]
         crs:
@@ -105,7 +105,7 @@ datasets:
             layer: ESRIJSON
 
     cases_country:
-        title: "Cases by country - Coronavirus 2019 nCoV Cases"
+        title: "Global - Cases by Country - Coronavirus 2019 nCoV Cases"
         description: "Current situation for the noval coronavirus starting from Wuhan, China"
         keywords: [Daily, Cases, Country, Province, State]
         crs:
@@ -155,7 +155,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_per_municipality:
-        title: "Cases in The Netherlands - Per Municipality - Points"
+        title: "The Netherlands - Cases Per Municipality - Points"
         description: "Current situation within The Netherlands, number of cases per Municipality, provided by ESRI NL, source data from RIVM. Point Layer."
         keywords: [Daily, Cases, Municipality]
         crs:
@@ -200,7 +200,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_per_municipality_polygons:
-        title: "Cases in The Netherlands - Per Municipality - Polygons"
+        title: "The Netherlands - Cases Per Municipality - Polygons"
         description: "Current situation within The Netherlands, number of cases per Municipality, provided by ESRI NL, source data from RIVM. Polygon Layer."
         keywords: [Daily, Cases, Municipality]
         crs:

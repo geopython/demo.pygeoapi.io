@@ -30,7 +30,7 @@ services:
       - ./../pygeoapi_master:/srv/pygeoapi_master
       - ./../home:/srv/home
       - ./../pygeoapi_cite:/srv/pygeoapi_cite
-      - ./../pygeoapi_covid19:/srv/pygeoapi_covid19
+      - ./../pygeoapi_covid-19:/srv/pygeoapi_covid-19
 
 
 networks:

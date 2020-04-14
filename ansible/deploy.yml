@@ -44,8 +44,8 @@
       shell: "cd {{ services_home }}/pygeoapi_cite && ./build.sh --no-cache && ./stop.sh && ./start.sh"
       tags: pygeoapi
 
-    - name: "pygeoapi_covid19"
-      shell: "cd {{ services_home }}/pygeoapi_covid19 && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+    - name: "pygeoapi_covid-19"
+      shell: "cd {{ services_home }}/pygeoapi_covid-19 && ./build.sh --no-cache && ./stop.sh && ./start.sh"
       tags: pygeoapi
 
     - name: "traefik"

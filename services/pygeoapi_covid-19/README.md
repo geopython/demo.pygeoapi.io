@@ -1,11 +1,13 @@
 # pygeoapi COVID-19 demo service - master
 
-This is the configuration and service for the COVID-19 endpoint provided by `pygeoapi`.
-It runs a pygeoapi instance with a configuration that fetches data
-directly from ESRI backend Feature Services. In effect, this is basically a proxy with 
-actualized data from official sources like the Center for Systems Science and Engineering (CSSE) 
-at Johns Hopkins University and national Public Health institutes like RIVM in The Netherlands.
-So no data is stored.
+This is the [configuration](pygeoapi/covid-19.config.yml) and [Docker service](docker-compose.yml) for the COVID-19 endpoint provided by `pygeoapi`.
+It runs a [pygeoapi](https://pygeoapi.io) instance with a [configuration](pygeoapi/covid-19.config.yml) that fetches data
+directly from ESRI backend Feature Services. In effect, we (`pygeoapi team`) provide basically a proxy with 
+actualized data from official sources like the 
+[Center for Systems Science and Engineering](https://systems.jhu.edu/) (CSSE) 
+at Johns Hopkins University and national 
+Public Health institutes like [RIVM in The Netherlands](https://rivm.nl.
+So no data is stored nor cached by our service.
 
 Contact: https://gitter.im/geopython/pygeoapi or via main website: https://pygeoapi.io
 

@@ -34,19 +34,19 @@
 
     - name: "pygeoapi_master"
       shell: "cd {{ services_home }}/pygeoapi_master && ./build.sh --no-cache && ./stop.sh && ./start.sh"
-      tags: pygeoapi
+      tags: pygeoapi_master
 
     - name: "pygeoapi_stable"
       shell: "cd {{ services_home }}/pygeoapi_stable && ./build.sh --no-cache && ./stop.sh && ./start.sh"
-      tags: pygeoapi
+      tags: pygeoapi_stable
 
     - name: "pygeoapi_cite"
       shell: "cd {{ services_home }}/pygeoapi_cite && ./build.sh --no-cache && ./stop.sh && ./start.sh"
-      tags: pygeoapi
+      tags: pygeoapi_cite
 
     - name: "pygeoapi_covid-19"
       shell: "cd {{ services_home }}/pygeoapi_covid-19 && ./build.sh --no-cache && ./stop.sh && ./start.sh"
-      tags: pygeoapi
+      tags: pygeoapi_covid-19
 
     - name: "traefik"
       shell: "cd {{ services_home }}/traefik && ./start.sh"

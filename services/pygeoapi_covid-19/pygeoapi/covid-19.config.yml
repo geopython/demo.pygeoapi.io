@@ -423,3 +423,115 @@ datasets:
                     CPL_DEBUG: NO
             id_field: OBJECTID
             layer: ESRIJSON
+
+    cases_italy_per_region:
+        title: "Cases in Italy - Variation of the Total Number Per Region - Points"
+        description: "Current situation within Italy, number of cases with variation per Italy, provided by ESRI, source data from DPC."
+        keywords: [Daily, Cases Variation, Region]
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: "COVID-19 Italy - Interactive Dashboard of the current situation"
+              href: http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1
+              hreflang: it-IT
+            - type: text/html
+              rel: canonical
+              title: "ArcGIS instance with the current situation for number of COVID-19 cases with variation per region in Italy - Point Layer"
+              href: https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer/0?f=html
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "ArcGIS instance with the current situation for number of COVID-19 cases with variation per region in Italy - Point Layer"
+              href: https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "GitHub DPC repository - COVID-19 raw data for Italy"
+              href: https://github.com/pcm-dpc/COVID-19
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2020-01-01
+                end: null # or empty
+
+        provider:
+            name: OGR
+            data:
+                source_type: ESRIJSON
+                source: https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=objectid+ASC&f=json
+                # https://support.esri.com/en/technical-article/000013950
+                source_srs: EPSG:3857 # declared was 102100 see above
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+                open_options:
+                    FEATURE_SERVER_PAGING: YES
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+            id_field: OBJECTID
+            layer: ESRIJSON
+
+    restricted_zones_italy:
+        title: "Restricted Zones in Italy - Polygons"
+        description: "Current situation within Italy, number of restricted zone in Italy, provided by ESRI, source data from DPC."
+        keywords: [Daily, Restrictions, Zones]
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: COVID-19 Italy - Interactive Dashboard of the current situation
+              href: http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1
+              hreflang: it-IT
+            - type: text/html
+              rel: canonical
+              title: "ArcGIS instance with the current situation for number of COVID-19 restricted zones in Italy - Polygon Layer"
+              href: https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/COVID19_AREE/FeatureServer/0?f=html
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "ArcGIS instance with the current situation for number of COVID-19 restricted zones in Italy - Polygon Layer"
+              href: https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/COVID19_AREE/FeatureServer
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "GitHub DPC repository - COVID-19 raw data for Italy"
+              href: https://github.com/pcm-dpc/COVID-19
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2020-01-01
+                end: null # or empty
+
+        provider:
+            name: OGR
+            data:
+                source_type: ESRIJSON
+                source: https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/COVID19_AREE/FeatureServer/0/query?where=FID+%3D+FID&outfields=*&orderByFields=FID+ASC&f=json
+                # https://support.esri.com/en/technical-article/000013950
+                source_srs: EPSG:3857 # declared was 102100 see above
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+                open_options:
+                    FEATURE_SERVER_PAGING: YES
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+            id_field: FID
+            layer: ESRIJSON

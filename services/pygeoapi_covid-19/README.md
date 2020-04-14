@@ -54,6 +54,14 @@ TODO (tables, no geospatial column)
 https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/Coronavirus_aantallen_tabel/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=OBJECTID+ASC&f=json
 * IC intakes, age: https://services.arcgis.com/nSZVuSZjHpEZZbRo/ArcGIS/rest/services/Coronavirus_IC_opnamen_leeftijd/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=OBJECTID+ASC&f=json
 
+Interesting pygeoapi queries:
+
+* *Cases in the Municipality of Amsterdam* : https://demo.pygeoapi.io/covid-19/collections/cases_netherlands_per_municipality/items?Gemeentenaam=Amsterdam&f=json
+* *Cases in the Province of Noord-Holland* : https://demo.pygeoapi.io/covid-19/collections/cases_netherlands_per_municipality/items?Provincie=Noord-Holland&f=json
+* *Cases in Southers Part of The Netherlands (bbox)* : https://demo.pygeoapi.io/covid-19/collections/cases_netherlands_per_municipality/items?bbox=2.4,50.7,7.2,52.1&f=json
+* *Persons Hospitalized in Amsterdam over Time* : https://demo.pygeoapi.io/covid-19/collections/cases_netherlands_hospitalized_per_municipality_time/items?limit=1000&Gemeentenaam=Amsterdam&f=json
+
+
 ## Deployment of this Service
 
 This service runs latest GitHub master branch of `pygeoapi` using

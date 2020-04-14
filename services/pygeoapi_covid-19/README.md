@@ -7,6 +7,16 @@ actualized data from official sources like the
 [Center for Systems Science and Engineering](https://systems.jhu.edu/) (CSSE) 
 at Johns Hopkins University and national 
 Public Health institutes like [RIVM in The Netherlands](https://rivm.nl).
+The data is provided via the new [OGC API Features](https://www.ogc.org/standards/ogcapi-features) REST service
+for which `pygeoapi` is a [certified OGC Compliant and an OGC Reference Implementation](https://www.ogc.org/resource/products/details/?pid=1606).
+
+Main endpoint is: https://demo.pygeoapi.io/covid-19. Note that this is an API, with some basic
+HTML rendering, **not a viewer/dashboard**.
+
+As the OGC API Features is based on Open API Specification (Swagger), there is also a Swagger endpoint:
+
+https://demo.pygeoapi.io/covid-19/openapi?f=html
+
 So no data is stored nor cached by our service.
 
 Contact: https://gitter.im/geopython/pygeoapi or via main website: https://pygeoapi.io

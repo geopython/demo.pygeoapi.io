@@ -33,16 +33,22 @@ TBS
 
 Contact: Francesco Bartoli - [https://github.com/francbartoli](https://github.com/francbartoli)
 
-For The Italy COVID-19 data is provided by ESRI via Arcgis Feature Services.
-Their data stems directly from the National Civil Protection Department under the Presidency of the Council of Ministers, the DPC [http://www.protezionecivile.gov.it/](http://www.protezionecivile.gov.it/).
-So this data can be considered official and actual. They are also released publicly on GitHub under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.it), [https://github.com/pcm-dpc/COVID-19](https://github.com/pcm-dpc/COVID-19).
+For The Italy COVID-19 data are released publicly on GitHub under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.it), [https://github.com/pcm-dpc/COVID-19](https://github.com/pcm-dpc/COVID-19). These raw data are served directly from that repository storage.
+
+Some layers are also provided by ESRI via Arcgis Feature Services.
+Their data stems directly from the same source above, managed by the National Civil Protection Department under the Presidency of the Council of Ministers, the DPC [http://www.protezionecivile.gov.it/](http://www.protezionecivile.gov.it/).
+So this data can be considered official and actual.
 
 The main URL used is : [https://services6.arcgis.com/L1SotImj1AAZY1eK](https://services6.arcgis.com/L1SotImj1AAZY1eK) . 
 Unfortunately many layers have no geometry, making these hard to integrate.
 
 Layers
 
-* `Cases in Italy - Total Number Per Region With Last Variation - Points` source: [https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=objectid+ASC&f=json](https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=objectid+ASC&f=json)
+* `Cases in Italy - Cases Per Region over Time - Points` source: [https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv](https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv)
+* `Cases in Italy - Latest Cases Per Region - Points` source: [https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni-latest.csv](https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni-latest.csv)
+* `Cases in Italy - Cases Per Province over Time - Points` source: [https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province.csv](https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province.csv)
+* `Cases in Italy - Latest Cases Per Province - Points` source: [https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province-latest.csv](https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province-latest.csv)
+* *Same layer as above* `Cases in Italy - Total Number Per Region With Latest Variation - Points` source: [https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=objectid+ASC&f=json](https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/dpc_regioni_covid19/FeatureServer/0/query?where=objectid+%3D+objectid&outfields=*&orderByFields=objectid+ASC&f=json)
 * `Restricted Zones in Italy - Polygons` source: [https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/COVID19_AREE/FeatureServer/0/query?where=FID+%3D+FID&outfields=*&orderByFields=FID+ASC&f=json](https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services/COVID19_AREE/FeatureServer/0/query?where=FID+%3D+FID&outfields=*&orderByFields=FID+ASC&f=json)
 
 Excluded
@@ -53,8 +59,11 @@ TODO (tables, no geospatial column)
 
 Interesting pygeoapi queries:
 
-* *Cases in the Region of Lazio* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_per_region/items?denominazione_regione=lazio&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_per_region/items?denominazione_regione=lazio&f=json)
-* *Cases in Southers Part of Italy (bbox)* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_per_region/items?bbox=10.616226,36.721480,18.855972,41.738721&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_per_region/items?bbox=10.616226,36.721480,18.855972,41.738721&f=json)
+* *Cases in the Region of Lazio over Time* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_region/items?denominazione_regione=lazio&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_region/items?denominazione_regione=lazio&f=json)
+* *Cases in Southers Part of Italy at regional level over Time (bbox)* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_per_region/items?bbox=10.616226,36.721480,18.855972,41.738721&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_region/items?bbox=10.616226,36.721480,18.855972,41.738721&f=json)
+* *Cases in the Region of Lazio divided per provinces over Time* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_province/items?denominazione_regione=lazio&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_province/items?denominazione_regione=lazio&f=json)
+* *Cases in the Province of Rome over Time* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_province/items?denominazione_provincia=roma&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_province/items?denominazione_provincia=roma&f=json)
+* *Cases in Southers Part of Italy divided per province over Time (bbox)* : [https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_province/items?bbox=10.616226,36.721480,18.855972,41.738721&f=json](https://demo.pygeoapi.io/covid-19/collections/cases_italy_timeseries_per_province/items?bbox=10.616226,36.721480,18.855972,41.738721&f=json)
 
 ### The Netherlands
 

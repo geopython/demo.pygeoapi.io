@@ -425,7 +425,7 @@ datasets:
             layer: ESRIJSON
 
     cases_italy_per_region:
-        title: "Cases in Italy - Variation of the Total Number Per Region - Points"
+        title: "Italy - Cases - Variation of the Total Number Per Region - Points"
         description: "Current situation within Italy, number of cases with variation per Italy, provided by ESRI, source data from DPC."
         keywords: [Daily, Cases Variation, Region]
         crs:
@@ -481,7 +481,7 @@ datasets:
             layer: ESRIJSON
 
     restricted_zones_italy:
-        title: "Restricted Zones in Italy - Polygons"
+        title: "Italy - Restricted Zones - Polygons"
         description: "Current situation within Italy, number of restricted zone in Italy, provided by ESRI, source data from DPC."
         keywords: [Daily, Restrictions, Zones]
         crs:

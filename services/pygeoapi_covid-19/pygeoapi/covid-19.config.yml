@@ -341,6 +341,7 @@ resources:
             layer: ESRIJSON
 
     cases_netherlands_hospitalized_per_municipality_time:
+        type: collection
         title: "The Netherlands - Persons Hospitalized Per Municipality over Time - Points"
         description: "Current situation within The Netherlands, number of patients hospitalized per Municipality over Time, provided by ESRI NL, source data from RIVM. Point and Time Layer."
         keywords: [Daily, Cases, Municipality, Hospital]
@@ -576,6 +577,7 @@ resources:
             layer: dpc-covid19-ita-province
 
     cases_italy_per_province_latest:
+        type: collection
         title: "Cases in Italy - Latest Cases Per Province - Points"
         description: "Current situation within Italy, number of latest cases per Italy, provided by the official raw archive, source data from DPC."
         keywords: [Daily, Cases, Region, Latest]

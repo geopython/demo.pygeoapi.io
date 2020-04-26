@@ -53,8 +53,9 @@ metadata:
         instructions: During hours of service. Off on weekends.
         role: pointOfContact
 
-datasets:
+resources:
     cases:
+        type: collection
         title: "Global - Cases by Country and Province - Coronavirus 2019 nCoV Cases"
         description: "Current situation for the noval coronavirus starting from Wuhan, China"
         keywords: [Daily, Cases, Country, Province, State]
@@ -105,6 +106,7 @@ datasets:
             layer: ESRIJSON
 
     cases_country:
+        type: collection
         title: "Global - Cases by Country - Coronavirus 2019 nCoV Cases"
         description: "Current situation for the noval coronavirus starting from Wuhan, China"
         keywords: [Daily, Cases, Country, Province, State]
@@ -155,6 +157,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_per_municipality:
+        type: collection
         title: "The Netherlands - Cases Per Municipality - Points"
         description: "Current situation within The Netherlands, number of cases per Municipality, provided by ESRI NL, source data from RIVM. Point Layer."
         keywords: [Daily, Cases, Municipality]
@@ -200,6 +203,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_per_municipality_polygons:
+        type: collection
         title: "The Netherlands - Cases Per Municipality - Polygons"
         description: "Current situation within The Netherlands, number of cases per Municipality, provided by ESRI NL, source data from RIVM. Polygon Layer."
         keywords: [Daily, Cases, Municipality]
@@ -245,6 +249,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_hospitalized_per_municipality:
+        type: collection
         title: "The Netherlands - Persons Hospitalized Per Municipality - Points"
         description: "Current situation within The Netherlands, number of patients hospitalized per Municipality, provided by ESRI NL, source data from RIVM. Point Layer."
         keywords: [Daily, Cases, Municipality, Hospital]
@@ -290,6 +295,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_hospitalized_per_municipality_polygons:
+        type: collection
         title: "The Netherlands - Persons Hospitalized Per Municipality - Polygons"
         description: "Current situation within The Netherlands, number of patients hospitalized per Municipality, provided by ESRI NL, source data from RIVM. Polygon Layer."
         keywords: [Daily, Cases, Municipality, Hospital]
@@ -380,6 +386,7 @@ datasets:
             layer: ESRIJSON
 
     cases_netherlands_hospitalized_per_municipality_time_polygons:
+        type: collection
         title: "The Netherlands - Persons Hospitalized Per Municipality over Time - Polygons"
         description: "Current situation within The Netherlands, number of patients hospitalized per Municipality over Time, provided by ESRI NL, source data from RIVM. Polygon and Time Layer."
         keywords: [Daily, Cases, Municipality, Hospital]
@@ -425,6 +432,7 @@ datasets:
             layer: ESRIJSON
 
     cases_italy_timeseries_per_region:
+        type: collection
         title: "Cases in Italy - Cases Per Region over Time - Points"
         description: "Current situation within Italy, number of cases per Italy over time, provided by the official raw archive, source data from DPC."
         keywords: [Daily, Cases, Region, TimeSeries]
@@ -472,6 +480,7 @@ datasets:
             layer: dpc-covid19-ita-regioni
 
     cases_italy_per_region_latest:
+        type: collection
         title: "Cases in Italy - Latest Cases Per Region - Points"
         description: "Current situation within Italy, number of latest cases per Italy, provided by the official raw archive, source data from DPC."
         keywords: [Daily, Cases, Region, Latest]
@@ -519,6 +528,7 @@ datasets:
             layer: dpc-covid19-ita-regioni-latest
 
     cases_italy_timeseries_per_province:
+        type: collection
         title: "Cases in Italy - Cases Per Province over Time - Points"
         description: "Current situation within Italy, number of cases per Italy over time, provided by the official raw archive, source data from DPC."
         keywords: [Daily, Cases, Province, TimeSeries]
@@ -613,6 +623,7 @@ datasets:
             layer: dpc-covid19-ita-province-latest
 
     cases_italy_per_region:
+        type: collection
         title: "Italy - Cases - Variation of the Total Number Per Region - Points"
         description: "Current situation within Italy, number of cases with variation per Italy, provided by ESRI, source data from DPC."
         keywords: [Daily, Cases Variation, Region]
@@ -669,6 +680,7 @@ datasets:
             layer: ESRIJSON
 
     restricted_zones_italy:
+        type: collection
         title: "Italy - Restricted Zones - Polygons"
         description: "Current situation within Italy, number of restricted zone in Italy, provided by ESRI, source data from DPC."
         keywords: [Daily, Restrictions, Zones]

@@ -12,7 +12,7 @@ server:
     map:
         url: https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png
         attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia maps</a> | Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-    # templates: /path/to/templates
+    ogc_schemas_location: /schemas.opengis.net
 
 logging:
     level: ERROR
@@ -20,7 +20,7 @@ logging:
 
 metadata:
     identification:
-        title: pygeoapi Demo instance - running latest stable pygeoapi version
+        title: pygeoapi Demo instance - running latest stable 0.8.0 pygeoapi version
         description: pygeoapi provides an API to geospatial data
         keywords:
             - geospatial
@@ -51,8 +51,9 @@ metadata:
         instructions: During hours of service.  Off on weekends.
         role: pointOfContact
 
-datasets:
+resources:
     obs:
+        type: collection
         title: Observations
         description: Observations
         keywords:
@@ -87,6 +88,7 @@ datasets:
                 y_field: lat
 
 #    ne_110m_populated_places_simple:
+#        type: collection
 #        title: Populated Places
 #        description: Point symbols with name attributes. Includes all admin-0 capitals and some other major cities. We favor regional significance over population census in determining our selection of places. Use the scale rankings to filter the number of towns that appear on your map.
 #        keywords:
@@ -116,6 +118,7 @@ datasets:
 #            id_field: geonameid
 #
     lakes:
+        type: collection
         title: Large Lakes
         description: lakes of the world, public domain
         keywords:
@@ -141,6 +144,7 @@ datasets:
             id_field: id
 
 #    poi:
+#        type: collection
 #        title: Portuguese point of interrest
 #        description: Portuguese points of interrest obtained from OpenStreetMap. Dataset includes Madeira and Azores islands
 #        keywords:
@@ -174,6 +178,7 @@ datasets:
 #            table: poi_portugal
 
 #    hotosm_bdi_waterways:
+#        type: collection
 #        title: Waterways of Burundi
 #        description: Waterways of Burundi, Africa. Dataset timestamp  1st Sep 2018 - Humanitarian OpenStreetMap Team (HOT)
 #        keywords:
@@ -210,6 +215,7 @@ datasets:
 #            table: hotosm_bdi_waterways
 
     dutch_windmills:
+        type: collection
         title: Windmills within The Netherlands
         description: Locations of windmills within the Netherlands from Rijksdienst voor het Cultureel Erfgoed (RCE) INSPIRE WFS. Uses GeoServer WFS v2 backend via OGRProvider.
         keywords:
@@ -259,6 +265,7 @@ datasets:
             layer: landschapsatlas:Molens
 
     dutch_castles:
+        type: collection
         title: Castles within The Netherlands
         description: Locations of castles within the Netherlands from Rijksdienst voor het Cultureel Erfgoed (RCE) INSPIRE WFS. Uses GeoServer WFS v2 backend via OGRProvider.
         keywords:
@@ -308,6 +315,7 @@ datasets:
             layer: landschapsatlas:kastelen
 
     dutch_georef_stations:
+        type: collection
         title: Dutch Georef Stations via OGR WFS
         description: Locations of RD/GNSS-reference stations from Dutch Kadaster PDOK a.k.a RDInfo. Uses MapServer WFS v2 backend via OGRProvider.
         keywords:
@@ -356,6 +364,7 @@ datasets:
             layer: rdinfo:stations
 
     utah_city_locations:
+        type: collection
         title: Cities in Utah via OGR WFS
         description: Data from the state of Utah. Standard demo dataset from the deegree WFS server that is used as backend WFS.
         keywords:
@@ -403,6 +412,7 @@ datasets:
             layer: app:SGID93_LOCATION_UDOTMap_CityLocations
 
     unesco_pois_italy:
+        type: collection
         title: Unesco POIs in Italy via OGR WFS
         description: Unesco Points of Interest in Italy. Using GeoSolutions GeoServer WFS demo-server as backend WFS.
         keywords:
@@ -449,6 +459,7 @@ datasets:
             layer: unesco:Unesco_point
 
     ogr_gpkg_poi:
+        type: collection
         title: Portuguese Points of Interest via OGR GPKG
         description: Portuguese Points of Interest obtained from OpenStreetMap. Dataset includes Madeira and Azores islands. Uses GeoPackage backend via OGR provider.
         keywords:
@@ -496,6 +507,7 @@ datasets:
             layer: poi_portugal
 
     ogr_geojson_lakes:
+        type: collection
         title: Large Lakes OGR GeoJSON Driver
         description: lakes of the world, public domain
         keywords:
@@ -535,7 +547,98 @@ datasets:
             id_field: id
             layer: ne_110m_lakes
 
+#    ogr_gpkg_wales_railway_lines:
+#        type: collection
+#        title: Railway lines in Wales (UK) via OGR GPKG
+#        description: Railway lines in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
+#        keywords:
+#            - United Kingdom
+#            - Wales
+#            - Train
+#            - Station
+#            - Ordnance Survey
+#        crs:
+#            - CRS84
+#        links:
+#            - type: text/html
+#              rel: canonical
+#              title: information
+#              href: https://www.ordnancesurvey.co.uk/
+#              hreflang: en-US
+#        extents:
+#            spatial:
+#                bbox: [51.6, -4.5, 52.0, -4.0]
+#                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+#            temporal:
+#                begin:
+#                end: now  # or empty
+#        provider:
+#            name: OGR
+#            data:
+#                source_type: GPKG
+#                source: data/wales_railway_lines.gpkg
+#                source_srs: EPSG:27700
+#                target_srs: EPSG:4326
+#                source_capabilities:
+#                    paging: True
+#
+#                gdal_ogr_options:
+#                    EMPTY_AS_NULL: NO
+#                    GDAL_CACHEMAX: 64
+#                    # GDAL_HTTP_PROXY: (optional proxy)
+#                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+#                    CPL_DEBUG: NO
+#
+#            id_field: id
+#            layer: rail
+#
+#    ogr_gpkg_wales_stations:
+#        type: collection
+#        title: Railway stations in Wales (UK) via OGR GPKG
+#        description: Railway stations in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
+#        keywords:
+#            - United Kingdom
+#            - Wales
+#            - Train
+#            - Station
+#            - Ordnance Survey
+#        crs:
+#            - CRS84
+#        links:
+#            - type: text/html
+#              rel: canonical
+#              title: information
+#              href: https://www.ordnancesurvey.co.uk/
+#              hreflang: en-US
+#        extents:
+#            spatial:
+#                bbox: [51.6, -4.5, 52.0, -4.0]
+#                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+#            temporal:
+#                begin:
+#                end: now  # or empty
+#        provider:
+#            name: OGR
+#            data:
+#                source_type: GPKG
+#                source: data/wales_railway_stations.gpkg
+#                source_srs: EPSG:27700
+#                target_srs: EPSG:4326
+#                source_capabilities:
+#                    paging: True
+#
+#                gdal_ogr_options:
+#                    EMPTY_AS_NULL: NO
+#                    GDAL_CACHEMAX: 64
+#                    # GDAL_HTTP_PROXY: (optional proxy)
+#                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+#                    CPL_DEBUG: NO
+#
+#            id_field: id
+#            layer: railway_stations
+
     ogr_addresses_sqlite:
+        type: collection
         title: Dutch addresses (subset Otterlo). OGR SQLite Driver
         description: Dutch addresses subset.
         keywords:
@@ -579,6 +682,7 @@ datasets:
             layer: ogrgeojson
 
     ogr_addresses_gpkg:
+        type: collection
         title: Dutch addresses (subset Otterlo). OGR GeoPackage Driver
         description: Dutch addresses subset.
         keywords:
@@ -597,7 +701,7 @@ datasets:
             spatial:
                 bbox: [50.75, 3.37, 53.47, 7.21]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
+        temporal:
                 begin:
                 end: now  # or empty
         provider:
@@ -622,6 +726,7 @@ datasets:
 
 
 #    countries:
+#        type: collection
 #        title: Countries in the world (SpatialLite Provider)
 #        description: Countries of the world (SpatialLite)
 #        keywords:
@@ -637,7 +742,7 @@ datasets:
 #              hreflang: en-US
 #        extents:
 #            spatial:
-#                bbox: [-180,-90,180,90]
+#                bbox: [-180, -90, 180, 90]
 #                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
 #            temporal:
 #                begin:
@@ -650,6 +755,7 @@ datasets:
 
 # NEEDS GDAL >= 2.3 !
 #    sf_311incidents:
+#        type: collection
 #        title: SF 311Incidents via OGR ESRI Feature Server
 #        description: OGR Provider - ESRI Feature Server - SF 311Incidents
 #        keywords:
@@ -690,7 +796,7 @@ datasets:
 #            id_field: objectid
 #            layer: 311Incidents
 
-processes:
     hello-world:
+        type: process
         processor:
             name: HelloWorld

@@ -411,52 +411,52 @@ resources:
             id_field: NAME
             layer: app:SGID93_LOCATION_UDOTMap_CityLocations
 
-#    unesco_pois_italy:
-#        type: collection
-#        title: Unesco POIs in Italy via OGR WFS
-#        description: Unesco Points of Interest in Italy. Using GeoSolutions GeoServer WFS demo-server as backend WFS.
-#        keywords:
-#            - Italy
-#            - Unesco
-#            - Demo
-#        crs:
-#            - CRS84
-#        links:
-#            - type: text/html
-#              rel: canonical
-#              title: information
-#              href: https://mapstore2.geo-solutions.it/mapstore/#/dashboard/5593
-#              hreflang: en-US
-#        extents:
-#            spatial:
-#                bbox: [36.0, 17.0, 46.0, 18.0]
-#                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-#            temporal:
-#                begin:
-#                end: now  # or empty
-#        provider:
-#            name: OGR
-#            data:
-#                source_type: WFS
-#                source: WFS:https://demo.geo-solutions.it/geoserver/wfs
-#                source_srs: EPSG:32632
-#                target_srs: EPSG:4326
-#                source_capabilities:
-#                    paging: True
-#
-#                source_options:
-##                    OGR_WFS_VERSION: 1.1.0
-#                    OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
-#
-#                gdal_ogr_options:
-#                    EMPTY_AS_NULL: NO
-#                    GDAL_CACHEMAX: 64
-#                    # GDAL_HTTP_PROXY: (optional proxy)
-#                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
-#                    CPL_DEBUG: NO
-#
-#            id_field: gml_id
-#            layer: unesco:Unesco_point
+    unesco_pois_italy:
+        type: collection
+        title: Unesco POIs in Italy via OGR WFS
+        description: Unesco Points of Interest in Italy. Using GeoSolutions GeoServer WFS demo-server as backend WFS.
+        keywords:
+            - Italy
+            - Unesco
+            - Demo
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://mapstore2.geo-solutions.it/mapstore/#/dashboard/5593
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [36.0, 17.0, 46.0, 18.0]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin:
+                end: now  # or empty
+        provider:
+            name: OGR
+            data:
+                source_type: WFS
+                source: WFS:https://demo.geo-solutions.it/geoserver/wfs
+                source_srs: EPSG:32632
+                target_srs: EPSG:4326
+                source_capabilities:
+                    paging: True
+
+                source_options:
+#                    OGR_WFS_VERSION: 1.1.0
+                    OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
+
+                gdal_ogr_options:
+                    EMPTY_AS_NULL: NO
+                    GDAL_CACHEMAX: 64
+                    # GDAL_HTTP_PROXY: (optional proxy)
+                    # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                    CPL_DEBUG: NO
+
+            id_field: gml_id
+            layer: unesco:Unesco_point
 
     ogr_gpkg_poi:
         type: collection

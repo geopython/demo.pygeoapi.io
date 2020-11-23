@@ -37,7 +37,7 @@
       tags: pygeoapi_master
 
     - name: "pygeoapi_stable"
-      shell: "cd {{ services_home }}/pygeoapi_stable && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+      shell: "cd {{ services_home }}/pygeoapi_stable && ./stop.sh && ./start.sh"
       tags: pygeoapi_stable
 
     - name: "pygeoapi_cite"

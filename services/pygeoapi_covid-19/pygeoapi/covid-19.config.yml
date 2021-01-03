@@ -463,7 +463,7 @@ resources:
               hreflang: it-IT
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [5.0,36.0,20.0,46.0]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin: 2020-01-01T00:00:00Z
@@ -512,7 +512,7 @@ resources:
               hreflang: it-IT
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [5.0,36.0,20.0,46.0]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin: 2020-01-01T00:00:00Z
@@ -561,7 +561,7 @@ resources:
               hreflang: it-IT
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [5.0,36.0,20.0,46.0]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin: 2020-01-01T00:00:00Z
@@ -610,7 +610,7 @@ resources:
               hreflang: it-IT
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [5.0,36.0,20.0,46.0]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin: 2020-01-01T00:00:00Z
@@ -669,7 +669,7 @@ resources:
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [5.0,36.0,20.0,46.0]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin: 2020-01-01
@@ -727,7 +727,7 @@ resources:
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-180,-90,180,90]
+                bbox: [5.0,36.0,20.0,46.0]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin: 2020-01-01

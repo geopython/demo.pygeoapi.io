@@ -837,7 +837,7 @@ resources:
         providers:
             - type: record
               name: TinyDBCatalogue
-              data: tests/data/records.tinydb
+              data: data/nationaalgeoregister.nl/sample-records.tinydb
               id_field: externalId
               time_field: record-created
               title_field: title

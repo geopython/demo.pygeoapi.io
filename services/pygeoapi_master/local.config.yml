@@ -816,6 +816,32 @@ resources:
 #              id_field: objectid
 #              layer: 311Incidents
 
+    dutch-metadata:
+        type: collection
+        title: Sample metadata records from Dutch Nationaal georegister
+        description: Sample metadata records from Dutch Nationaal georegister
+        keywords:
+            - netherlands
+            - open data
+            - georegister
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.nationaalgeoregister.nl
+              hreflang: nl-NL
+        extents:
+            spatial:
+                bbox: [3.37,50.75,7.21,53.47]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: record
+              name: TinyDBCatalogue
+              data: data/nationaalgeoregister.nl/sample-records.tinydb
+              id_field: externalId
+              time_field: record-created
+              title_field: title
+
     hello-world:
         type: process
         processor:

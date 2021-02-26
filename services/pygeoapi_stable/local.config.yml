@@ -48,7 +48,7 @@ metadata:
         phone: +xx-xxx-xxx-xxxx
         fax: +xx-xxx-xxx-xxxx
         email: you@example.org
-        url: Contact URL
+        url: https://pygeoapi.io
         hours: Hours of Service
         instructions: During hours of service.  Off on weekends.
         role: pointOfContact

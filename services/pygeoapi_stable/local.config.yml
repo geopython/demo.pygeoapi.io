@@ -540,7 +540,7 @@ resources:
             temporal:
                 begin: 2011-11-11
                 end: now  # or empty
-        provider:
+        providers:
             - type: feature
               name: OGR
               data:

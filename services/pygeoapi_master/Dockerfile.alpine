@@ -60,6 +60,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" > /etc/apk/reposito
 	&& cd ${PYGEOAPI_HOME} \
 	&& pip3 install -r requirements.txt \
 	&& pip3 install -r requirements-dev.txt \
+	&& pip3 install xarray \
 	&& pip3 install -e . \
 	&& rm -rf /var/cache/apk/* /tmp/* /var/tmp/* \
 	&& apk --purge del --force-broken-world .build_deps

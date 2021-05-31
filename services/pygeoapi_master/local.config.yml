@@ -909,7 +909,7 @@ resources:
               name: TinyDBCatalogue
               data: data/nationaalgeoregister.nl/sample-records.tinydb
               id_field: externalId
-              time_field: record-created
+              time_field: recordCreated
               title_field: title
 
     test-data:

@@ -31,8 +31,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Wegpanorama (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Wegpanorama. De provincie Drenthe hecht waarde aan een zorgvuldige presentatie van Drenthe aan de hoofdinfrastructuur en wil de karakteristieken van de landschapstypen en het contrast tussen stad en land, gezien vanaf de infrastructuur, zichtbaar houden. De provincie hanteert enkel het begrip wegpanorama dat voorkomt langs de doorgaande Rijks- en provinciale wegen, zoals bijvoorbeeld de A28, N33 en N391. Komt voor in kaart 2B: Kernkwaliteit Landschap.",
@@ -118,8 +118,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Grens verbodzone diepe boringen",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Grens verbodzone diepe boringen.In de verbodszone diepe boringen willen we de natuurlijke bescherming van het grondwater, door in de ondergrond aanwezige kleilagen te behouden. In de Provinciale Omgevingsverordening zijn regels opgenomen tot welke diepte maximaal geboord mag worden. Kaart robuust en klimaatbestendig watersysteem",
@@ -203,8 +203,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-04-25T16:29:02",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2018-04-25T16:29:02",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Buurtindeling 2017",
                 "description": "Uniforme buurtindeling van het CBS",
@@ -301,8 +301,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-30",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2019-01-30",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Luchthavens Risicocontouren",
                 "description": "De risicocontouren zijn gebaseerd op het maximale gebruik van de luchthaven volgens het luchthavenbesluit. Weergegeven zijn de contouren ter aanduiding van het 10-5 en 10-6 plaatsgebonden risico. Eerste is een kans van eens in de 100.000 en tweede een kans van eens in de miljoen jaar op een fataal incident. Binnen de 10-5 contour worden woningen en kwetsbare gebouwen aan hun bestemming onttrokken en is nieuwbouw niet toegestaan. In het gebied tussen de 10-5 en 10-6 contour is nieuwbouw niet zonder meer toegestaan. De contouren moeten in het bestemmingsplan worden overgenomen.",
@@ -389,8 +389,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-10-06",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2020-10-06",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "GES-contouren geluid (Lden) - railverkeer",
                 "description": "ProRail is verantwoordelijk voor de geluidkaarten die inzicht geven in de geluidbelasting door vervoer per spoor in Nederland. Deze dataset bevat gegevens van de provincie Utrecht. Op basis van de informatie uit alle landen geeft de Europese Commissie een beeld van heel Europa. \nDe geluidbelasting als gevolg van railverkeer (Lden)  is vertaald naar GES (gezondheidseffectscreening)-contouren en op kaarten weergegeven. Alle woningen  en gevoelige bestemmingen die in de verschillende GES-contouren gelegen zijn,  zijn eveneens in beeld gebracht. Doel is inzicht in knelpunten in de bestaande situatie en in de aanwezige risico\u2019s bij nieuwe ontwikkelingen.  Met dit inzicht kunnen keuzes onderbouwd worden\nElke 5 jaar wordt de geluidkaart door ProRail geactualiseerd.",
@@ -488,8 +488,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-05-12",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2020-05-12",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "service",
                 "title": "Projecten Deltaplan Agrarisch Waterbeheer WFS",
                 "description": "Overzicht van projecten waarin agrari\u00c3\u00abrs, waterschappen en andere partijen onder de vlag van het Deltaplan Agrarisch Waterbeheer werken aan een betere waterkwaliteit, beter omgaan met zoetwaterbeschikbaarheid en betere agrarische bedrijfsresultaten.",
@@ -578,8 +578,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-06-12",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2015-06-12",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Bijdragen van de toplaag van de bodem aan klimaatregulatie (relatief)",
                 "description": "Wat ziet U: Bodemaspecten van de toplaag die bijdragen aan een goed lokaal en mondiaal klimaat\n\nWat is de waarde: de bodem speelt een hoofdrol in klimaatregulatie en kan aangewend worden om de effecten van klimaatverandering te verzachten. In de bodem is een grote hoeveelheid gereduceerd koolstof opgeslagen, meer koolstof dan er als CO2 in de atmosfeer  aanwezig is. De CO2 uitstoot in veengebieden wordt niet in deze kaart gevat. De bodem in de bebouwde omgeving draagt bij aan het voorkomen van het hitte-eiland effect (lokaal klimaat). \n\nBelangrijk voor: klimaat en waterhuishouding, bodembeheer in het bebouwde gebied, in het agrarisch gebied, en in het bijzonder het veengebied.",
@@ -664,8 +664,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-06-24",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2019-06-24",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Droogmakerijen",
                 "description": "Een droogmakerij is een drooggemalen voormalige plas of meer. De polders in de droogmakerijen hebben een rechtlijnige verkaveling en liggen meestal enkele meters lager dan het omringende gebied. \nDe dataset 'Droogmakerijen' bevat een landelijke kartering van droogmakerijen zoals die als type zijn gedefinieerd in de NAi Polderatlas. Deze droogmakerijen zijn verdeeld naar ontstaansperiode en kennen datavelden voor huidig polderpeil en jaar van droogmaking. \nBij deze dataset hoort de dataset Molens en Gemalen, die de bij de betreffende droogmakerij de maalinrichting(en) voor de droogmaking toont.",
@@ -769,8 +769,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Windenergie zoekgebied (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Windenergie zoekgebied.Op de kaart staan de gebieden in het provinciaal zoekgebied voor windenergie die geschikt zijn voor plaatsing van windturbines/windmolens. Komt voor in kaart 7: Zoekgebied grootschalige windenergie.",
@@ -856,8 +856,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2021-02-05",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2021-02-05",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Meetlocaties waterkwantiteit Waterschap Rivierenland",
                 "description": "Binnen het waterschap worden veel oppervlaktewaterpeilen en grondwaterstanden gemeten. De kaart toont waar metingen plaatsvinden en wat voor type meting plaats vindt. Voor meetgegevens of overige informatie over waterkwantiteit kunt u contact opnemen met het waterschap via h.niewold@wsrl.nl",
@@ -939,8 +939,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-03-19T08:42:23",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2018-03-19T08:42:23",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Woningaanpassingen",
                 "description": "Woningen waar in het kader van de WMO aanpassingen zijn gerealiseerd. Aan te raden is deze kaart te combineren met de kaart Woningcorporaties 2017, waarmee eventuele clusters van aanpassingen in corporatie-complexen zichtbaar kunnen worden gemaakt.",
@@ -1036,8 +1036,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-11-12",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2015-11-12",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2015 - Verwachting toetsen (Laaggelegen waterrijke gebieden) (historie)",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 23 september 2015 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D4).",
@@ -1121,8 +1121,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-11-12",
-                "record-updated": "2021-02-21T00:14:33Z",
+                "recordCreated": "2015-11-12",
+                "recordUpdated": "2021-02-21T00:14:33Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2015 - Es (historie)",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 23 september 2015 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D7).",
@@ -1199,8 +1199,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-03-30",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-03-30",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Fijnstof 2016 (pm2,5)",
                 "description": "Deze kaart toont de gemodelleerde concentratie fijn stof (\u00b5g pm2,5/m\u00b3) voor 2016 op basis van rekenpunten uit de monitoringstool van het nsl. Deze vlakdekkende kaart van Nederland heeft een resolutie van 25 meter.",
@@ -1282,8 +1282,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-04-14",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-04-14",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Luchtfoto 2014 Gemeente Koggenland",
                 "description": "Luchtfoto 2014 Gemeente Koggenland",
@@ -1367,8 +1367,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-03-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Windenergie specifieke afspraken",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijgevoegde kaart D10).",
@@ -1452,8 +1452,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-24",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-10-24",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Actuele voedselproductie met subsidie akker",
                 "description": "Deze kaart geeft voor elke cel (10X10m of 1 a) de waarde van de actuele productie weer. Deze waarde wordt uitgedrukt in \u20ac per hectare per jaar. Subsudies zijn meegerekend. \n\nDe kaart geeft een beeld van de ruimtelijke spreiding van de landbouwproductie en de financi\u00eble opbrengsten die hieraan verbonden zijn.\n\nDe kaart bevat relevante informatie voor landbouwers, handelaars en voedselverwerkende industrie.\n\n\nDe kaart is geproduceerd voor de Atlas Natuurlijk Kapitaal door kennisinstituten RIVM en VITO (Belgi\u00eb).",
@@ -1540,8 +1540,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-21",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-11-21",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Projecten Deltaplan Agrarisch Waterbeheer",
                 "description": "Overzicht van projecten waarin agrari\u00ebrs, waterschappen en andere partijen onder de vlag van het Deltaplan Agrarisch Waterbeheer werken aan een betere waterkwaliteit, beter omgaan met zoetwaterbeschikbaarheid en betere agrarische bedrijfsresultaten.",
@@ -1629,8 +1629,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-03-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Gebiedsnormen wateroverlast",
                 "description": "In het Nationaal Bestuursakkoord Water (2011) zijn werknormen opgenomen die voor de verschillende vormen van landgebruik het wenselijk geachte beschermingsniveau uitdrukken. De vormen van landgebruik die worden onderscheiden zijn: grasland, akkerbouw, hoogwaardige land- en tuinbouw, glastuinbouw en bebouwd gebied. Op de kaart worden voor verschillende gebieden de wenselijk geachte normen weergegeven waarbij de kans op wateroverlast door grote hoeveelheden neerslag is gerelateerd aan het landgebruik.Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart B).",
@@ -1714,8 +1714,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Verwachting toetsen door onderzoek (Prehistorische weg)",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D4).",
@@ -1799,8 +1799,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-11-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Genexpressie in muizenlever bij dag-nachtritmeverstoring",
                 "description": "Genexpressie in lever bij verschillende soorten verstoring van het dag-nachtritme",
@@ -1887,8 +1887,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-03-30",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-03-30",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Bos en natuur, niet limitatief",
                 "description": "Kaart bos en natuur in Drenthe, Groningen en Overijssel, tbv de kernkwaliteiten viewer",
@@ -1972,8 +1972,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-29",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-01-29",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Drinkwatergebied (Omgevingsverordening 2016)",
                 "description": "Dit bestand bevat drinkwaterwingebieden zoals vastgesteld in de Omgevingsverordening provincie Groningen 2016. In deze Omgevingsverordening hebben wij regels opgenomen ter bescherming van deze gebieden. \nIn waterwingebieden zijn in principe alleen activiteiten toegestaan, die direct of indirect samenhangen met de drinkwaterproductie. Activiteiten, die schadelijk kunnen zijn voor de grondwaterwinning zijn hier verboden, zoals het gebruik van mest en bestrijdingsmiddelen, het diep graven of boren en het lozen van schadelijke stoffen op of in de bodem.",
@@ -2060,8 +2060,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-05-27",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2016-05-27",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Stellingforten",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart zijn de Stellingforten te zien. Zie ook paragraaf 5.1 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd",
@@ -2152,8 +2152,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-12-05",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-12-05",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Geluidsbelasting adressen EU-geluidsbelastingkaart 2016 (basis: wegen met intensiteit groter dan 3 mln. voertuigen p.jr.)",
                 "description": "Geluidsbelasting adressen voor het basisjaar 2016.Dataset is tot stand gekomen in het kader van EU-richtlijn Omgevingslawaai.Dataset wordt eens per vijf jaar gemaakt. Deze dataset is gebaseerd op alle provinciale wegen met een intensiteit van meer dan 3 miljoen voertuigen per jaar.",
@@ -2237,8 +2237,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-21",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-01-21",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Meetnet Biodiversiteit Vlinders dagvlinders",
                 "description": "Samenvatting van de dataset.",
@@ -2343,8 +2343,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Grondwaterlichaam",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Grondwaterlichaam.Grondwater binnen de stroomgebieden Nedereems, Rijn-Noord en Rijn-Oost van de Kaderrichtlijn water. Kaart",
@@ -2428,8 +2428,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-09-09",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-09-09",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Parkeernormenkaart 2016",
                 "description": "In de Uitvoeringsnota Parkeren Zaanstad 2016 zijn gebiedsafhankelijke parkeernormen opgenomen. Deze gebiedsindeling is grotendeels op basis van verschillen in stedelijkheidsgraad tot stand gekomen. De 8 verschillende gebiedstypen zijn in figuur 1 van deze nota opgenomen.",
@@ -2527,8 +2527,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Robuuste systemen en multifunctionele gebieden",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Robuuste systemen en multifunctionele gebieden. In tegenstelling tot de robuuste systemen is in deze gebieden geen sprake van een hoofdfunctie die leidend is in de ordening. De provincie Drenthe noemt dit de multifunctionele gebieden. In deze gebieden zijn meerdere functies van belang. Naast water, landbouw en natuur gaat het in de meeste gevallen om recreatie. Kaart multifunctionele gebieden",
@@ -2612,8 +2612,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-01",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-10-01",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Strooiroutes Gemeente Koggenland",
                 "description": "Strooiroutes Gemeente Koggenland",
@@ -2704,8 +2704,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2021-01-14",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2021-01-14",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Natuurbeheerplan 2020 - Agrarisch Zoekgebied",
                 "description": "Het Natuurbeheerplan (NBP) is het provinciaal plandocument waarin op basis van een afgestemde ambitie de overeengekomen doelen op het gebied van (agrarisch) natuur- en landschapsbeheer zijn vastgelegd.  De leefgebieden van het agrarisch zoekgebied geven aan waar met ingang van 1 januari 2020 subsidie voor agrarisch natuurbeheer aangevraagd kan worden.",
@@ -2791,8 +2791,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-11-08T11:57:06",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-11-08T11:57:06",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Zonnepanelen",
                 "description": "Aantal netaansluitingen van zonnepanelen per postcodegebied en het terug geleverde vermogen aan het net van Liander. \n\nOp de dataset is een selectie te maken op:\nPostcode\nJaartal\nTotaal aantal aansluitingen per postcode gebied\nAantal aansluitingen per postcode gebied met PV\nTerug geleverde vermogen per jaar\n\nOpm:\nNiet alle huishoudens of bedrijven staan geregistreerd in het register bij Liander.\nGetoonde data is op basis van postcode 6",
@@ -2889,8 +2889,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-05-12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-05-12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Voortgangsrapportage Natuur 2020 tbv Prolander, inrichting",
                 "description": "Voortgangsrapportage Natuur 2020. Geeft inzicht in begrenzing, verwerving, inrichting van de Nieuwe natuur in de provincies Drenthe en Groningen.",
@@ -2974,8 +2974,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Ecologische-multifunctionele verbinding",
                 "description": "Dee Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Ecologische-multifunctionele verbindingen. Multifunctionele verbindingen zijn belangrijk voor de verspreiding van soorten tussen de verschillende gebieden van het Natuurnetwerk Nederland voor gezonde populatie plant- plant en diersoorten. Ze dragen daarmee bij aan de instandhouding en verbetering van de biodiversiteit. Net als ecologische verbindingen zijn multifunctionele verbindingen ook belangrijk om ontsnippering van de Drentse natuur te voorkomen. Visiekaart",
@@ -3059,8 +3059,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-04-14",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-04-14",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Luchtfoto 2016 Gemeente Koggenland",
                 "description": "Luchtfoto 2016 Gemeente Koggenland",
@@ -3144,8 +3144,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Blueport en Dryport (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Blueport en Dryport. Blueport: Meppel beschikt over de grootste binnenvaartcontainerterminal van Noord-Nederland. In samenwerking met Meppel wil de provincie Drenthe via het project Blueport de functie van Meppel als multimodaal knooppunt voor de overslag van containers en bulkgoederen verder versterken.Dryport: De provincie Drenthe maakt zich sterk voor een verbeterde aansluiting op het Duitse hoofdwegennet en de mogelijkheid voor personen- en goederenvervoer per spoor. Daarmee wordt de positie van Emmen-Coevorden als logistieke draaischijf benadrukt. Samen met de gemeenten Emmen en Coevorden en het bedrijfsleven werkt de provincie via het project Dryport samen om meerwaarde te cre?ren uit het transport van goederen langs, van en naar de regio. Komt voor in kaart 1: Visie; kaart 4: Robuust sociaal-economisch systeem.",
@@ -3232,8 +3232,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-09-28",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-09-28",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Geluidkaart rijkswegen 2016 (Lden) - Atlas Leefomgeving",
                 "description": "Deze geluidskaart laat zien hoeveel geluid het verkeer op een snelweg maakte in 2016. De kaart geeft de gemiddelde etmaalwaarde weer. Op de kaart staan alle snelwegen die worden beheerd door Rijkswaterstaat. Geluidskaarten van andere wegen en andere geluidsbronnen zijn te vinden bij provincies en een aantal gemeenten. Wettelijk moeten deze geluidbelastingskaarten eenmaal in de vijf jaar worden ontwikkeld.",
@@ -3321,8 +3321,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-07-18",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-07-18",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Potentieel leefgebied kwartelkoning (historie)",
                 "description": "Potentieel leefgebieden kwartelkoning, zoals gerapporteerd in het Natura2000 beheerplan (05-07-2016).",
@@ -3406,8 +3406,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-04-17",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-04-17",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Ontwerp Natuurbeheerplan 2019, beheertypenkaart",
                 "description": "Deze kaartlaag vormt de wijzigingen op de beheertypenkaart. Deze kaart is door Gedeputeerde Staten van Noord-Holland vastgesteld op10 april mei 2019, document/nummer (1057213/1057232) als onderdeel van het Ontwerp Natuurbeheerplan 2019. Doel van de beheertypenkaart is het vastleggen van de huidige wijze van natuurbeheer, zowel binnen als buiten het Natuurnetwerk Nederland (NNN). De Beheertypenkaart wordt gebruikt voor de toekenning van subsidies voor natuurbeheer.",
@@ -3493,8 +3493,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-09-29",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2015-09-29",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Aardkundige landschapselementen",
                 "description": "Geeft de belangrijkste aardkundige landschapselementen in Drenthe weer, met een beschrijving van de aardkundige waarde en van ecologische en cultuurhistorische achtergronden. Aan de hand van de code van het gebied kan men de betreffende beschrijving zoeken.",
@@ -3586,8 +3586,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-08-28",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-08-28",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Fijnstof 2018 (PM2,5)",
                 "description": "Deze kaart toont de gemodelleerde concentratie fijn stof (\u00b5g PM2,5/m\u00b3) voor 2018 op basis van rekenpunten uit de monitoringstool van het nsl. Deze vlakdekkende kaart van Nederland heeft een resolutie van 25 meter.",
@@ -3674,8 +3674,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-06-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-06-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Clusters geluid - railverkeer",
                 "description": "Clusters (omtreklijn) gebasseerd op woningen binnen Geluidcontouren Lden dB railverkeer. Per cluster zijn de aantallen woningen en gevoelige bestemmingen per GES-score geteld. Bij de gevoelige bestemmingen is onderscheid gemaakt in 3 categorien: Ziekenhuizen, Scholen en dagverblijven voor jeugd, Verpleeg en verzorgingshuizen.",
@@ -3773,8 +3773,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Bodemenergie restrictiegebieden zone 2",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart C2).",
@@ -3858,8 +3858,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-05",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-10-05",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Omgevingseffecten DFW (lijnen) (historie)",
                 "description": "Omgevingseffecten (lijnen) Drents Friesche Wold is als kaart(of een onderdeel van een kaart) opgenomen in het beheerplan natura 2000. Het beheerplan Drents Friesche Wold is vastgesteld op 07-03-2017.",
@@ -3943,8 +3943,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-03-30",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-03-30",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Stikstofdioxide 2014 (NO2)",
                 "description": "Deze kaart toont de gemodelleerde concentratie stikstofdioxide (\u00b5g NO2/m\u00b3) voor 2014 op basis van rekenpunten uit de monitoringstool van het nsl. Deze vlakdekkende kaart van Nederland heeft een resolutie van 25 meter.",
@@ -4032,8 +4032,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-06-11",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-06-11",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Foerageergebieden ganzen (Omgevingsvisie 2016-2020)",
                 "description": "Dit bestand bevat foerageergebieden ganzen zoals vastgesteld in de Omgevingsvisie provincie Groningen 2016-2020. Daarnaast bevat dit bestand foerageergebieden gelegen ten westen van het Zuidlaardermeer die per wijzigingsbesluit van GS (13-11-2018) zijn toegevoegd aan dit bestand. Bij de volgende herziening van de Omgevingsvisie zullen deze worden opgenomen in de Omgevingsvisie.\nIn de kolom \"info\" staat aangegeven in welk besluit het betreffende gebied zijn grondslag heeft. \nWij hebben een internationale verplichting tot instandhouding van de ganzenpopulatie. Samen met onze partners geven wij daar invulling aan. Onder andere door het aanwijzen van foerageergebieden voor trekganzen in de winterperiode.",
@@ -4120,8 +4120,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Zwemplassen",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van zwemwater. De provincie Drenthe wijst op grond van de Wet hygi\u00ebne en veiligheid badinrichtingen en zwemgelegenheden jaarlijks de locaties voor zwemwater aan. De waterschappen stellen op grond van de EU-zwemwaterrichtlijn (2006) voor iedere zwemwaterlocatie een zwemwaterprofiel op. Kaart Robuust klimaatbestendig watersysteem.",
@@ -4205,8 +4205,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-09-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Geluidhinder wegen <50 km/u per gemeente in 2016",
                 "description": "Op de kaart ziet u welk percentage van de bevolking in de door u gekozen gemeente ernstig gehinderd is door geluid van wegverkeer op wegen waar niet harder gereden mag worden dan 50 kilometer per uur.",
@@ -4292,8 +4292,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-04-11T13:55:32",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-04-11T13:55:32",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "temperatuur - getransformeerde min. dagtemperatuur, KNMI14, Nederland",
                 "description": "Getransformeerde dagtijdreeksen voor minimum temperatuur voor de KNMI'14 scenario's voor rond 2030, 2050 en 2085 voor 14 stations in Nederland (herzien 2015). Ook te downloaden via http://www.klimaatscenarios.nl/toekomstig_weer/transformatie/index.html",
@@ -4373,8 +4373,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-06-24",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-06-24",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Kanalen en wijken (Omgevingsverordening 2016)",
                 "description": "Dit bestand bevat kanalen en wijken zoals vastgesteld in de Omgevingsverordening provincie Groningen 2016. In deze Omgevingsverordening hebben wij specifieke regels opgenomen ter bescherming van de wijken en kanalen, karakteristieke waterlopen en karakteristieke verkaveling.\n\n\n \nWater, verkaveling en het beloop van wegen zijn bepalend voor het karakter van het landschap van Groningen.",
@@ -4462,8 +4462,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-18T18:02:13",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-10-18T18:02:13",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Gemeentegrenzen",
                 "description": "Gemeentegrenzen van Zaanstad en omliggende gemeente 2016.\nDe dataset bevat veel cbs gegevens over inwoneraantal en oppervlak",
@@ -4563,8 +4563,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Grondwaterlichaam (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Grondwaterlichaam.Grondwater binnen de stroomgebieden Nedereems, Rijn-Noord en Rijn-Oost van de Kaderrichtlijn water. Komt voor in kaart 9: Kaderrichtlijn Water.",
@@ -4650,8 +4650,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Zonering radiotelescoop (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Zonering radiotelescoop.In de bossen van Dwingeloo en Hooghalen staan radiotelescopen opgesteld voor waarnemingen aan het zonnestelsel. Rond elk van deze waarnemingsposten zijn zones aangegeven voor de toelating van gemotoriseerd verkeer en de oprichting van nieuwe bebouwing. Komt voor in kaart 4: Robuust sociaal-economisch systeem.",
@@ -4737,8 +4737,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-05",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-10-05",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Bestaand gebruik (Onttrekkingen DFW) (historie)",
                 "description": "Bestaand gebruik (Onttrekkingen) Drents Friesche Wold is als kaart(of een onderdeel van een kaart) opgenomen in het beheerplan natura 2000. Het beheerplan Drents Friesche Wold is vastgesteld op 07-03-2017.",
@@ -4822,8 +4822,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-02-11T10:37:23",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-02-11T10:37:23",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "verdamping - KNMI14 Dagelijkse Makkink verdamping 2050 GL",
                 "description": "KNMI14 dagelijkse scenariodata: 2050 GL. Grid bestanden van dagelijkse Makkink verdamping in Nederland. Gebaseerd op 14 automatische waarneemstations.",
@@ -4902,8 +4902,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-11",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-11-11",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "BGT - Themalaag Kilometrering",
                 "description": "Selectie van de kilometerpalen uit de Basisregistratie Grootschalige Topografie.",
@@ -5000,8 +5000,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-11-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Genexpresseprofielen van niet-genotoxische carcinogenen in muizenlever en stamcellen",
                 "description": "Verschillende soorten niet-genotoxisch carcinogenen, getest in muizenlever en stamcellen",
@@ -5091,8 +5091,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Bouwvlak grondgebonden agrarisch bedrijf",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D9).",
@@ -5176,8 +5176,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-29",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-01-29",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Zoekgebied noodberging (Omgevingsverordening 2016)",
                 "description": "Dit bestand bevat het zoekgebied noodberging zoals vastgesteld in de Omgevingsverordening provincie Groningen 2016. In deze Omgevingsverordening zijn regels vastgelegd m.b.t. deze zones.\nVoor het geval bij overvloedige neerslag het regionale watersysteem het regenwater niet kan bergen, moeten wij gebieden achter de hand hebben voor waterberging.\nRond Meerstad hebben wij een zoekgebied aangewezen voor eventueel toekomstige noodberging.",
@@ -5265,8 +5265,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-12-31T09:45:00",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-12-31T09:45:00",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "AED locaties",
                 "description": "De dataset is te downloaden van het gemeentelijk open data portaal: https://gemeente-bloemendaal.opendata.arcgis.com/search/protocol: website",
@@ -5342,8 +5342,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-11-08",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-11-08",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Aardkundige monumenten",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van aardkundige monumenten. Een aardkundig monument is een markant voorbeeld van een aardkundig fenomeen, zoals de Havelterberg en het Drouwenerzand. Als onderdeel van een bewustwordingsproces om de archiefwaarde van de bodem behouden en de landvormen, die karakteristiek zijn voor het Drentse landschap, te behouden en te versterken. Kaart kernkwaliteit aardkundige waarde",
@@ -5427,8 +5427,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-11-01T10:34:25",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-11-01T10:34:25",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "neerslag - radar 5-minuten volledige volume gegevens De Bilt - archief",
                 "description": "Archief van volume gegevens van radarreflectiviteit (ongecorrigeerd en gecorrigeerd voor grondecho's), radiele snelheid en spreiding in radiele snelheid voor de radar in De Bilt. Het tijdsinterval is 5 minuten. Gegevens zijn samengevoegd tot een .tar bestand per dag.",
@@ -5509,8 +5509,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-02-25",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-02-25",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Kabelbed - WIBON data vanuit GIS",
                 "description": "Kabelbedden waarin HDPE buizen liggen. In de HDPE buizen liggen kabels die beheerd worden door de regiotram, en daarom zijn zowel de buizen als de kabelbedden in beheer van Regiotram Utrecht en daarmee Provincie Utrecht. Kabelbedden staan bij Regiotram Utrecht beter bekend als geulen.",
@@ -5599,8 +5599,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-02-11T10:50:12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-02-11T10:50:12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "temperatuur - Langjarig gemiddelde 1981-2010 - Gemiddelde minimumtemperatuur per jaar",
                 "description": "Grid bestanden van gemiddelde minimum jaartemperatuur in Nederland over de periode 1981-2010 (normaalperiode). Gebaseerd op 28 automatische waarneemstations Grid bestanden van gemiddelde minimum jaartemperatuur in Nederland over de periode 1981-2010 (normaalperiode). Gebaseerd op 28 automatische waarneemstations",
@@ -5682,8 +5682,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-05",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-10-05",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Maatregelen Historisch (vlakken)",
                 "description": "Historische maatregelen (vlakken) is als kaart(of een onderdeel van een kaart) opgenomen in het beheerplan natura 2000. In de attributen tabel is terug te vinden over welk gebied het gaat en wanneer het beheerplan is vastgesteld.",
@@ -5767,8 +5767,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-08-03",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-08-03",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Immissie verkeer- Prognose 2030 Fijnstof (PM10) concentratie, provincie Gelderland",
                 "description": "Bestand geeft een prognose van de luchtkwaliteit inzake fijnstof rond rijks, provinciale en gemeentelijke wegen in Gelderland in het jaar 2030. De gegevens zijn landelijk doorgerekend met behulp van de Monitoringstool. Per wegvak is aangegeven wat de prognose is voor de concentratie PM10 op10 meter van de rand van de weg. De luchtkwaliteit wordt weergegeven in vijf concentratieklassen. Volgends de normen mag de jaargemiddelde concentratie niet meer dan 40 \u00b5g/m3 bedragen. De Wereldgezondheidsorganisatie (WHO) adviseert 20 \u00b5g/m3 als norm volgens de laatste wetenschappelijke inzichten. Daarnaast geldt een norm voor de daggemiddelde concentratie van 50 \u00b5g/m3. De norm voor de daggemiddelde concentratie mag maximaal 35 keer per jaar worden overschreden. In de legenda wordt de gemiddelde jaarconcentratie PM10 weergegeven. \nDe luchtkwaliteit wordt berekend onder andere aan de hand van voorspelling van de verkeersintensiteiten en met rekenmodellen op basis van het jaar 2017. Hierbij zijn de bronnen, zoals industrie en landbouw verwerkt in de achtergrondconcentratie. Bij de totale concentratie zijn ook de directe bijdrage door het wegverkeer meegeteld. De met het model berekende waarden hebben een onnauwkeurigheid van 20-25 procent.",
@@ -5856,8 +5856,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Landschap van de kolonien van Weldadigheid (UNESCO)",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Landschap van de kolonien van Weldadigheid (UNESCO). De Koloni\u00ebn van Weldadigheid zijn uniek voor Nederland en verdienen bijzondere aandacht. Hoewel elk van de gebieden zijn eigen karakter en sfeer heeft, hebben de koloni\u00ebn ook een aantal gemeenschappelijke kenmerken. Kaart kernkwaliteit Landschap",
@@ -5941,8 +5941,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-06T13:10:40",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2019-03-06T13:10:40",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "golfgegevens en zeewatertemperaturen - zeewatertemperaturen, golfperiodes en -hoogtes per 10 minuten",
                 "description": "Deze dataset is tot stand gekomen door gebruik te maken van metingen van zeewatertemperatuursensoren en sensoren voor de golfperiodes en -hoogtes per 10 minuten. De dataset is niet gevalideerd en ontbrekende waarden zijn niet aangevuld.",
@@ -6026,8 +6026,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-04-14",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2020-04-14",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "BAG Ligplaatsen Gemeente Koggenland",
                 "description": "Ligplaatsen Gemeente Koggenland",
@@ -6118,8 +6118,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-11-08",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-11-08",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Zonering vliegveld Hoogeveen en Helihaven",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van zonering vliegveld Hoogeveen en helihaven. De Regeling Burgerluchthavens en Militaire luchthavens (RBML) geeft ons bevoegdheden over alle luchtvaartactiviteiten en luchthavens, inclusief helikopterlandingsplaatsen, met uitzondering van Groningen Airport Eelde.",
@@ -6203,8 +6203,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-05-26",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2016-05-26",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Ontwerp Natuurbeheerplan 2017, Natuurverbindingen",
                 "description": "Deze kaartlaag vormt onderdeel van het bestand van de Begrenzingenkaart. Deze kaart is door Gedeputeerde Staten van Noord-Holland vastgesteld op 17 mei 2016, document/nummer 773831/773838 als onderdeel van het Ontwerp Natuurbeheerplan 2017. De Begrenzingenkaart bestaat uit 'NNN natuur', \u2018NNN zoekgebied\u2019, 'NNN grote wateren', \u2018Natura 2000\u2019 en de \u2018Natuurverbindingen\u2019. Doel van het Natuurnetwerk Nederland (NNN) is het vormen van een samenhangend netwerk van natuurgebieden, om zo de biodiversiteit te beschermen. Natuurverbindingen zijn verbindingen tussen de Natuurnetwerk-gebieden. Het \u2018Natuurnetwerk Nederland (NNN)\u2019 is opgenomen in een aparte kaartlaag. De Begrenzingenkaart vormt de basis voor de Beheertypenkaart.",
@@ -6295,8 +6295,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-04-25T16:28:38",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2018-04-25T16:28:38",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Wijkindeling 2017",
                 "description": "Dataset van het cbs met informatie over de oppervlakte en samenstelling van wijken in de gemeente Zaanstad",
@@ -6393,8 +6393,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-04-11T13:54:00",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2017-04-11T13:54:00",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "straling - getransformeerde dagelijkse globale straling, KNMI14, Nederland",
                 "description": "Getransformeerde dagtijdreeksen voor globale straling voor de KNMI'14 scenario's voor rond 2030, 2050 en 2085 voor 14 stations in Nederland (herzien 2015). Ook te downloaden via http://www.klimaatscenarios.nl/toekomstig_weer/transformatie/index.html",
@@ -6474,8 +6474,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-05-27",
-                "record-updated": "2021-02-21T00:14:34Z",
+                "recordCreated": "2016-05-27",
+                "recordUpdated": "2021-02-21T00:14:34Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Tuinbouwconcentratiegebied (combinatie glas en volle grond)",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart is uinbouwconcentratiegebieden weergegeven waarvoor regels gelden met als doel om tuinbouwbedrijven in deze gebieden te concentreren. Zie artikel artikel 26c t/m 27 in de PRV. Zie ook artikel 26 in de PRV en de toelichting op dit artikel. Zie ook paragraaf 6.5.1.1 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd",
@@ -6566,8 +6566,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-06-22",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-06-22",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Fauna- Wildrasters op de Veluwe, provincie Gelderland",
                 "description": "Een overzicht van belangrijkste wildrasters en die in grote mate het leefgebied bepalen van het groot wild (edelhert, ree, zwijn).",
@@ -6655,8 +6655,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-09-19",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-09-19",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Potentieel aanbod bestuiving alle bestuivers",
                 "description": "Deze kaart geeft voor elke cel de kans (in %) weer dat deze cel bezocht wordt door bestuivers. Deze kans is bepaald op basis van de vliegafstand van bestuivers rondom geschikte habitatten (Broekx et al., 2013, De Bruyn, 2014). De vliegafstand is berekend op basis van een generieke formule voor vliegafstand van bestuivers (Gathmann & Tscharntke 2002). De habitatten zijn afkomstig uit de kaart \u2018Geschikt habitat voor bestuivers\u2019 in de Atlas Natuurlijk Kapitaal. De kaart is geproduceerd voor de Atlas Natuurlijk Kapitaal door kennisinstituten RIVM en VITO (Belgi\u00eb).",
@@ -6734,8 +6734,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-26",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-11-26",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Transcriptomics op muizenlong na blootstelling aan ozon",
                 "description": "Genexpressie in longen van twee muismodellen na blootstelling aan ozon; normale WT muizen en transcription coupled repair deficient Csb-/- muizen.",
@@ -6825,8 +6825,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Wegpanorama",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Wegpanorama. De provincie Drenthe hecht waarde aan een zorgvuldige presentatie van Drenthe aan de hoofdinfrastructuur en wil de karakteristieken van de landschapstypen en het contrast tussen stad en land, gezien vanaf de infrastructuur, zichtbaar houden. De provincie hanteert enkel het begrip wegpanorama dat voorkomt langs de doorgaande Rijks- en provinciale wegen, zoals bijvoorbeeld de A28, N33 en N391. Kaart Kernkwaliteit Landschap.",
@@ -6910,8 +6910,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-02-18",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-02-18",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "CHAT - monumenten (MIP)",
                 "description": "Digitale cultuurhistorische atlas van de Provincie Utrecht (CHAT), monumenten (Monumenten Inventarisatie Project - MIP).",
@@ -7009,8 +7009,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-19T15:12:57",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-10-19T15:12:57",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Woningen onder hoogspanningskabels",
                 "description": "Woningen die in de zone van 18,575 meter liggen uit de as van het hoogspanningstrack van netbeheerder Tennet",
@@ -7108,8 +7108,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-03-10",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2014-03-10",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Waterlopen (ontwerp-OGV 2014) (historie)",
                 "description": "Door Gedeputeerde Staten op 22 januari 2014 vastgestelde ontwerpversie van Waterlopen",
@@ -7196,8 +7196,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-05",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-03-05",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Leefgebieden akkervogels (Omgevingsvisie 2016-2020)",
                 "description": "Dit bestand  bevat leefgebieden akkervogels  zoals vastgesteld in de Omgevingsvisie provincie Groningen 2016-2020. \nWij beschermen akkervogels in gebieden waar nog levenskrachtige populaties akkervogels voorkomen, de zogenaamde leefgebieden. De beheermaatregelen voor akkervogels worden genomen door samenwerkingsverbanden van boeren (de agrarische collectieven).",
@@ -7285,8 +7285,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-11-13",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-11-13",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "CO2 vastlegging in vegetatie in Mei 2013",
                 "description": "Deze kaart geeft weer hoeveel koolstof er gemiddeld in Mei 2013 werd opgenomen door bomen en planten in Nederland. Daarmee geeft de kaart informatie over de productiviteit van planten door heel Nederland, zowel voor natuurlijke vegetatie als landbouwgewassen. De kaart geeft niet aan hoeveel van deze biomassa geoogst is en hoeveel in de vegetatie is behouden. Op basis van deze kaart kan niet worden beoordeeld hoeveel koolstof er in Mei 2013 blijvend is vastgelegd.",
@@ -7369,8 +7369,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-11-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2015-11-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2015 - Zonering LOFAR en radiotelescoop (historie)",
                 "description": "Met de bepalingen voor de radioastronomie wil de provincie garanderen dat de radioastronomie zich kan blijven ontwikkelen en dat verstoring van activiteiten die daarmee samenhangen wordt voorkomen. Om dat te bewerkstelligen, liggen er beschermingszones rondom de radiotelescoop in Dwingeloo en Hooghalen en de LOFAR-radiotelescoop in Oost-Drenthe, waar beperkingen gelden inzake de ruimtelijke ontwikkelingsmogelijkheden ter voorkoming van elektromagnetische straling.Deze kaartlaag maakt onderdeel uit van de op 23 september vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D10).",
@@ -7455,8 +7455,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Gebiedsgericht grondwaterbeheer (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Gebiedsgericht grondwaterbeheer.Voorkeurlocaties voor een samenhangende aanpak van grondwateraspecten in stedelijk gebied, zoals grondwaterverontreiniging, warmte en koude opslag en grondwateroverlast. Komt voor in kaart 10: Grondwater.",
@@ -7543,8 +7543,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-11-08",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-11-08",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Groen-blauwe dooradering",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van groen-blauwe dooradering. De landschapselementen zijn belangrijk voor het behoud van de biodiversiteit van het Drentse buitengebied. Deze biodiversiteit willen we behouden en stimuleren door het nemen van beheermaatregelen, waarvoor het agrarisch collectief verantwoordelijk is. De realisatie van de groen-blauwe dooradering is onderdeel van het Uitvoeringsprogramma Natuurlijk Platteland. Kaart robuust natuursysteem",
@@ -7628,8 +7628,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Beschermingszone radioastronomie",
                 "description": "Met de bepalingen voor de radioastronomie wil de provincie garanderen dat de radioastronomie zich kan blijven ontwikkelen en dat verstoring van activiteiten die daarmee samenhangen wordt voorkomen. Om dat te bewerkstelligen, liggen er beschermingszones rondom de radiotelescoop in Dwingeloo en Hooghalen en de LOFAR-radiotelescoop in Oost-Drenthe, waar beperkingen gelden inzake de ruimtelijke ontwikkelings mogelijkheden ter voorkoming van elektromagnetische straling.Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D8).",
@@ -7713,8 +7713,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-06-20",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-06-20",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Gebieden met veiligheidsnormen regionale waterkeringen: hoogte T100; stabiliteit min. T100 (Omgevingsverordening 2016)",
                 "description": "Dit bestand bevat de gebieden met veiligheidsnormen regionale waterkeringen (T100 - hoogte kering, stabiliteit kering minimaal T100) zoals vastgesteld in de Omgevingsverordening provincie Groningen 2016. In deze Omgevingsverordening hebben wij regels opgenomen betreffende de veiligheidsnormen regionale waterkeringen.\n\nVoor het geval bij overvloedige neerslag het regionale watersysteem het regenwater niet kan bergen, moeten wij gebieden achter de hand hebben voor waterberging.",
@@ -7802,8 +7802,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Bedrijventerrein",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Bedrijventerrein. Om werkgelegenheid te behouden en nieuwe te cre\u00ebren, streeft de provincie Drenthe naar de ontwikkeling van een dynamische, vitale en zichzelf vernieuwende, regionale economie. Een belangrijke voorwaarde daarvoor is het kunnen bieden van voldoende, gevarieerde, aantrekkelijke en vitale vestigingsmogelijkheden voor het bedrijfsleven op regionale bedrijventerreinen en andere stedelijke werklocaties. Deze locaties moeten goed bereikbaar zijn. Daarnaast wijzen we locaties aan voor milieuhinderlijke bedrijvigheid. Visiekaart.",
@@ -7887,8 +7887,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-09-19",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-09-19",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Waterstructuur (lijn)",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart is een kaartlaag afkomstig uit de Leidraad Landschap en Cultuurhistorie te zien. Zie ook hoofdstuk 5 (Ruimtelijke Kwaliteit) in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd.",
@@ -7977,8 +7977,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-04-14",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-04-14",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "BAG Panden Gemeente Koggenland",
                 "description": "Panden Gemeente Koggenland",
@@ -8069,8 +8069,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-07-18",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-07-18",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Beregeningsputten",
                 "description": "Aangemelde beregeningsputten naar aanleiding van nieuw beleid (april 2016) t.a.v. de aanleg van drainagebuizen en het slaan van beregeningsputten.",
@@ -8164,8 +8164,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-12-03",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-12-03",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Geluidhinder vliegtuigen 2016 per buurt",
                 "description": "Op de kaart ziet u welk percentage van de bevolking in de door u gekozen buurt ernstig gehinderd is door geluid van vliegtuigen.",
@@ -8258,8 +8258,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-09-16",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-09-16",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Hondenlosloopgebieden",
                 "description": "De dataset is te downloaden van het gemeentelijk open data portaal: https://gemeente-bloemendaal.opendata.arcgis.com/search/protocol: website",
@@ -8330,8 +8330,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-03-13",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2014-03-13",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Zonering vliegvelden (ontwerp-OGV 2014) (historie)",
                 "description": "Door Gedeputeerde Staten op 22 januari 2014 vastgestelde ontwerpversie van Zonering vliegvelden",
@@ -8415,8 +8415,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Bekende archeologische waarden - Behoud in situ veenterpengebied",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Bekende archeologische waarden - Behoud in situ. Van een selectie van bekende en gewaardeerde archeologische vindplaatsen vinden wij dat ze in situ behouden moeten blijven voor toekomstige generaties en toekomstig wetenschappelijk onderzoek. Hieronder vallen alle hunebedden, een cluster middeleeuwse huisplaatsen (veenterpen) in de Onlanden, een aantal grafheuvelcomplexen, nederzettingsterreinen, offerveentjes, veenwegen en schansen, alle zekere Celtic fields, het Spaans kerkhof bij Veenhuizen en gebieden met karrensporen. Kaart Kernkwaliteit Archeologie",
@@ -8500,8 +8500,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-02-20",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-02-20",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Opgave wateroverlast, Waterbeheerplan",
                 "description": "De inzet van waterbergingsgebieden maakt onderdeel uit van de strategische maatregelen die overstroming en wateroverlast moeten voorkomen. Met gemeenten wordt gewerkt aan het oplossen van knelpuntgebieden in stedelijk gebied met bestaande of te verwachte wateroverlast",
@@ -8588,8 +8588,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-04-29",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2015-04-29",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Faunaslachtoffers",
                 "description": "Aantallen ree-, vos- en dasslachtoffers langs onze provinciale wegen",
@@ -8675,8 +8675,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-08-29",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-08-29",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Hondenlosloopgebieden",
                 "description": "Deze dataset bevat de locaties waar honden los mogen lopen in de gemeente Bloemendaal.",
@@ -8749,8 +8749,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-10-29",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-10-29",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Karrensporen - aanvulling luchtfoto's",
                 "description": "Karrensporen zijn de zichtbare overblijfselen van oude routes. Ze stammen uit de middeleeuwen, maar gaan waarschijnlijk nog veel verder terug. Er ontstonden brede systemen of bundels, onder andere door het intensieve gebruik van de routes door karren met verschillende spoorbreedtes. Ook door het telkens zoeken naar de meest ideale wegomstandigheden werd het systeem steeds breder. Door recent onderzoek in opdracht van de provincie is gebleken dat er veel meer karrenspoorsystemen in Drenthe bewaard zijn gebleven dan tot nu toe werd gedacht. De bundels van de verschillende routes zijn goed te volgen. Zij zijn representanten van, onder andere, de lange, interregionale noord-zuidroute over de Hondsrug maar ook van lokale verbindingen tussen de Drentse esdorpen. In dit kaartbeeld zijn de karrensporen die zijn herkend in een analyse van luchtfoto's van Drenthe te zien. In aanvulling daarop zijn ook door middel van AHN2-analyse karrensporen ontdekt, deze zijn te vinden onder het kopje 'Karrensporen - AHN2'.",
@@ -8835,8 +8835,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Luchtvaart",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Luchtvaart. De Regeling Burgerluchthavens en Militaire luchthavens (RBML) geeft ons bevoegdheden over alle luchtvaartactiviteiten en luchthavens (inclusief helikopterlandingsplaatsen), met  uitzondering van Groningen Airport Eelde. Eventuele verzoeken voor nieuwe luchtvaartactiviteiten toetsen we aan de wettelijke normen en aan ons beleid zoals vastgelegd in de \"Beleidsnota Luchtvaart Drenthe\" (2010). Ook houden we rekening met de regelgeving over Natura 2000- en stiltegebieden. Kaart Robuust sociaal-economisch systeem.",
@@ -8920,8 +8920,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-02-11T10:41:12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-02-11T10:41:12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "neerslag - KNMI14 Dagelijkse neerslagsom 2050 GH",
                 "description": "KNMI14 scenario data: 2050 GH. Grid bestanden van dagelijkse neerslagsom in Nederland. Gebaseerd op 294 observaties van het vrijwilligersnetwerk. Het tijdsinterval is 08:00-08:00 UT.",
@@ -9002,8 +9002,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-30",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-01-30",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Begrenzing Natuurnetwerk 2019 tbv Prolander",
                 "description": "Begrenzing 2019 van het Natuurnetwerk Nederland en het Provinciaal Natuurnetwerk voor Groningen en Drenthe. Trefwoorden: Nieuwe natuur, Bestaande natuur, Overige natuur, beheergebied",
@@ -9087,8 +9087,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-10-21",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-10-21",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Woningtype (indicatie)",
                 "description": "De BAG-data is bijgewerkt tot eind augustus 2019.\n\nOverzicht van alle woningen in Zaanstad ingedeeld naar woningtype op basis van BAG pand en BAG verblijfsobject in de volgende klasse.\n\nVrijstaande woning\nTwee onder een kap\nHoekwoning\nTussenwoning\nMeergezinswoning\n\nHet bestand is een momentopname februari 2016\n\nLet op:\nVoor de twee onder een kap woning kan er wat ruis zitten in de analyse.",
@@ -9187,8 +9187,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Beekdal",
                 "description": "Een ruimtelijk plan dat een gebied bestrijkt dat samenvalt met een beekdal voorziet voor de desbetreffende gebieden in voorwaarden (Nee, tenzij)  voor het realiseren van kapitaalintensieve functies.Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaarten B en D11).",
@@ -9272,8 +9272,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-03-30",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-03-30",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Fijnstof 2015 (pm10)",
                 "description": "Deze kaart toont de gemodelleerde concentratie fijn stof (\u00b5g pm10/m\u00b3) voor 2015 op basis van rekenpunten uit de monitoringstool van het nsl. Deze vlakdekkende kaart van Nederland heeft een resolutie van 25 meter.",
@@ -9361,8 +9361,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-12-03",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-12-03",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Geluidhinder vliegtuigen 2016 per wijk",
                 "description": "Op de kaart ziet u welk percentage van de bevolking in de door u gekozen wijk ernstig gehinderd is door geluid van vliegtuigen.",
@@ -9455,8 +9455,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Oppervlaktewaterlichamen Meren (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe  op 2 juli 2014 vastgestelde versie van Meren. De meren maken onderdeel uit van de oppervlaktewaterlichamen uit de Kaderrichtlijn water. Komt voor in kaart 9: Kaderrichtlijn Water.",
@@ -9542,8 +9542,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-10-29",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-10-29",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Celtic fields",
                 "description": "Drenthe is rijk aan zogenaamde Celtic fields. Dit zijn raatvormige omwalde akkercomplexen uit de IJzertijd (ca. 600 v. Chr. - 2de eeuw n. Chr.) Ze zijn door de hele provincie te vinden maar laten zich niet altijd makkelijk opsporen. Door archeologisch adviesbureau RAAP is een actueel kaartbeeld gemaakt van de voorraad Drentse Celtic fields. Hiervoor is de hele provincie door middel van een analyse van satellietbeelden en het Actueel Hoogtebestand Nederland versie 2 (AHN2) onder de loep genomen.",
@@ -9630,8 +9630,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-02-24",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-02-24",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "tuinbouw voor voedsel",
                 "description": "De kaart geeft de gemiddelde toegevoegde waarde per hectare weer van voedselteelten in de tuinbouw (groenten en fruit in de open grond), berekend over de periode 2011-2014. Teelten in kassen zijn niet meegenomen, omdat die niet als diensten van een natuurlijk ecosysteem worden gezien. Deze vierjarige periode is gekozen om recht te doen aan vruchtwisselingscycli: op dezelfde grond worden immers vaak elk jaar andere gewassen geteeld. De data zijn deels afkomstig uit de Basisregistratie Percelen (waarin te vinden is waar welk gewas wordt geteeld) en deels uit de CBS-Landbouwtellingen, zoals bewerkt door het LEI (daarin wordt de gemiddelde productiewaarde van elk gewas berekend). Op deze zg. standaardopbrengst wordt vervolgens de gemiddelde verdiencapaciteit per sector toegepast als schatting van de toegevoegde waarde. De ecosysteemdienst moet namelijk gezien worden als de toegevoegde waarde van producten die de grond oplevert - niet als de totale waarde van de productie.",
@@ -9710,8 +9710,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-04-30T16:06:22",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-04-30T16:06:22",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Route schaapskudde",
                 "description": "Kaartweergave van de afgelegde route en het tijdsstip",
@@ -9808,8 +9808,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-02-12T12:30:09",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-02-12T12:30:09",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "temperatuur - Langjarig gemiddelde 1981-2010 - Gemiddelde jaartemperatuur",
                 "description": "Grid bestanden van gemiddelde jaartemperatuur in Nederland over de periode 1981-2010 (normaalperiode). Gebaseerd op 28 automatische waarneemstations",
@@ -9891,8 +9891,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-11-13",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-11-13",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "CO2 vastlegging in vegetatie in Juli 2013",
                 "description": "Deze kaart geeft weer hoeveel koolstof er gemiddeld in Juli 2013 werd opgenomen door bomen en planten in Nederland. Daarmee geeft de kaart informatie over de productiviteit van planten door heel Nederland, zowel voor natuurlijke vegetatie als landbouwgewassen. De kaart geeft niet aan hoeveel van deze biomassa geoogst is en hoeveel in de vegetatie is behouden. Op basis van deze kaart kan niet worden beoordeeld hoeveel koolstof er in Juli 2013 blijvend is vastgelegd.",
@@ -9975,8 +9975,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-05-27",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-05-27",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Wierdijk",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart is een kaartlaag afkomstig uit de Leidraad Landschap en Cultuurhistorie te zien. Zie ook hoofdstuk 5 (Ruimtelijke Kwaliteit) in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd",
@@ -10069,8 +10069,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-26",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-09-26",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Cruyff Courts",
                 "description": "Op de kaart ziet u de Cruyff Courts; plekken waar kinderen veilig kunnen sporten en buitenspelen. Naast de \u2018gewone\u2019 Cruyff Courts zijn er speciale Cruyff Courts bij instellingen voor kinderen met een handicap.",
@@ -10155,8 +10155,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-07-18",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-07-18",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Geschiktheid foerageergebied 2008 (historie)",
                 "description": "Geschiktheid foerageergebied ganzen 2008, zoals gerapporteerd in het beheerplan 05-07-2016",
@@ -10240,8 +10240,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-10-19",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-10-19",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "EHS 2016, ecologische verbindingen (historie)",
                 "description": "De ecologische verbindingen zijn essentiele onderdelen van de EHS (Ecologische Hoofdstructuur): de tracees en de invulling zijn nog niet overal afgerond. Om die reden staan ze indicatief op de EHS-kaart.",
@@ -10328,8 +10328,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-10-02",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-10-02",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Voorstel kaart aanpassing opgave nieuwe natuur",
                 "description": "De categorie Nieuwe Natuur in het natuurbeheerplan is gecontroleerd mbt realisatiegegevens (verwerving/functieverandering en inrichting) uit de Voortgangs Rapportage Natuur (VRN). Dit resulteert in een voorstel voor wijziging van een aantal percelen mbt realisatieinformatie in de VRN en aanpassingen van de begrenzing van de Nieuwe Natuur.",
@@ -10426,8 +10426,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-08-08",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-08-08",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Agrarische Veenontginningen",
                 "description": "De kaart 'Agrarische veenontginningen' biedt een overzicht van kenmerkende agrarische veenontginningsgebieden in Nederland, primair gedefinieerd aan de hand van de in het huidige agrarisch landschap nog aanwezige zichtbare kenmerken van de historische verkavelingsstructuur.",
@@ -10526,8 +10526,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-11-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2015-11-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2015 - Beekdal (historie)",
                 "description": "Een ruimtelijk plan dat een gebied bestrijkt dat samenvalt met een beekdal voorziet voor de desbetreffende gebieden in voorwaarden (Nee, tenzij)  voor het realiseren van kapitaalintensieve functies.Deze kaartlaag maakt onderdeel uit van de op 23 september vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaarten D7 en D14).",
@@ -10611,8 +10611,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-07-04",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2017-07-04",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Kernvlakte bosreservaten (historie)",
                 "description": "De kernvlakte bosreservaten is een onderdeel van de kaart Bosbodem afkomstig uit het Natura2000 beheerplan en vormt tezamen met andere flora en fauna gegevens de kaart zoals gepresenteerd in het Natura2000 beheerplan 05-07-2016.",
@@ -10696,8 +10696,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Hart van Drenthe (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Hart van Drenthe.In het \"Hart van Drenthe\" komen verschillende bovenlopen van beken samen (globaal het gebied Elp-Grolloo-Borger). Komt voor in kaart 5: Robuust natuursysteem.",
@@ -10782,8 +10782,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Stiltegebied",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Stiltegebied. Het aanwijzen van stiltegebieden is een wettelijke taak vanuit de Wet milieubeheer. Een stiltegebied als onderdeel van de kernkwaliteit rust biedt kansen voor (nieuwe) ontwikkelingen in Drenthe. Daarbij is het van belang dat de ontwikkelingen passen bij deze kwaliteit, deze zoveel mogelijk in stand houden en, daar waar mogelijk, zelfs verbeteren. Kaart Kernkwaliteit rust.",
@@ -10867,8 +10867,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-05-12",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2020-05-12",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "service",
                 "title": "Projecten Deltaplan Agrarisch Waterbeheer WMS",
                 "description": "Overzicht van projecten waarin agrariers, waterschappen en andere partijen onder de vlag van het Deltaplan Agrarisch Waterbeheer werken aan een betere waterkwaliteit, beter omgaan met zoetwaterbeschikbaarheid en betere agrarische bedrijfsresultaten.",
@@ -10962,8 +10962,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-09-16",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-09-16",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Afvalbakken",
                 "description": "De dataset is te downloaden van het gemeentelijk open data portaal: https://gemeente-bloemendaal.opendata.arcgis.com/search/protocol: website",
@@ -11033,8 +11033,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-07-22",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-07-22",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "PRS Kaart 11 Landelijk gebied",
                 "description": "Wij willen de kwaliteit en vitaliteit van het landelijk gebied behouden. Wij koesteren daarom de functies die bijdragen aan behoud van de openheid, kwaliteit en beleefbaarheid van het platteland, zoals landbouw, natuur en bos.",
@@ -11118,8 +11118,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-17",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2018-10-17",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Water - Vaarstrook-Vlak",
                 "description": "Vaarweg vlak in de Zaan. Bevaarbare gebeid voor de scheepvaart in de Zaan",
@@ -11217,8 +11217,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-09-19",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-09-19",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Regionaal wegennet (rijk)",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart zijn de voorgenomen reconstructies rond Rijkswegen te zien. Zie ook paragraaf 6.3.2 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd.",
@@ -11307,8 +11307,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-08-07",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2019-08-07",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Gezondheidskaart GES Geur industrie 2015",
                 "description": "Dit bestand bevat gegevens over de geuruitstoot van industri\u00eble bedrijven met een vergunning van de provincie en de vertaling daarvan naar gezondheidsrisico's. De provincie heeft met behulp van een geurverspreidingsmodel de 98-percentiel geurcontouren berekend. Bijvoorbeeld 98 percentiel van 5 ge/m3 wil zeggen dat buiten de contour in 98% van de tijd de geurimmissie op een bepaald punt lager zal zijn dan 5 ge/m3. De berekende 98p-geurcontouren zijn conform het Handboek gezondheidseffectscreening stad & milieu 2012 vertaald naar GES-scores. De kaart geeft niet precies de gebieden aan waar geur waarneembaar is, maar hoe groot de kans is dat de geur waarneembaar is en hoe sterk deze geur is. Of iemand de geur ook daarwerkelijk ruikt is afhankelijk van de bedrijfsvoering, het weer, de plek en het reukvermogen van die persoon.",
@@ -11429,8 +11429,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-05-27",
-                "record-updated": "2021-02-21T00:14:35Z",
+                "recordCreated": "2016-05-27",
+                "recordUpdated": "2021-02-21T00:14:35Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Natuurnetwerk Nederland (NNN)",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart is het Nederlands netwerk van bestaande en nieuw aan te leggen natuur te zien (voorheen Ecologische Hoofdstructuur) te zien. Zie ook paragraaf 5.2.1 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd.",
@@ -11521,8 +11521,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-29",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-01-29",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Buitendijkse gebieden (Omgevingsvisie 2016-2020)",
                 "description": "Dit bestand bevat buitendijkse gebieden zoals vastgesteld in de Omgevingsvisie provincie Groningen 2016-2020.\nWij spannen ons in om de buitendijks gelegen haventerreinen van Lauwersoog, Noordpolderzijl, Eemshaven, Delfzijl en Termunten dusdanig in te richten dat deze slechts zelden getroffen worden door wateroverlast.",
@@ -11610,8 +11610,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-09-09",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-09-09",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Luchthavens Veiligheidsgebieden",
                 "description": "Aan de koppen/uiteinden van start-/landingsbanen moeten in een luchthavenbesluit gebieden worden vastgelegd, waarbinnen speciale eisen gelden voor obstakels en de breekbaarheid daarvan. In Groningen zijn deze alleen voor de vliegvelden Oostwold en Stadskanaal en voor Heliport Eemshaven vastgelegd.",
@@ -11698,8 +11698,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-06",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-03-06",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Veiligheidszone 1 provinciale wegen (Omgevingsverordening 2016)",
                 "description": "Dit bestand bevat de veiligheidszone 1 provinciale wegen, zoals vastgesteld in de Omgevingsverordening provincie Groningen 2016. In deze Omgevingsverordening zijn regels opgenomen m.b.t. tot deze veiligheidszone. \nHet betreft een zone langs provinciale wegen in verband met plaatsgebonden risico (PR max) provinciale wegen.",
@@ -11787,8 +11787,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-24",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-10-24",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Natuurbeheerplan 2018, ambitiekaart",
                 "description": "Deze kaartlaag vormt de wijzigingen op de ambitiekaart. Deze kaart is door Gedeputeerde Staten van Noord-Holland vastgesteld op 3 oktober 2017, document/nummer 934521/982203 als onderdeel van het Natuurbeheerplan 2018. Doel van de ambitiekaart is het vastleggen van de huidige wijze van natuurbeheer, zowel binnen als buiten het Natuurnetwerk Nederland (NNN). De Beheertypenkaart wordt gebruikt voor de toekenning van subsidies voor natuurbeheer.",
@@ -11874,8 +11874,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-06T13:15:15",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-03-06T13:15:15",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "zonneschijnduur en straling - zonneschijnduur en stralingshoeveelheden per 10 minuten",
                 "description": "Deze dataset is tot stand gekomen door gebruik te maken van meting van globale stralingsmeters en een algoritme voor de berekening van de zonneschijnduur. De dataset is niet gevalideerd en ontbrekende waarden zijn niet aangevuld,",
@@ -11956,8 +11956,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Gebiedsgericht grondwaterbeheer",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Gebiedsgericht grondwaterbeheer. De beschikbaarheid van voldoende grondwater van goede kwaliteit is een nationaal belang. Provincies dienen als co\u00f6rdinerend bestuursorgaan daar uitvoering aan te geven. Wij richten ons op het oplossen van de knelpunten en bedreigingen die er zijn met betrekking tot grond- en oppervlaktewater en proberen de regeldruk en kosten die daarmee samenhangen te verlagen. Kaart robuust en klimaatbestendig watersysteem",
@@ -12041,8 +12041,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-24",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2017-10-24",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Actuele voedselproductie met subsidie groenten",
                 "description": "Deze kaart geeft voor elke cel (10X10m of 1 a) de waarde van de actuele productie weer. Deze waarde wordt uitgedrukt in \u20ac per hectare per jaar. Subsudies zijn meegerekend. \n\nDe kaart geeft een beeld van de ruimtelijke spreiding van de landbouwproductie en de financi\u00eble opbrengsten die hieraan verbonden zijn.\n\nDe kaart bevat relevante informatie voor landbouwers, handelaars en voedselverwerkende industrie.\n\n\nDe kaart is geproduceerd voor de Atlas Natuurlijk Kapitaal door kennisinstituten RIVM en VITO (Belgi\u00eb).",
@@ -12129,8 +12129,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Aardkundige waarden, beschermingsniveau",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van het beschermingsniveau Aardkundige waarden. De inzet is de aardkundige waarden die bijdragen aan het specifieke Drentse karakter behouden en zo mogelijk herstellen. Voor de aardkundige waarden onderscheiden wij vier beschermingsniveaus (1. Generiek, 2. Hoog, 3. Hoog - stergebied, 4. Middel). De kaart en de beschermingsniveaus zijn weergegeven in de beleidsnotitie Waardevol Drenthe. Ze  verschillen in de mate van inzet van de provincie. Het hoge en het gemiddelde beschermingsniveau zijn van provinciaal belang. Komt voor in kaart kernkwaliteit aardkundige waarde.",
@@ -12214,8 +12214,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-11",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-11-11",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Verkeersregelinstallaties",
                 "description": "De verkeersregelinstallaties (verkeerslichten) op de provinciale wegen.",
@@ -12305,8 +12305,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-11-08",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-11-08",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Duurzaam bodembeheer",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Duurzaam bodembeheer. De provincie Drenthe is als bevoegd gezag verantwoordelijk voor het uitvoeren van de bodemsaneringstaken uit de Wet bodembescherming op Drents grondgebied, met uitzondering van het grondgebied van de gemeente Emmen. Kaart",
@@ -12390,8 +12390,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-06-07",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2016-06-07",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "HISTLAND",
                 "description": "HISTLAND (Historisch landschappelijk informatiesysteem) bevat geografische gegevens over de ontginningsgeschiedenis van het Nederlandse landschap en de mate van verandering van dat landschap.",
@@ -12476,8 +12476,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - De Hondsrug UNESCO GLOBAL GEOPARK",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van De Hondsrug UNESCO GLOBAL GEOPARK. In dit gebied zijn de kernkwaliteiten archeologie,Kernkwaliteit landschap en cultuurhistorie onlosmakelijk gekoppeld aan het (economische) vestigingsklimaat en de vrijetijdseconomie. Wij zetten deze gebiedskwaliteiten in voor een duurzame economische ontwikkeling van het gebied. De Hondsrug UNESCO Global Geopark draagt bij aan bewustwording, kennisverbreding en een inspirerend kader van kernkwaliteiten voor nieuwe initatieven. Kaart Kernkwaliteit aardkundige waarden",
@@ -12561,8 +12561,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - NNN verbindingen",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van NNN - verbindingen. Voor de instandhouding en het versterken van biodiversiteit, conform de afspraken in het Natuurpact met het Rijk zet de provincie Drenthe de komende jaren in op de verdere ontwikkeling van verbindingen en hiermee de verdere ontsnippering van de Drentse natuur. Daarmee verbinden wij in Drenthe verschillende natuurgebieden binnen het Natuurnetwerk Nederland. Kaart Kernkwaliteit Natuur",
@@ -12646,8 +12646,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-19T09:17:49",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2017-10-19T09:17:49",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Gasleidingen jaartallen",
                 "description": "Gasleidingen overzicht ouder dan aanlegdatum voor 1985",
@@ -12745,8 +12745,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-07-06",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-07-06",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Conservation Units voor bomen",
                 "description": "Wat ziet u?\nDe kaart brengt populaties van bomen en struiken in beeld die een bepaalde genetische waarde vertegenwoordigen voor deze soorten in Nederland. De kaart geeft een overzicht van de populaties die belangrijk zijn voor bescherming van genetische diversiteit van de soort binnen Europa: zogenaamde conservation units. \nWat is de waarde?\nDe populaties vertegenwoordigen vanwege hun bijzonder genetische samenstelling een bepaalde economische waarde en/of ecologische waarde. De populaties kunnen van belang zijn voor een productie doelstelling (productie van kwalitatief goed hout) of ecologische doelstelling  (teeltmateriaal vertegenwoordigt een ecologisch waarde, ook wel autochtoon plantmateriaal genoemd)\nVoor wie is dit belangrijk?\nBeheerders van natuur-, bos en landschappelijke beplantingen, kwekers.",
@@ -12830,8 +12830,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Bedrijventerrein (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Bedrijventerrein. Om werkgelegenheid te behouden en nieuwe te creeren, streeft de provincie Drenthe  naar de ontwikkeling van een dynamische, vitale en zichzelf vernieuwende regionale economie. Een belangrijke voorwaarde daarvoor is het kunnen bieden van voldoende, gevarieerde, aantrekkelijke en vitale vestigingsmogelijkheden op regionale bedrijventerreinen en andere stedelijke werklocaties. Komt voor in kaart 3: Milieu- en leefomgevingskwaliteit; kaart 4: Robuust sociaal-economisch systeem.",
@@ -12916,8 +12916,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-02-11T10:39:51",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-02-11T10:39:51",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "verdamping - KNMI14 Dagelijkse Makkink verdamping 2085 WH",
                 "description": "KNMI14 dagelijkse scenariodata: 2085 WH. Grid bestanden van dagelijkse Makkink verdamping in Nederland. Gebaseerd op 14 automatische waarneemstations.",
@@ -12996,8 +12996,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-05",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-03-05",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Provinciaal basisnet gevaarlijke stoffen (Omgevingsvisie 2016-2020)",
                 "description": "Dit bestand bevat het invloedsgebied van het provinciaal basisnet voor het vervoer van gevaarlijke stoffen zoals vastgesteld in de Omgevingsvisie provincie Groningen 2016-2020. \nOm gevaarlijke stoffen te vervoeren moeten vervoerders zich houden aan veiligheidseisen, waaronder het zoveel mogelijk vervoeren langs de hiervoor aangewezen transportroutes. Deze transportroutes zijn voor zover het rijksinfrastructuur betreft door het rijk aangewezen. Wij wijzen in aanvulling daarop een provinciaal basisnet aan. \nHet is van belang dat deze routes ook geschikt blijven voor het vervoer van gevaarlijke stoffen, reden waarom wij hierover in de Omgevingsverordening regels hebben opgenomen.\nHet invloedsgebied omvat de infrastructuur en zijn directe omgeving.",
@@ -13085,8 +13085,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-07-16",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-07-16",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Geluidscontouren Lnight 2016 EU-geluidskaart 3e tranche",
                 "description": "In dit bestand zijn de geluidscontouren langs provinciale wegen vastgelegd zoals deze zijn berekend voor de EU-geluidskartering, 3e tranche. De Lnight-contouren representeren de gemiddelde geluidsbelasting in de nacht voor het peiljaar 2016. De contouren zijn berekend volgens de SRM-II methode en gelden op een hoogte van 4m.",
@@ -13172,8 +13172,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-08-07",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-08-07",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Gezondheidskaart GES Geluid rijkswegen Lden 2013",
                 "description": "Dit bestand bevat gegevens over de blootstelling aan geluid van wegverkeer vanwege de rjikswegen in Noord-Brabant. en de vertaling daarvan naar gezondheidsrisico's, zogenaamde GES-scores. Berekende geluidcontouren Lden zijn conform het Handboek gezondheidseffectscreening stad & milieu 2012 vertaald naar GES-scores:  55-60 dB = GES 4 (matig); 60-65 dB = GES 5 (zeer matig); 65-70 dB = GES 6 (onvoldoende); 70-75 dB = GES 7 (ruim onvoldoende); >= 75 dB = GES 8 (zeer onvoldoende). De Gezondheids Effect Screening (GES)-methode geeft een score (van 0 t/m 8) aan de milieugezondheidskwaliteit. Op de kaart weergegeven van groen (GES score 0, zeer goede) via geel, oranje en rood (GES score 6, onvoldoende) naar paars (GES-score 8, zeer onvoldoende). Deze scores zijn gebaseerd op de kennis over de relatie tussen blootstelling en gezondheidsrisico\u2019s. \n\n\n\n\n\n\n\n        De geluidcontouren weerspiegelen de situatie voor het peiljaar 2011. \n\n\n\n\n\n\n\n        De geluidbelasting is voor het volledige rijkswegennet berekend. De gecombineerde geluidbelasting met provinciale of gemeentelijke wegen of railverkeer, vliegverkeer en/of bedrijven is niet bepaald. In werkelijkheid kan bij combinatie van meerdere geluidbronnen de geluidbelasting en daarmee het gezondheidseffect dus hoger uitvallen.",
@@ -13295,8 +13295,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Innamepunt Drentsche Aa voor drinkwaterproductie (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Innamepunt Drentsche Aa voor drinkwaterproductie. Locatie waar oppervlaktewater wordt onttrokken voor de bereiding van drinkwater. De kwaliteitseisen zijn opgenomen in de Kaderrichtlijn Water. Komt voor in kaart 8: Oppervlaktewater; kaart 9: Kaderrichtlijn Water.",
@@ -13383,8 +13383,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-09-19",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2016-09-19",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Regionaal wegennet (provincie) - nieuw of ingrijpende reconstructie (indicatief)",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart zijn de voorgenomen reconstructies rond Rijkswegen te zien. Zie ook paragraaf 6.3.2 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd.",
@@ -13473,8 +13473,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-01-13",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2020-01-13",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Geluidsbelastingkaarten 2017 provinciale wegen Flevoland",
                 "description": "De provincie Flevoland heeft de geluidsbelasting in kaart gebracht van alle provinciale wegen in Flevoland. Dit betekent dat er berekend is hoeveel geluid er gemiddeld geproduceerd wordt op de weg, door het verkeer dat er over heen rijdt en wat de omgeving hiervan merkt. Wettelijk is het verplicht om dit te doen bij wegen waar jaarlijks meer dan 3 miljoen voertuigen over heenrijden, maar de provincie wilde graag weten hoe groot de geluidsbelasting van alle provinciale wegen is. \nZo is het mogelijk om te zien welke woningen een hoge geluidsbelasting hebben.",
@@ -13584,8 +13584,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Top-gebied verdroging (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Top-gebied verdroging.Gebieden waar prioriteit wordt gegeven aan de aanpak van de verdroging van natuur. Er is sprake van verdroging als de grondwaterstand te laag is voor het natuurdoel. Komt voor in kaart 10: Grondwater.",
@@ -13672,8 +13672,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-29",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-01-29",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Ecologische verbindingszones indicatief (Omgevingsvisie 2016-2020)",
                 "description": "Dit bestand bevat ecologische verbindingszones (indicatief), zoals vastgesteld in de Omgevingsvisie provincie Groningen 2016-2020.\nBinnen het Natuurnetwerk Nederland (NNN) verbinden we vooral de meer ge\u00efsoleerd gelegen natuurgebieden met de overige delen van het netwerk. De ecologische verbindingszones zijn indicatief op kaart aangegeven. We realiseren ze door ze te combineren met andere werkzaamheden zoals de aanleg van natuurvriendelijke oevers en beplantingsstroken.",
@@ -13761,8 +13761,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Robuuste systemen en multifunctionele gebieden (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Robuuste systemen en multifunctionele gebieden. Binnen de robuuste systemen staat de ontwikkeling van de desbetreffende hoofdfunctie (wonen, werken, water, natuur of landbouw) voorop. Naast de robuuste systemen kent Drenthe multifunctionele gebieden waar verschillende functies en ambities samenkomen en waar geen hoofdfunctie is te onderkennen die leidend is in de ordening. Komt voor in kaart 1: Visie.",
@@ -13846,8 +13846,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-06-25",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2020-06-25",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie- Windenergie niet kansrijk, provincie Gelderland",
                 "description": "Voor natuurgebieden (Gelders Natuurnetwerk en de Groene Ontwikkelingszone, zie kaart) ziet de provincie grote belemmeringen voor het plaatsen van windturbines. Het bestand is uit de volgende kaartlagen samengesteld : 1. Gelders natuurnetwerk 2. Nieuwe Hollandse Waterlinie minus Open Schootsvelden 3. Natura2000. Het actualisatieplan is door Provinciale Staten op 19 december 2018 vastgesteld.",
@@ -13938,8 +13938,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-26",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-11-26",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Genexpressie in testes van muismodellen na blootstelling aan benzo(a)pyreen",
                 "description": "Genexpressie in testes van twee muismodellen na blootstelling aan benzo(a)pyreen; normale WT en DNA repair deficiente Xpc-/- muizen.",
@@ -14027,8 +14027,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-12-06",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2016-12-06",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Natuurbeheerplan 2018, Waterkaart (historie)",
                 "description": "De waterkaart hoort bij het Natuurbeheerplan.",
@@ -14123,8 +14123,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-07-22",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-07-22",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "PRS Kaart 13 Recreatie",
                 "description": "De provincie Utrecht heeft een aantrekkelijke basis voor recreatie en toerisme. We hebben veel te bieden: uitstekende voorzieningen (winkels en musea) in diverse steden, aantrekkelijk cultureel erfgoed en een gevarieerd landschap met plassen, veengebieden, waarden en grote bos- en natuurgebieden. In de provincie ligt ook een uitgebreid recreatief netwerk van wandel- en fietspaden met recreatieconcentratiepunten. De bereikbaarheid van het landelijk gebied vanuit het stedelijk gebied vinden wij belangrijk. Daarnaast zetten wij ons in voor behoud van het bestaande provinciale en landelijke routenetwerk en de knelpunten hierin. We streven naar meer samenhang in de totale recreatieve structuur en in verbindingen tussen bestaande recreatiegebieden.",
@@ -14211,8 +14211,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Verwachting toetsen (Es)",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D4).",
@@ -14296,8 +14296,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-03-30",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-03-30",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Fijnstof 2015 (pm2,5)",
                 "description": "Deze kaart toont de gemodelleerde concentratie fijn stof (\u00b5g pm2,5/m\u00b3) voor 2015 op basis van rekenpunten uit de monitoringstool van het nsl. Deze vlakdekkende kaart van Nederland heeft een resolutie van 25 meter.",
@@ -14385,8 +14385,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-11-07",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-11-07",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Warmtenetwerk (concept)",
                 "description": "Voorlopig trace van een warmtenetwerk in Zaandam oost.",
@@ -14485,8 +14485,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-10-29",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2020-10-29",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Karrensporen - AHN2",
                 "description": "Karrensporen zijn de zichtbare overblijfselen van oude routes. Ze stammen uit de middeleeuwen, maar gaan waarschijnlijk nog veel verder terug. Er ontstonden brede systemen of bundels, onder andere door het intensieve gebruik van de routes door karren met verschillende spoorbreedtes. Ook door het telkens zoeken naar de meest ideale wegomstandigheden werd het systeem steeds breder. Door recent onderzoek in opdracht van de provincie is gebleken dat er veel meer karrenspoorsystemen in Drenthe bewaard zijn gebleven dan tot nu toe werd gedacht. De bundels van de verschillende routes zijn goed te volgen. Zij zijn representanten van, onder andere, de lange, interregionale noord-zuidroute over de Hondsrug maar ook van lokale verbindingen tussen de Drentse esdorpen. In dit kaartbeeld zijn de karrensporen die zijn herkend in een AHN2 analyse van Drenthe. In aanvulling daarop zijn ook door middel van luchtofoto's karrensporen ontdekt, deze zijn te vinden onder het kopje 'Karrensporen - aanvulling luchtfoto's'",
@@ -14571,8 +14571,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-09-30",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-09-30",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Koper (Cu) belasting oppervlaktewater 2014",
                 "description": "Koper (Cu) belasting oppervlaktewater uit alle bronnen in 2014 in kg per jaar. Emissieregistratie 1990 - 2014. (vastgesteld 2016)",
@@ -14663,8 +14663,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Windenergie zoekgebied",
                 "description": "Door Provinciale Staten van Drenthe op 3 oktober 2018 vastgestelde versie van Windenergie zoekgebied. De twaalf provincies hebben begin 2013 afspraken met het Rijk gemaakt over de verdeling van de Rijksdoelstelling van 6.000 MW windenergie op land in 2020. Voor Drenthe is afgesproken om in 2020 285,5 MW aan windenergie op land te realiseren. Deze opgave is gekoppeld aan een zoekgebied in de gemeenten Aa en Hunze, Borger-Odoorn, Emmen en Coevorden. Kaart Robuust sociaal-economisch systeem.",
@@ -14748,8 +14748,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-09-19",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2016-09-19",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Overslaglocatie - niet aan basisnet",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart is zijn de overslaglocaties voor de binnenvaart te zien. Op het basisnet beroepsvaart bestaan diverse private en publieke overslagterreinen. De provincie streeft naar behoud van deze ruimte voor overslag. Zie ook paragraaf 6.3.3 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd.",
@@ -14838,8 +14838,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Harde grens stad en land",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe. (Bijbehorende kaart D7).",
@@ -14923,8 +14923,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-02-11T10:37:51",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-02-11T10:37:51",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "verdamping - KNMI14 Dagelijkse Makkink verdamping 2050 WH",
                 "description": "KNMI14 dagelijkse scenariodata: 2050 WH. Grid bestanden van dagelijkse Makkink verdamping in Nederland. Gebaseerd op 14 automatische waarneemstations.",
@@ -15003,8 +15003,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-29",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-01-29",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Bedrijventerrein Weiwerd (Structuurvisie Eemsmond-Delfzijl)",
                 "description": "Dit bestand bevat het bedrijventerrein Weiwerd, zoals vastgesteld in de Structuurvisie Eemsmond-Delfzijl.\nBedrijventerrein Weiwerd in de gemeente Delfzijl is bedoeld voor kwalitatief hoogwaardige kleinschalige bedrijvigheid op het gebied van kennis en innovatie, die gekoppeld is aan de aanwezige chemische industrie op Oosterhorn. Op Weiwerd mogen zich alleen lichte vormen van bedrijvigheid vestigen. Het terrein verschilt daarmee van het grootschalige industriegebied Oosterhorn dat bedoeld is voor zware industrie. Het terrein is ongeveer 14 hectare groot.",
@@ -15092,8 +15092,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-25",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-09-25",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Zorgaanbieders",
                 "description": "Overzicht van diverse zorg aanbieders",
@@ -15192,8 +15192,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2015-04-01",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2015-04-01",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Grondwateronttrekking voor de bereiding van drinkwater (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten van Drenthe op 2 juli 2014 vastgestelde versie van Grondwateronttrekking voor de bereiding van drinkwater.Komt voor in kaart 9: Kaderrichtlijn Water.",
@@ -15279,8 +15279,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2013-03-27",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2013-03-27",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Masterplan Fietspaden  (wegmeubilair) (historie)",
                 "description": "Wegmeubilair, zoals lantaarnpalen, bewegwijzering, etc.",
@@ -15369,8 +15369,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-11-26",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2019-11-26",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Genexpressie in muizenlever door blootstelling aan benzo[a]pyreen",
                 "description": "Genexpressie in lever van twee muismodellen na blootstelling aan benzo(a)pyreen; normale WT en DNA repair deficiente Xpa-/-p53+/- muizen.",
@@ -15456,8 +15456,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-05",
-                "record-updated": "2021-02-21T00:14:36Z",
+                "recordCreated": "2018-10-05",
+                "recordUpdated": "2021-02-21T00:14:36Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Omgevingseffecten DFW (punten) (historie)",
                 "description": "Omgevingseffecten (punten) Drents Friesche Wold is als kaart(of een onderdeel van een kaart) opgenomen in het beheerplan natura 2000. Het beheerplan Drents Friesche Wold is vastgesteld op 07-03-2017.",
@@ -15541,8 +15541,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-19T09:00:50",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-10-19T09:00:50",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Elektriciteitsverbruik",
                 "description": "Gemiddelde energieverbruik\n \nKleinverbruiksdata over het jaar 2014\nHet energieverbruik van kleine aansluitingen. Elektriciteit tot en met een capaciteit van 3x80 amp\u00e8re.\n\nDe gegevens zijn verwerkt op postcode niveau. Deze opendata wordt beschikbaar gesteld door de netbeheerder Liander.\nDe gegevens zijn door de gemeente Zaanstad vertaald naar postcode en geven dus een gemiddelde aan.",
@@ -15639,8 +15639,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-24",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-10-24",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Actuele voedselproductie mais",
                 "description": "Deze kaart geeft voor elke cel (10X10m of 1 a) de actuele productie weer. Deze actuele productie wordt uitgedrukt aan de hand van een rendementspercentage en opbrengstverliezen door bepaalde beheersmaatregelen.  \n\nDe kaart geeft een beeld van de ruimtelijke spreiding van de landbouwproductie.\n\nDe kaart bevat relevante informatie voor landbouwers, handelaars en voedselverwerkende industrie.\"\n\nDe kaart is geproduceerd voor de Atlas Natuurlijk Kapitaal door kennisinstituten RIVM en VITO (Belgi\u00eb).",
@@ -15727,8 +15727,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-09-28",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-09-28",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Geluidkaart hoofdspoornet 2016 (Lnight) - Atlas Leefomgeving",
                 "description": "Geluidkaart 2016 voor het Nederlandse hoofdspoor in het kader van de Regeling omgevingslawaai. Met de geluidkaart voor het hoofdspoor (de gemiddelde geluidswaarde van alle nachtperioden, 23.00 tot 7.00 uur, Lnight) wordt invulling gegeven aan de eisen uit de Wet milieubeheer die voortvloeien uit de Europese Richtlijn Omgevingslawaai. \n\nOver de kaart De kaart en de gegevens zijn afkomstig en eigendom van het ministerie van Infrastructuur & Milieu. De geluidkaart is gemaakt in het kader van de EU geluidkartering en bevat geluidcontouren vari\u00ebrend tussen 50 en 65 dB in klassen van 5 db. Op basis van de EU-regelgeving zal de volgende geluidkartering gaan over het jaar 2021 en waarschijnlijk in 2022 klaar zijn en online verschijnen.",
@@ -15820,8 +15820,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-07-18",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-07-18",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Ganzen foerageergebieden (2016) (historie)",
                 "description": "Fourageergebieden van ganzen (2016) zoals gerapporteerd in het Natuurbeheerplan. 05-07-2016",
@@ -15905,8 +15905,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-06-25",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2020-06-25",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie- Windenergie bestaand en in aanbouw, provincie Gelderland",
                 "description": "Er zijn locaties waarvoor de provincie met partijen een afspraak heeft over de opwekking van windenergie. Het gaat om locaties waar reeds windturbines staan of vergund zijn. \nDit bestand is vastgesteld door Provinciale Staten op 1 maart 2017.",
@@ -15999,8 +15999,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-12",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2018-09-12",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Omgevingsvisie 2018 - Oppervlaktewaterlichamen Waterlopen",
                 "description": "Door Provinciale Staten van Drenthe  op 3 oktober 2018 vastgestelde versie van Waterlopen. De waterlopen maken onderdeel uit van de oppervlaktewaterlichamen uit de Kaderrichtlijn water. Kaart Robuust en klimaatbestendig watersysteem.",
@@ -16084,8 +16084,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-04",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2019-03-04",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Biodiversiteit Flora Aandachtsoorten 250m hok",
                 "description": "Deze kaart toont de verspreiding van de Flora aandachtsoorten (AS) in Utrecht. Aandachtsoorten zijn een selectie van de Rode Lijst soorten, namelijk alleen de (ernstig) bedreigde soorten, aangevuld met de Habitatrichtlijn- en Vogelrichtlijnsoorten en enkele specifiek voor de provincie Utrecht belangrijke soorten. Zie het supplement biodiversiteit van de Natuurvisie voor meer informatie. Het betreft vaatplanten, paddestoelen, mossen en korstmossen,\n\nDe gegevens zijn in oktober 2017 betrokken uit de Nationale Databank Flora en Fauna (NDFF). Voor de Aandachtsoorten is het beginjaar 1990. De kaarten tonen per soortgroep het aantal soorten per 250 x 250 m. Waarnemingen die ingevoerd zijn op kilometerhokniveau zijn niet zichtbaar op het 250 x 250 m niveau.Voor de gemeente Vijfheerenlanden, die sinds 1 januari 2019 deel uitmaakt van de provincie Utrecht, is nog geen data beschikbaar",
@@ -16177,8 +16177,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-19T09:35:57",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-10-19T09:35:57",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Hittestress (situatie 2014)",
                 "description": "Het hittestressmodel geeft een voorspelling van de lokale luchttemperatuur op circa 1,5 m boven de grond rond 15:00 uur op een hete, zonnige middag tijdens een (fictieve) tropische dag (30 graden of meer). Hierbij is een zeer lichte wind uit het oosten aangehouden omdat een tropische dag vaak samengaat met een oostelijke landwind. Er is geen rekening gehouden met ontwikkelingen als afname van koeling doordat vegetatie mogelijk minder kan verdampen (bijv. als gevolg van watertekort of verdorring).\nDe kaart toont de lokale temperatuur met een kwalitatieve schaal (van veel koeler tot veel warmer dan buiten de stad). Het geeft dus geen absolute temperaturen (iedere hittegolf is immers anders), maar wel een goede indicatie van de verschillen tussen straten en wijken.",
@@ -16275,8 +16275,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-09-19",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2016-09-19",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Structuurvisie - Regionaal wegennet (provincie)",
                 "description": "Kaartlaag Structuurvisie Noord-Holland 2040. Op de kaart zijn de voorgenomen reconstructies rond Rijkswegen te zien. Zie ook paragraaf 6.3.2 in de Structuurvisie Noord-Holland 2040. Op 28 september 2015 hebben PS bij voordracht 74-2015 (verseon 179956/ 659098) een aantal kaartlagen gewijzigd. De overige kaartlagen bleven daarbij ongewijzigd.",
@@ -16365,8 +16365,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-24",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-10-24",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Actuele voedselproductie zonder subsidie gras",
                 "description": "Deze kaart geeft voor elke cel (10X10m of 1 a) de waarde van de actuele productie weer. Deze waarde wordt uitgedrukt in \u20ac per hectare per jaar.\n\nDe kaart geeft een beeld van de ruimtelijke spreiding van de landbouwproductie en de financi\u00eble opbrengsten die hieraan verbonden zijn.\n\nDe kaart bevat relevante informatie voor landbouwers, handelaars en voedselverwerkende industrie.\"\n\nDe kaart is geproduceerd voor de Atlas Natuurlijk Kapitaal door kennisinstituten RIVM en VITO (Belgi\u00eb).",
@@ -16453,8 +16453,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-09-21",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-09-21",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Drinkwaterwinlokaties waar chloride is aangemerkt als (potenti\u00eble) probleemstof",
                 "description": "Deze kaart geeft aan bij welke winningen chloride als potenti\u00eble of actuele probleemstof is aangetroffen. De kaart is gebaseerd op informatie uit de gebiedsdossiers voor drinkwaterwinningen. \n\nIn een gebiedsdossier van een winning worden door de betrokken partijen (gemeente, provincie, drinkwaterbedrijf en waterbeheerder) huidige en toekomstige risico\u2019s voor de waterkwaliteit ge\u00efnventariseerd. Deze risico\u2019s kunnen zowel inhoudelijk als beleidsmatig van aard zijn. In de gebiedsdossiers worden ook mogelijke maatregelen ge\u00efdentificeerd waarover de partijen in een volgende fase afspraken maken. Ook geven de regiehouders vorm aan het proces van afspraken maken en bewaken zij de voortgang van de uitvoering van maatregelen zoals die zijn afgesproken.",
@@ -16542,8 +16542,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2014-07-21",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2014-07-21",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Toets verwachte archeologische waarden Drentse Aa-gebied en Havelterberg  (Omgevingsvisie 2014) (historie)",
                 "description": "Door Provinciale Staten op 2 juli 2014 vastgestelde versie van Toets verwachte archeologische waarden Drentse Aa-gebied en Havelterberg. In gebieden of terreinen met een archeologische verwachting op de archeologiekaarten, stuurt de provincie Drenthe op een goede uitvoering van archeologisch onderzoek, conform de gangbare, in de beroepsgroep geldende kwaliteitseisen van de Kwaliteitsnorm Nederlandse Archeologie (KNA). Hieronder vallen alle essen en beekdalen, de Havelterberg en het Drentsche Aa-gebied, verwachte Celtic fields, offerveentjes, een burcht bij Zuidlaren en het vermoede traject van de prehistorische weg over de Hondsrug. Komt voor in kaart 2 E: Archeologie Informatie; kaart 2 E: Archeologie Kernkwaliteiten.",
@@ -16627,8 +16627,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-09-11",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-09-11",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Koolstofdioxide (CO2) emissies naar lucht 2014.",
                 "description": "Koolstofdioxide (CO2) emissies naar lucht uit alle bronnen in 2014 in kg/km2 per jaar. Emissieregistratie 1990 - 2014. (vastgesteld 2016)",
@@ -16723,8 +16723,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-09-10",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2018-09-10",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Geluidhinder buren 2016",
                 "description": "Op de kaart ziet u welk percentage van de bevolking in de door u gekozen gemeente ernstig gehinderd is door geluid van zijn of haar buren.",
@@ -16811,8 +16811,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-03-28",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2019-03-28",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Provinciale Omgevingsverordening 2018 - Nationaal Park Drentsche Aa",
                 "description": "Deze kaartlaag maakt onderdeel uit van de op 3 oktober 2018 vastgestelde versie van de Provinciale Omgevingsverordening Drenthe, waarin het gehele stroomgebied van de Drentsche Aa als Nationaal Landschap is aangewezen, inclusief het Groningse deel in de gemeente Haren. De Drentse begrenzing sluit aan op de Groningse. Doel van een Nationaal Landschap is de kwaliteiten te behouden, duurzaam te beheren en te versterken. Uitgangspunt voor het ruimtelijk beleid is behoud door ontwikkeling. Ruimtelijke ontwikkelingen zijn mogelijk, mits de kwaliteiten worden behouden of versterkt. (Bijbehorende kaart D2 en D7)",
@@ -16896,8 +16896,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-01-29",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2019-01-29",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Pingoru\u00efnes Gorecht (Omgevingsverordening 2016)",
                 "description": "Dit bestand bevat pingoru\u00efnes Gorecht zoals vastgesteld in de Omgevingsverordening provincie Groningen 2016. In deze Omgevingsverordening hebben wij regels opgenomen ter bescherming van de pingoru\u00efnes Gorecht.\nOp verschillende plaatsen in onze provincie zijn duidelijke hoogteverschillen in het landschap aanwezig die te maken hebben met de aardkundige geschiedenis. Wij beschermen het aardkundig reli\u00ebf en het zicht daarop.",
@@ -16985,8 +16985,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2020-04-14",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2020-04-14",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Beeldkwaliteitsplannen Gemeente Koggenland",
                 "description": "Beeldkwaliteitsplannen Gemeente Koggenland",
@@ -17101,8 +17101,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-05-26",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2016-05-26",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Ontwerp Natuurbeheerplan 2017, ambitiekaart",
                 "description": "Deze kaartlaag vormt de wijzigingen op de ambitiekaart. Deze kaart is door Gedeputeerde Staten van Noord-Holland vastgesteld op 17 mei 2016, document/nummer 773831/773838 als onderdeel van het Ontwerp Natuurbeheerplan 2017. Doel van de ambitiekaart is het vastleggen van de huidige wijze van natuurbeheer, zowel binnen als buiten het Natuurnetwerk Nederland (NNN). De Beheertypenkaart wordt gebruikt voor de toekenning van subsidies voor natuurbeheer.",
@@ -17193,8 +17193,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2016-03-08",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2016-03-08",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "PRV Kaart 10 Aardkundige waarden - Aardkundig waardevol gebied",
                 "description": "Op deze kaartlaag in de PRV is te zien welk gebied als aardkundig waardevol gebied is aangeduid. Het zijn die onderdelen van het landschap die iets vertellen over de natuurlijke ontstaanswijze van het gebied. Het zijn er 63 in totaal. Artikel 8 bevat de regels hierover en verwijst naar deze kaartlaag. Deze kaartlaag is vastgesteld door PS op 3 februari 2014 (besluitnummer 179956-281768) en is gecorrigeerd door GS op 25 augustus 2015 (besluitnummer 179956/659095)",
@@ -17286,8 +17286,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2019-09-16",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2019-09-16",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Monumenten in de gemeente Bloemendaal en de gemeente Heemstede",
                 "description": "Deze kaart bevat al het erfgoed binnen de samenwerkende gemeenten Bloemendaal en Heemstede. Het erfgoed bestaat uit Rijks-, Provinciale- en Gemeentelijke Monumenten.De dataset is te downloaden van het gemeentelijk open data portaal: https://gemeente-bloemendaal.opendata.arcgis.com/search/protocol: website",
@@ -17359,8 +17359,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2018-10-05",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2018-10-05",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Natura2000 Beheerplannen - Effecten waterhuishouding (Grens Potklei DFW) (historie)",
                 "description": "Effecten waterhuishouding (Grens potklei) Drents Friesche Wold is als kaart(of een onderdeel van een kaart) opgenomen in het beheerplan natura 2000. Het beheerplan Drents Friesche Wold is vastgesteld op 07-03-2017.",
@@ -17444,8 +17444,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-10-16T18:03:36",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-10-16T18:03:36",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Bruggen en sluizen",
                 "description": "Brug en sluis informatie:\nOpeningstijden\nTelefoonnummers\nVHF kanaal\nAfmetingen\nBeheerder",
@@ -17543,8 +17543,8 @@
                 ]
             },
             "properties": {
-                "record-created": "2017-09-11",
-                "record-updated": "2021-02-21T00:14:37Z",
+                "recordCreated": "2017-09-11",
+                "recordUpdated": "2021-02-21T00:14:37Z",
                 "type": "dataset",
                 "title": "Ammoniak (NH3) emissies naar lucht 2014 per Gemeente",
                 "description": "Ammoniak (NH3) emissies naar lucht uit alle bronnen in 2014 in kg/km2 per jaar. Emissieregistratie 1990 - 2014. (vastgesteld 2016)",

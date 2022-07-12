@@ -451,7 +451,7 @@ resources:
             - type: text/html
               rel: canonical
               title: information
-              href: https://mapstore2.geo-solutions.it/mapstore/#/dashboard/5593
+              href: https://mapstore.geosolutionsgroup.com/mapstore/#
               hreflang: en-US
         extents:
             spatial:
@@ -465,7 +465,7 @@ resources:
               name: OGR
               data:
                   source_type: WFS
-                  source: WFS:https://demo.geo-solutions.it/geoserver/wfs
+                  source: WFS:https://gs-stable.geosolutionsgroup.com/geoserver/wfs
                   source_srs: EPSG:32632
                   target_srs: EPSG:4326
                   source_capabilities:

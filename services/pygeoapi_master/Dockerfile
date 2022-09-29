@@ -7,3 +7,5 @@ LABEL maintainer="Just van den Broecke <justb4@gmail.com>"
 # simply copy config into Image.
 COPY ./local.config.yml /pygeoapi/local.config.yml
 ADD ./data /pygeoapi/data
+
+RUN pip3 install pygeometa

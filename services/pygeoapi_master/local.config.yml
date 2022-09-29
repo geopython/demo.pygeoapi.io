@@ -948,9 +948,9 @@ resources:
     pygeometa-metadata-validate:
         type: process
         processor:
-            name: pygeoapi.process.pygeometa_.PygeometaMetadataValidateProcessor
+            name: pygeometa.pygeoapi_plugin.PygeometaMetadataValidateProcessor
 
     pygeometa-metadata-generate:
         type: process
         processor:
-            name: pygeoapi.process.pygeometa_.PygeometaMetadataGenerateProcessor
+            name: pygeometa.pygeoapi_plugin.PygeometaMetadataGenerateProcessor

@@ -368,7 +368,7 @@ resources:
               name: OGR
               data:
                   source_type: WFS
-                  source: WFS:http://geodata.nationaalgeoregister.nl/rdinfo/wfs?
+                  source: WFS:https://service.pdok.nl/kadaster/rdinfo/wfs/v1_0?
                   source_srs: EPSG:28992
                   target_srs: EPSG:4326
                   source_capabilities:
@@ -417,7 +417,7 @@ resources:
               name: OGR
               data:
                   source_type: WFS
-                  source: WFS:http://demo.deegree.org/utah-workspace/services/wfs?TYPENAME=app:SGID93_LOCATION_UDOTMap_CityLocations
+                  source: WFS:https://demo.deegree.org/utah-workspace/services/wfs?TYPENAME=app:SGID93_LOCATION_UDOTMap_CityLocations
                   source_srs: EPSG:26912
                   target_srs: EPSG:4326
                   source_capabilities:

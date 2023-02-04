@@ -1,4 +1,4 @@
 #!/usr/bin/env ash
 
-pip install pip --upgrade
-pip install gunicorn flask
+pip3 install pip --upgrade
+pip3 install gunicorn flask

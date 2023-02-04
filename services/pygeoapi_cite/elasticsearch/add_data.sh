@@ -45,4 +45,4 @@ until $(curl -sSf -XGET --insecure 'http://localhost:9200/_cluster/health?wait_f
 done
 
 echo "Elasticsearch seems to be working - Adding canada-hydat-daily-mean-02HC003.geojson"
-python /load_es_data.py /usr/share/elasticsearch/data/canada-hydat-daily-mean-02HC003.geojson IDENTIFIER && echo "Seems that data was loaded"
+python3 /load_es_data.py /usr/share/elasticsearch/data/canada-hydat-daily-mean-02HC003.geojson IDENTIFIER && echo "Seems that data was loaded"

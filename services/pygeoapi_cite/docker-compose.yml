@@ -14,6 +14,7 @@ services:
       - cluster.initial_master_nodes=elasticsearch_cite
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
 
     ulimits:
       nofile:

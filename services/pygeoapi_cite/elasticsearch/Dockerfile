@@ -31,32 +31,29 @@
 #
 # =================================================================
 
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.5.1
+FROM docker.elastic.co/elasticsearch/elasticsearch:8.6.1
 
-LABEL maintainer="jorge.dejesus@geocat.net justb4@gmail.com"
+LABEL maintainer="jorge.dejesus@geocat.net justb4@gmail.com tomkralidis@gmail.com"
 
 ARG DATA_FOLDER=/usr/share/elasticsearch/data
 ARG DATASET=canada-hydat-daily-mean-02HC003.geojson
 
-ENV PIP_PACKAGES="elasticsearch" \
-	YUM_PACKAGES="python-pip python-setuptools wget"
-
+ARG BUILD_PACKAGES="python3-pip python3-setuptools wget"
+ARG PIP_PACKAGES="pip elasticsearch"
 USER root
 
-RUN yum --enablerepo=extras -y install epel-release \
-	&& yum install -y ${YUM_PACKAGES} \
-	&& yum install -y python-setuptools \
-	&& pip install --upgrade pip && pip install ${PIP_PACKAGES} \
-	&& yum clean packages
+RUN apt-get update -y \
+    && apt-get install -y ${BUILD_PACKAGES} \
+    && pip3 install --upgrade ${PIP_PACKAGES} \
+    && apt-get clean \
+    && apt autoremove -y \
+    && rm -rf /var/lib/apt/lists/*
+
 
 RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/cite/ogcapi-features/${DATASET} -O ${DATA_FOLDER}/${DATASET} \
     && wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/load_es_data.py -O /load_es_data.py \
     && wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O bin/wait-for-it.sh \
     && chmod +x bin/wait-for-it.sh
-
-#	&& echo "transport.host: 0.0.0.0" >> config/elasticsearch.yml \
-#	&& echo "network.bind_host: 0.0.0.0" >> config/elasticsearch.yml \
-#	&& echo "network.publish_host: 0.0.0.0" >> config/elasticsearch.yml
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY add_data.sh /add_data.sh

@@ -984,7 +984,6 @@ resources:
         processor:
             name: HelloWorld
 
-
     pygeometa-metadata-schemas:
         type: process
         processor:

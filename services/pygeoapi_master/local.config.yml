@@ -984,10 +984,10 @@ resources:
         processor:
             name: HelloWorld
 
-    # pygeometa-metadata-schemas:
-    #     type: process
-    #     processor:
-    #         name: pygeometa.pygeoapi_plugin.PygeometaMetadataSchemasProcessor
+    pygeometa-metadata-schemas:
+        type: process
+        processor:
+            name: pygeometa.pygeoapi_plugin.PygeometaMetadataSchemasProcessor
 
     pygeometa-metadata-import:
         type: process

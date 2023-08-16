@@ -17,11 +17,11 @@ The demo server runs the following apps/services:
 * [traefik](services/traefik) - edge/proxy server routing incoming HTTP(S) and managing SSL-certificates (via Let's Encrypt)
 * [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi_master](services/pygeoapi_master)
 
-## Auto Update 
+## Auto Update
 
 The [home](services/home), [pygeoapi_master](services/pygeoapi_master), [pygeoapi_cite](services/pygeoapi_cite)
 and [pygeoapi_covid-19](services/pygeoapi_covid-19) services are automatically redeployed by [dockerhub listener](services/dockerhub). The full chain is:
- 
+
 ```
  (git push to GitHub master) --> (DockerHub Image autobuild) --> (demo server redeploy by dockerhub listener)
 
@@ -29,15 +29,15 @@ and [pygeoapi_covid-19](services/pygeoapi_covid-19) services are automatically r
 
 The [home](services/home) app is redeployed after any git push to the `master` of this GitHub repo.
 
-The [pygeoapi_master](services/pygeoapi_master) service is redeployed after any git push 
-to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
- 
-The [pygeoapi_cite](services/pygeoapi_cite) service is redeployed after any git push 
+The [pygeoapi_master](services/pygeoapi_master) service is redeployed after any git push
 to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
 
-The [pygeoapi_cite](services/pygeoapi_covid-19) service is redeployed after any git push 
+The [pygeoapi_cite](services/pygeoapi_cite) service is redeployed after any git push
 to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
- 
+
+The [pygeoapi_covid19](services/pygeoapi_covid-19) service is redeployed after any git push
+to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
+
 ## Common setup with Ansible
 
 ```
@@ -54,7 +54,7 @@ ansible-galaxy install --roles-path ./roles -r requirements.yml
 
 ## Make credentials files
 
-These are not in this repo for obvious reasons... You need to create/populate these locally. 
+These are not in this repo for obvious reasons... You need to create/populate these locally.
 
 * `ansible/vars/vars.yml` (see [example](ansible/vars/vars.example.yml))
 * `service/dockerhub/docker.env` dockerhub env file with your `TOKEN` set in DockerHub  (see [example](services/dockerhub/dockerhub.example.env))

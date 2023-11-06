@@ -948,7 +948,7 @@ resources:
               name: TinyDBCatalogue
               data: data/nationaalgeoregister.nl/sample-records.tinydb
               id_field: externalId
-              time_field: recordCreated
+              time_field: created
               title_field: title
 
     test-data:

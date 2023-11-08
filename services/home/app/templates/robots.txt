@@ -4,5 +4,4 @@ Disallow: *f=xml*
 Disallow: *f=gpkg*
 Disallow: *f=kml*
 Disallow: *f=geojson*
-Disallow: *f=json-ld*
 Disallow: /stable

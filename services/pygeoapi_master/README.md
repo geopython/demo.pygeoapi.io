@@ -19,9 +19,13 @@ There is also a [stable](../pygeoapi_stable) version that runs the latest `pygeo
 For example if the Dockerfile here, or the config has changed:
 
 * make changes as normal via GitHub
-* login to the demo server using the admin user
-* `cd git`
-* `git pull` (or `./refresh-git.sh` if pull somehow fails)
-* `cd services/pygeoapi_master`
-* `./stop.sh; ./build.sh; ./start.sh`
-* view new container logs: `docker logs --follow pygeoapi_master`
+* login to the demo server using the `admin` user
+
+```bash
+cd git
+git pull  # or `./refresh-git.sh` if pull somehow fails
+cd services/pygeoapi_master
+./build.sh && ./stop.sh && /start.sh
+# view new container logs
+docker logs --follow pygeoapi_master
+```

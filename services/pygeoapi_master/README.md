@@ -23,7 +23,7 @@ For example if the Dockerfile here, or the config has changed:
 
 ```bash
 cd git
-git pull  # or `./refresh-git.sh` if pull somehow fails
+git pull  # or ./refresh-git.sh if pull somehow fails
 cd services/pygeoapi_master
 ./build.sh && ./stop.sh && /start.sh
 # view new container logs

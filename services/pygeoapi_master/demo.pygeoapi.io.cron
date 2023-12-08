@@ -1,0 +1,1 @@
+0 1 * * * /bin/rm -f /tmp/pygeoapi-process-manager.db > /dev/null 2>&1

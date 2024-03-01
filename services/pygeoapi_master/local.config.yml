@@ -159,9 +159,6 @@ resources:
                 zoom:
                     min: 0
                     max: 11
-                schemes:
-                    - WebMercatorQuad
-                    - WorldCRS84Quad
               format: 
                     name: pbf
                     mimetype: application/vnd.mapbox-vector-tile

@@ -18,6 +18,7 @@ services:
 
     volumes:
       - ./local.config.yml:/pygeoapi/local.config.yml
+      - ./data:/pygeoapi/data
 
     environment:
      - SCRIPT_NAME=/stable

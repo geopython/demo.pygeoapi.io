@@ -151,14 +151,10 @@ resources:
               name: MVT-tippecanoe
               data: tests/data/tiles/ne_110m_lakes
               options:
-                metadata_format: tilejson
                 bounds: [[-124.953634,-16.536406],[109.929807,66.969298]]
                 zoom:
                     min: 0
                     max: 11
-                schemes:
-                    - WebMercatorQuad
-                    - WorldCRS84Quad
               format: 
                     name: pbf
                     mimetype: application/vnd.mapbox-vector-tile
@@ -222,7 +218,7 @@ resources:
 #                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
 #            temporal:
 #                begin:
-#                end: null # or empty
+#                end: null  # or empty
 #        providers:
 #            - type: feature
 #              name: PostgreSQL
@@ -261,20 +257,18 @@ resources:
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
-                end: null # or empty
+                end: null  # or empty
         providers:
             - type: feature
               name: OGR
               data:
                   source_type: WFS
                   source: WFS:https://services.rce.geovoorziening.nl/landschapsatlas/wfs?
-                  source_srs: EPSG:28992
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
 
                   source_options:
-#                      OGR_WFS_VERSION: 1.1.0
+  #                    OGR_WFS_VERSION: 1.1.0
                       OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
 
                   gdal_ogr_options:
@@ -286,6 +280,13 @@ resources:
 
               id_field: gml_id
               layer: landschapsatlas:Molens
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/28992
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/28992
 
     dutch_castles:
         type: collection
@@ -312,15 +313,13 @@ resources:
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
                 begin:
-                end: null # or empty
+                end: null  # or empty
         providers:
             - type: feature
               name: OGR
               data:
                   source_type: WFS
                   source: WFS:https://services.rce.geovoorziening.nl/landschapsatlas/wfs?
-                  source_srs: EPSG:28992
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
 
@@ -337,6 +336,13 @@ resources:
 
               id_field: gml_id
               layer: landschapsatlas:kastelen
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/28992
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/28992
 
     dutch_georef_stations:
         type: collection
@@ -368,16 +374,12 @@ resources:
               name: OGR
               data:
                   source_type: WFS
-                  source: WFS:http://geodata.nationaalgeoregister.nl/rdinfo/wfs?
-                  source_srs: EPSG:28992
-                  target_srs: EPSG:4326
+                  source: WFS:https://service.pdok.nl/kadaster/rdinfo/wfs/v1_0?
                   source_capabilities:
                       paging: True
-
                   source_options:
-  #                    OGR_WFS_VERSION: 1.1.0
+#                     OGR_WFS_VERSION: 1.1.0
                       OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
-
                   gdal_ogr_options:
                       EMPTY_AS_NULL: NO
                       GDAL_CACHEMAX: 64
@@ -387,6 +389,13 @@ resources:
 
               id_field: gml_id
               layer: rdinfo:stations
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/28992
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/28992
 
     utah_city_locations:
         type: collection
@@ -417,16 +426,12 @@ resources:
               name: OGR
               data:
                   source_type: WFS
-                  source: WFS:http://demo.deegree.org/utah-workspace/services/wfs?TYPENAME=app:SGID93_LOCATION_UDOTMap_CityLocations
-                  source_srs: EPSG:26912
-                  target_srs: EPSG:4326
+                  source: WFS:https://demo.deegree.org/utah-workspace/services/wfs?TYPENAME=app:SGID93_LOCATION_UDOTMap_CityLocations
                   source_capabilities:
                       paging: True
-
                   source_options:
 #                      OGR_WFS_VERSION: 2.0.0
                       OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
-
                   gdal_ogr_options:
                       EMPTY_AS_NULL: NO
                       GDAL_CACHEMAX: 64
@@ -436,6 +441,11 @@ resources:
 
               id_field: NAME
               layer: app:SGID93_LOCATION_UDOTMap_CityLocations
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/26912
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/26912
 
     unesco_pois_italy:
         type: collection
@@ -466,15 +476,11 @@ resources:
               data:
                   source_type: WFS
                   source: WFS:https://gs-stable.geosolutionsgroup.com/geoserver/wfs
-                  source_srs: EPSG:32632
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
-
                   source_options:
 #                      OGR_WFS_VERSION: 1.1.0
                       OGR_WFS_LOAD_MULTIPLE_LAYER_DEFN: NO
-
                   gdal_ogr_options:
                       EMPTY_AS_NULL: NO
                       GDAL_CACHEMAX: 64
@@ -484,6 +490,13 @@ resources:
 
               id_field: gml_id
               layer: unesco:Unesco_point
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/32632
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/32632
 
     ogr_gpkg_poi:
         type: collection
@@ -519,8 +532,6 @@ resources:
               data:
                   source_type: GPKG
                   source: tests/data/poi_portugal.gpkg
-                  source_srs: EPSG:4326
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
 
@@ -533,6 +544,12 @@ resources:
 
               id_field: osm_id
               layer: poi_portugal
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+              storage_crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
 
     ogr_geojson_lakes:
         type: collection
@@ -561,8 +578,6 @@ resources:
               data:
                   source_type: GeoJSON
                   source: tests/data/ne_110m_lakes.geojson
-                  source_srs: EPSG:4326
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
 
@@ -576,97 +591,107 @@ resources:
               id_field: id
               layer: ne_110m_lakes
 
-#    ogr_gpkg_wales_railway_lines:
-#        type: collection
-#        title: Railway lines in Wales (UK) via OGR GPKG
-#        description: Railway lines in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
-#        keywords:
-#            - United Kingdom
-#            - Wales
-#            - Train
-#            - Station
-#            - Ordnance Survey
-#        crs:
-#            - CRS84
-#        links:
-#            - type: text/html
-#              rel: canonical
-#              title: information
-#              href: https://www.ordnancesurvey.co.uk/
-#              hreflang: en-US
-#        extents:
-#            spatial:
-#                bbox: [51.6, -4.5, 52.0, -4.0]
-#                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-#            temporal:
-#                begin:
-#                end: null  # or empty
-#        providers:
-#            - type: feature
-#              name: OGR
-#              data:
-#                  source_type: GPKG
-#                  source: data/wales_railway_lines.gpkg
-#                  source_srs: EPSG:27700
-#                  target_srs: EPSG:4326
-#                  source_capabilities:
-#                      paging: True
-#
-#                  gdal_ogr_options:
-#                      EMPTY_AS_NULL: NO
-#                      GDAL_CACHEMAX: 64
-#                      # GDAL_HTTP_PROXY: (optional proxy)
-#                      # GDAL_PROXY_AUTH: (optional auth for remote WFS)
-#                      CPL_DEBUG: NO
-#
-#              id_field: id
-#              layer: rail
-#
-#    ogr_gpkg_wales_stations:
-#        type: collection
-#        title: Railway stations in Wales (UK) via OGR GPKG
-#        description: Railway stations in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
-#        keywords:
-#            - United Kingdom
-#            - Wales
-#            - Train
-#            - Station
-#            - Ordnance Survey
-#        crs:
-#            - CRS84
-#        links:
-#            - type: text/html
-#              rel: canonical
-#              title: information
-#              href: https://www.ordnancesurvey.co.uk/
-#              hreflang: en-US
-#        extents:
-#            spatial:
-#                bbox: [51.6, -4.5, 52.0, -4.0]
-#                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-#            temporal:
-#                begin:
-#                end: null  # or empty
-#        providers:
-#            - type: feature
-#              name: OGR
-#              data:
-#                  source_type: GPKG
-#                  source: data/wales_railway_stations.gpkg
-#                  source_srs: EPSG:27700
-#                  target_srs: EPSG:4326
-#                  source_capabilities:
-#                      paging: True
-#
-#                  gdal_ogr_options:
-#                      EMPTY_AS_NULL: NO
-#                      GDAL_CACHEMAX: 64
-#                      # GDAL_HTTP_PROXY: (optional proxy)
-#                      # GDAL_PROXY_AUTH: (optional auth for remote WFS)
-#                      CPL_DEBUG: NO
-#
-#              id_field: id
-#              layer: railway_stations
+    ogr_gpkg_wales_railway_lines:
+        type: collection
+        title: Railway lines in Wales (UK) via OGR GPKG
+        description: Railway lines in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
+        keywords:
+            - United Kingdom
+            - Wales
+            - Train
+            - Station
+            - Ordnance Survey
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.ordnancesurvey.co.uk/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-4.5,51.6,-4.0,52.0]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin:
+                end: null  # or empty
+        providers:
+            - type: feature
+              name: OGR
+              data:
+                  source_type: GPKG
+                  source: data/wales_railway_lines.gpkg
+                  source_capabilities:
+                      paging: True
+
+                  gdal_ogr_options:
+                      EMPTY_AS_NULL: NO
+                      GDAL_CACHEMAX: 64
+                      # GDAL_HTTP_PROXY: (optional proxy)
+                      # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                      CPL_DEBUG: NO
+
+              id_field: id
+              layer: rail
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/27700
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/27700
+
+    ogr_gpkg_wales_stations:
+        type: collection
+        title: Railway stations in Wales (UK) via OGR GPKG
+        description: Railway stations in Wales (UK) from Ordnance Survey. Uses GeoPackage backend via OGR provider.
+        keywords:
+            - United Kingdom
+            - Wales
+            - Train
+            - Station
+            - Ordnance Survey
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.ordnancesurvey.co.uk/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-4.5,51.6,-4.0,52.0]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin:
+                end: null  # or empty
+        providers:
+            - type: feature
+              name: OGR
+              data:
+                  source_type: GPKG
+                  source: data/wales_railway_stations.gpkg
+                  source_capabilities:
+                      paging: True
+
+                  gdal_ogr_options:
+                      EMPTY_AS_NULL: NO
+                      GDAL_CACHEMAX: 64
+                      # GDAL_HTTP_PROXY: (optional proxy)
+                      # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+                      CPL_DEBUG: NO
+
+              id_field: id
+              layer: railway_stations
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/27700
+              storage_crs: http://www.opengis.net/def/crs/EPSG/0/27700
 
     ogr_addresses_sqlite:
         type: collection
@@ -698,8 +723,6 @@ resources:
                   source_type: SQLite
                   # source: tests/data/ne_110m_admin_0_countries.sqlite
                   source: tests/data/dutch_addresses_4326.sqlite
-                  source_srs: EPSG:4326
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
 
@@ -712,6 +735,13 @@ resources:
 
               id_field: id
               layer: ogrgeojson
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/28992
+              storage_crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
 
     ogr_addresses_gpkg:
         type: collection
@@ -742,8 +772,6 @@ resources:
               data:
                   source_type: GPKG
                   source: tests/data/dutch_addresses_4326.gpkg
-                  source_srs: EPSG:4326
-                  target_srs: EPSG:4326
                   source_capabilities:
                       paging: True
 
@@ -756,7 +784,69 @@ resources:
 
               id_field: id
               layer: OGRGeoJSON
+              crs:
+                  - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                  - http://www.opengis.net/def/crs/EPSG/0/4326
+                  - http://www.opengis.net/def/crs/EPSG/0/3857
+                  - http://www.opengis.net/def/crs/EPSG/0/4258
+                  - http://www.opengis.net/def/crs/EPSG/0/28992
+              storage_crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
 
+    gdps-temperature:
+        type: collection
+        title: Global Deterministic Prediction System sample
+        description: Global Deterministic Prediction System sample
+        keywords:
+            - gdps
+            - global
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://eccc-msc.github.io/open-data/msc-data/nwp_gdps/readme_gdps_en
+              hreflang: en-CA
+        providers:
+            - type: coverage
+              name: rasterio
+              data: tests/data/CMC_glb_TMP_TGL_2_latlon.15x.15_2020081000_P000.grib2
+              options:
+                  DATA_ENCODING: COMPLEX_PACKING
+              format:
+                  name: GRIB
+                  mimetype: application/x-grib2
+
+    icoads-sst:
+        type: collection
+        title: International Comprehensive Ocean-Atmosphere Data Set (ICOADS)
+        description: International Comprehensive Ocean-Atmosphere Data Set (ICOADS)
+        keywords:
+            - icoads
+            - sst
+            - air temperature
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2000-01-16T06:00:00Z
+                end: 2000-12-16T06:00:00Z
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://psl.noaa.gov/data/gridded/data.coads.1deg.html
+              hreflang: en-US
+        providers:
+            - type: edr
+              name: xarray-edr
+              data: tests/data/coads_sst.nc
+              format:
+                  name: NetCDF
+                  mimetype: application/x-netcdf
 
 #    countries:
 #        type: collection
@@ -830,6 +920,88 @@ resources:
 #
 #              id_field: objectid
 #              layer: 311Incidents
+
+    dutch-metadata:
+        type: collection
+        title: Sample metadata records from Dutch Nationaal georegister
+        description: Sample metadata records from Dutch Nationaal georegister
+        keywords:
+            - netherlands
+            - open data
+            - georegister
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.nationaalgeoregister.nl
+              hreflang: nl-NL
+        extents:
+            spatial:
+                bbox: [3.37,50.75,7.21,53.47]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: record
+              name: TinyDBCatalogue
+              data: data/nationaalgeoregister.nl/sample-records.tinydb
+              id_field: externalId
+              time_field: created
+              title_field: title
+
+    test-data:
+        type: stac-collection
+        title: pygeoapi test data
+        description: pygeoapi test data
+        keywords:
+            - test data
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://github.com/geopython/pygeoapi/tree/master/tests/data
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: stac
+              name: FileSystem
+              data: tests/data
+              file_types:
+                  - .gpkg
+                  - .sqlite
+                  - .csv
+                  - .grib2
+                  - .tif
+                  - .shp
+
+    mapserver_world_map:
+        type: collection
+        title: MapServer demo WMS world map
+        description: MapServer demo WMS world map
+        keywords:
+            - MapServer
+            - world map
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://demo.mapserver.org
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: map
+              name: WMSFacade
+              data: https://demo.mapserver.org/cgi-bin/msautotest
+              options:
+                  layer: world_latlong
+                  style: default
+              format:
+                    name: png
+                    mimetype: image/png
 
     hello-world:
         type: process

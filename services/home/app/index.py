@@ -71,7 +71,7 @@ def page(page_name):
 
         result = render_template(page_file)
     except Exception as e:
-        result = render_template('error.html')
+        result = render_template('error.html'), 404
 
     return result
 

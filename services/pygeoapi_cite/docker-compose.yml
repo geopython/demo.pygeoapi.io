@@ -2,44 +2,13 @@ version: "3"
 
 services:
 
-  elasticsearch_cite:
-    image: geopython/elasticsearch_cite:latest
-    build: ./elasticsearch
-
-    container_name: elasticsearch_cite
-
-    environment:
-      - node.name=elasticsearch_cite
-      - cluster.name=es-docker-cluster
-      - cluster.initial_master_nodes=elasticsearch_cite
-      - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - xpack.security.enabled=false
-
-    ulimits:
-      nofile:
-        soft: 65535
-        hard: 65535
-      memlock:
-        soft: -1
-        hard: -1
-
-#    ports:
-#      - 9200:9200
-#      - 9300:9300
-
   pygeoapi_cite:
+
     image: geopython/pygeoapi_cite:latest
 
     build: ./pygeoapi
 
     container_name: pygeoapi_cite
-
-    depends_on:
-      - elasticsearch_cite
-
-    links:
-      - elasticsearch_cite
 
     restart: unless-stopped
 

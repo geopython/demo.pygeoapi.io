@@ -103,7 +103,7 @@ resources:
         providers:
             - type: feature
               name: TinyDB
-              data: /pygeoapi/tests/cite/canada-hydat-daily-mean-02HC003.tinydb
+              data: /pygeoapi/tests/data/canada-hydat-daily-mean-02HC003.tinydb
               id_field: IDENTIFIER
               time_field: DATE
               crs:

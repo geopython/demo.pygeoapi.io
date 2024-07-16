@@ -102,8 +102,8 @@ resources:
 
         providers:
             - type: feature
-              name: Elasticsearch
-              data: http://elasticsearch_cite:9200/canada-hydat-daily-mean-02hc003
+              name: TinyDB
+              data: /pygeoapi/tests/cite/canada-hydat-daily-mean-02HC003.tinydb
               id_field: IDENTIFIER
               time_field: DATE
               crs:

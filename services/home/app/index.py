@@ -4,12 +4,13 @@ import sys
 from datetime import datetime
 from functools import wraps, update_wrapper
 
-from config import config
+from config import base_url, config, services
 from flask import Flask, render_template, make_response, send_from_directory
 
 
 if __name__ != '__main__':
-    # When run with WSGI in Apache we need to extend the PYTHONPATH to find Python modules relative to index.py
+    # When run with WSGI in Apache we need to extend the PYTHONPATH
+    # to find Python modules relative to index.py
     sys.path.insert(0, os.path.dirname(__file__))
 
 app = Flask(__name__)
@@ -30,7 +31,7 @@ def nocache(view):
     def no_cache(*args, **kwargs):
         response = make_response(view(*args, **kwargs))
         response.headers['Last-Modified'] = datetime.now()
-        response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+        response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'  # noqa
         response.headers['Pragma'] = 'no-cache'
         response.headers['Expires'] = '-1'
         return response
@@ -43,6 +44,37 @@ def nocache(view):
 @nocache
 def home():
     return page('home')
+
+
+# API catalog
+@app.route('/api-catalog.json')
+@app.route('/.well-known/api-catalog')
+@nocache
+def api_catalog():
+    response = {
+        'linkset': []
+    }
+
+    for service in services:
+        url = f"{base_url}{service['href']}"
+        response['linkset'].append({
+            'anchor': service['href'],
+            'service-desc': [{
+                'href': f'{url}/openapi?f=json',
+                'title': f"{service['title']} (JSON)",
+                'type': 'application/vnd.oai.openapi+json'
+            }],
+            'service-doc': [{
+                'href': f'{url}/openapi?f=html',
+                'title': f"{service['title']} (HTML)",
+                'type': 'text/html'
+            }],
+        })
+
+    r = make_response(response)
+    r.mimetype = 'application/linkset+json'
+
+    return r
 
 
 # Specific page
@@ -69,11 +101,12 @@ def page(page_name):
         else:
             page_file = '%s%s' % (page_name, '.html')
 
-        result = render_template(page_file)
-    except Exception as e:
+        result = render_template(page_file, services=services)
+    except Exception:
         result = render_template('error.html'), 404
 
     return result
+
 
 if __name__ == '__main__':
     # Run as main via python index.py

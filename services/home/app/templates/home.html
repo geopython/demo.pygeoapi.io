@@ -11,21 +11,16 @@
     <table style="width: auto;" class="table table-bordered table-condensed table-responsive">
         <thead>
         <tr>
-            <th width="50%">Demonstrations</th>
+            <th width="50%">Demonstrations (<a href="{{ url_for('api_catalog') }}" rel="api-catalog">API Catalog</a>)</th>
         </tr>
         </thead>
+
+        {% for service in services %}
         <tr>
-            <td><a target="_blank" href="/master" class="btn btn-success">pygeoapi - latest GitHub 'master' version</a></td>
+            <td><a target="_blank" href="{{ service['href'] }}" class="btn btn-success">{{ service['title'] }}</a></td>
         </tr>
-        <tr>
-            <td><a target="_blank" href="/stable" class="btn btn-success">pygeoapi - latest stable version</a></td>
-        </tr>
-        <tr>
-            <td><a target="_blank" href="/cite" class="btn btn-success">pygeoapi - CITE endpoint - latest GitHub 'master' version</a></td>
-        </tr>
-        <tr>
-            <td><a target="_blank" href="/covid-19" class="btn btn-success">pygeoapi - COVID-19 endpoint - latest GitHub 'master' version</a></td>
-        </tr>
+        {% endfor %}
+
         <tr>
             <td><a target="_blank" href="https://opengeogroep.github.io/ogc-api-features-testclient/src/index.html" class="btn btn-success">Test Client - by OpenGeoGroep</a></td>
         </tr>

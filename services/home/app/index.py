@@ -58,7 +58,7 @@ def api_catalog():
     for service in services:
         url = f"{base_url}{service['href']}"
         response['linkset'].append({
-            'anchor': service['href'],
+            'anchor': url,
             'service-desc': [{
                 'href': f'{url}/openapi?f=json',
                 'title': f"{service['title']} (JSON)",

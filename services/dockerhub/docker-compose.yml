@@ -1,5 +1,3 @@
-version: "3"
-
 services:
 
   #  See https://github.com/maccyber/micro-dockerhub-hook
@@ -26,7 +24,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./scripts:/src/scripts
-      # Paths to docker-compose files who are triggered by scripts:
+      # Paths to docker compose files who are triggered by scripts:
       - ./../pygeoapi_master:/srv/pygeoapi_master
       - ./../home:/srv/home
       - ./../pygeoapi_cite:/srv/pygeoapi_cite
@@ -34,6 +32,5 @@ services:
 
 
 networks:
-  default:
-    external:
-      name: pygeoapi-network
+  pygeoapi-network:
+    external: true

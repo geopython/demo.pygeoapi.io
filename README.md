@@ -80,8 +80,8 @@ Have Ansible, Vagrant and VBox installed.
 
 # Setup Vagrant with VirtualBox for Ubuntu 16.04 VM
 cd demo.pygeoapi.io
-vagrant box add geerlingguy/ubuntu1604
-vagrant init geerlingguy/ubuntu1604
+vagrant box add geerlingguy/ubuntu2404
+vagrant init geerlingguy/ubuntu2404
 
 # Will use Vagrantfile for auto-provisioning via Ansible
 vagrant up

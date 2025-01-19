@@ -1,5 +1,5 @@
 # Inspired from https://github.com/5car1z/ansible-debian-provisioning
-- name: "PyGeoAPI Ubuntu Server Setup"
+- name: "pygeoapi Ubuntu Server Setup"
   hosts: all
   become: true
   gather_facts: yes
@@ -54,5 +54,5 @@
       shell: "cd {{ platform_home }}; ./build.sh"
       become_user: "{{ my_admin_user }}"
 
-    - name: "Install PyGeoAPI System Service"
+    - name: "Install pygeoapi System Service"
       shell: "{{ platform_home }}/install.sh"

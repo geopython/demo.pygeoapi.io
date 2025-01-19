@@ -6,4 +6,4 @@ cd /srv/home && ./stop.sh && docker pull geopython/demo.pygeoapi.io:latest && do
 
 echo "Cleaning up..."
 
-cd /src/scripts && ./docker-clean.sh
+cd /src/scripts && docker system prune --force --volumes

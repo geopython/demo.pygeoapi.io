@@ -16,4 +16,4 @@ cd /srv/pygeoapi_covid-19 && ./stop.sh && ./build.sh && docker compose up -d
 
 echo "Cleaning up..."
 
-cd /src/scripts && ./docker-clean.sh
+cd /src/scripts && docker system prune --force --volumes

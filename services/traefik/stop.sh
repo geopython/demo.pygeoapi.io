@@ -6,5 +6,5 @@ export HTTP_PORT=80
 export ACME_FILE="config/acme.json"
 
 docker compose stop
-docker compose rm --force
+docker compose down --remove-orphans
 chmod 600 ${ACME_FILE}

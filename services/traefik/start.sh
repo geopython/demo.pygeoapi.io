@@ -16,4 +16,4 @@ export ACME_FILE="config/acme.json"
   && touch ${ACME_FILE}
 
 chmod 600 ${ACME_FILE}
-docker-compose up -d
+docker compose up -d

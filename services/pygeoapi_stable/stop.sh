@@ -1,4 +1,3 @@
 #!/bin/bash
 
-docker-compose stop
-docker-compose rm --force
+docker compose down --remove-orphans

@@ -1,5 +1,4 @@
 # Runs Home app
-version: '3.1'
 
 services:
   home:
@@ -17,6 +16,5 @@ services:
       - "traefik.docker.network=pygeoapi-network"
 
 networks:
-  default:
-    external:
-      name: pygeoapi-network
+  pygeoapi-network:
+    external: true

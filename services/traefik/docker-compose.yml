@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   proxy:
-    image: traefik:1.7.10-alpine
+    image: traefik:v3.3.2
 
     container_name: traefik
 
@@ -20,7 +20,7 @@ services:
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./config/traefik.${HOSTNAME}.toml:/traefik.toml
+      - ./config/traefik.${HOSTNAME}.yaml:/traefik.yaml
       - ./config/acme.json:/acme.json
       - traefik_logs:/var/log/traefik
 

@@ -1,5 +1,4 @@
 # Runs Home app
-version: '3.1'
 
 services:
   home:
@@ -18,5 +17,5 @@ services:
 
 networks:
   default:
-    external:
-      name: pygeoapi-network
+    name: pygeoapi-network
+    external: true

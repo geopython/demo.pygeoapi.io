@@ -1,4 +1,4 @@
-FROM python:3.6.7-alpine3.8
+FROM python:3.11-alpine3.21
 
 LABEL maintainer="Just van den Broecke <justb4@gmail.com>"
 

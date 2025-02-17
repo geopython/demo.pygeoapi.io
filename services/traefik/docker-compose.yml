@@ -26,5 +26,6 @@ volumes:
   traefik_logs:
 
 networks:
-  pygeoapi-network:
+  default:
+    name: pygeoapi-network
     external: true

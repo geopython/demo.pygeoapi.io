@@ -27,5 +27,6 @@ services:
       - "traefik.docker.network=pygeoapi-network"
 
 networks:
-  pygeoapi-network:
+  default:
+    name: pygeoapi-network
     external: true

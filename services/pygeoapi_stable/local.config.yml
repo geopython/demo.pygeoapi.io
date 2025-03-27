@@ -8,7 +8,8 @@ server:
     language: en-US
     cors: true
     pretty_print: true
-    limit: 10
+    limits:
+        max_items: 10
     map:
         url: https://tile.openstreetmap.org/{z}/{x}/{y}.png
         attribution: 'Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
@@ -20,7 +21,7 @@ logging:
 
 metadata:
     identification:
-        title: pygeoapi Demo instance - running latest stable 0.19.0 pygeoapi version
+        title: pygeoapi Demo instance - running latest stable 0.20.0 pygeoapi version
         description: pygeoapi provides an API to geospatial data
         keywords:
             - geospatial

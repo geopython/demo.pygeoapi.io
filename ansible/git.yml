@@ -1,0 +1,19 @@
+- name: "Exec Git Commands on Remote Server"
+  hosts: all
+  gather_facts: yes
+
+  vars_files:
+    - vars/vars.yml
+
+  vars:
+    ansible_ssh_user: "{{ my_admin_user }}"
+    branch: "master"
+
+  tasks:
+    - name: "status"
+      shell: "cd {{ my_git_home }} && git status"
+      tags: status
+
+    - name: "checkout"
+      shell: "cd {{ my_git_home }} && git fetch && git checkout {{ branch }}"
+      tags: checkout

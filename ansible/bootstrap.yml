@@ -1,21 +1,22 @@
 # Inspired from https://github.com/5car1z/ansible-debian-provisioning
 - name: "pygeoapi Ubuntu Server Setup"
   hosts: all
-  become: true
+  become_user: root
   gather_facts: yes
 
   vars_files:
     - vars/vars.yml
 
   roles:
-    # https://github.com/sansible/users_and_groups
-    - name: sansible.users_and_groups
+    # https://github.com/justb4/ansible-users-and-groups
+    - name: justb4.users-and-groups
       tags: users
+      # Users and Groups
       sansible_users_and_groups_users:
         - name: "{{ my_admin_user }}"
           system: yes
           shell: /bin/bash
-          ssh_key: ~/.ssh/id_rsa.pub
+          ssh_key: "{{ my_ssh_pubkey_file }}"
           append: yes
       sansible_users_and_groups_sudoers:
          - name: "{{ my_admin_user }}"
@@ -26,15 +27,6 @@
 
     - name: justb4.ubuntu-base
       tags: ubuntu-base
-
-    - name: justb4.ubuntu-ntp
-      tags: ubuntu-ntp
-
-    - name: oefenweb.postfix
-      tags: postfix
-
-    - name: geerlingguy.pip
-      tags: pip
 
     # https://github.com/geerlingguy/ansible-role-docker
     - name: geerlingguy.docker

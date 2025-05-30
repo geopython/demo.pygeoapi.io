@@ -72,6 +72,20 @@ ansible-playbook -vv service.yml  -i hosts/demo.pygeoapi.io  --tags status
 
 ```
 
+## Git Management
+
+Manage the Git folder on the remote server with git commands. This way one can switch branches remotely via Ansible.
+
+```
+ansible-playbook -v git.yml -i hosts/demo.pygeoapi.io --tags status
+
+# Switch to branch called 'traefik'
+ansible-playbook -v git.yml -i hosts/demo.pygeoapi.io --tags checkout --extra-vars "branch=traefik"
+
+# Switch to branch master (default)
+ansible-playbook -v git.yml -i hosts/demo.pygeoapi.io --tags checkout
+
+```
 
 ## Other
 

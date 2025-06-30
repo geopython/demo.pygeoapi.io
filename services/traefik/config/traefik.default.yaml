@@ -1,0 +1,16 @@
+entryPoints:
+  web:
+    address: ":80"
+
+retry:
+  attempts: 4
+  initialInterval: 5s
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    watch: true
+    exposedbydefault = false
+
+accessLog:
+  filePath: /var/log/traefik/access.log

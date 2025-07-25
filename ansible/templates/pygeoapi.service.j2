@@ -1,0 +1,17 @@
+[Unit]
+Description=Runs all pygeoapi related processes
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User={{ my_admin_user }}
+Group={{ my_admin_user }}
+ExecStart={{ platform_home }}/start.sh
+ExecStop={{ platform_home }}/stop.sh
+WorkingDirectory={{ platform_home }}
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

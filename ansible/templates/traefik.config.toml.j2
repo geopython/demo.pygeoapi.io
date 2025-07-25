@@ -1,8 +1,6 @@
 # defaultEntryPoints must be at the top because it should not be in any table below
-# Initial from:
-# https://github.com/containerize-my-server/reverse-proxy/blob/master/traefik.toml
+# Configuration for {{ inventory_hostname }}
 defaultEntryPoints = ["http", "https"]
-
 
 # Entrypoints, http and https
 [entryPoints]
@@ -18,7 +16,7 @@ defaultEntryPoints = ["http", "https"]
     [entryPoints.https.tls]
 
 [acme]
-email = "just@justobjects.nl"
+email = "{{ my_email }}"
 storage = "/acme.json"
 entryPoint = "https"
 onHostRule = false
@@ -27,13 +25,13 @@ onDemand = false
 [acme.tlsChallenge] #enables the TLS ALPN Challenge
 
 [[acme.domains]]
-  main = "demo.pygeoapi.io"
+  main = "{{ inventory_hostname }}"
 
 [retry]
 
 [docker]
 endpoint = "unix:///var/run/docker.sock"
-domain = "pygeoapi.io"
+domain = "{{ inventory_hostname.split('.')[1:] | join('.') }}"
 watch = true
 exposedbydefault = false
 

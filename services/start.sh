@@ -11,6 +11,8 @@ SCRIPT_DIR=${0%/*}
 # first create the Docker network
 docker network create --driver bridge pygeoapi-network
 
+#SERVICES="dockerhub pygeoapi_master pygeoapi_stable pygeoapi_cite pygeoapi_covid-19 home traefik"
+# JMDJ disable dockerhub and automatic upgrade so test traefik upgrade
 SERVICES="dockerhub pygeoapi_master pygeoapi_stable pygeoapi_cite pygeoapi_covid-19 home traefik"
 
 for SERVICE in ${SERVICES}

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Stop and remove possibly old containers
+./stop.sh
+
+# Set configuration from Ansible variables
+export HOSTNAME="{{ domain }}"
+export HTTP_PORT={{ http_port }}
+export ACME_FILE="config/acme.json"
+
+echo "Starting Traefik for domain: ${HOSTNAME}"
+echo "HTTP Port: ${HTTP_PORT}"
+echo "Config file: config/traefik.${HOSTNAME}.toml"
+
+# Check if hostname-specific config exists, fallback to default
+if [[ -f "config/traefik.${HOSTNAME}.toml" ]]; then
+    echo "Using domain-specific config: traefik.${HOSTNAME}.toml"
+elif [[ -f "config/traefik.default.toml" ]]; then
+    echo "Using default config: traefik.default.toml"
+    export HOSTNAME="default"
+else
+    echo "Error: No Traefik config found for ${HOSTNAME}"
+    echo "Available configs:"
+    ls -la config/traefik.*.toml 2>/dev/null || echo "No config files found"
+    exit 1
+fi
+
+# Create acme.json if it doesn't exist
+[[ -f ${ACME_FILE} ]] \
+  || { echo "${ACME_FILE} does not exist! creating..." && touch ${ACME_FILE}; }
+
+chmod 600 ${ACME_FILE}
+docker compose up -d

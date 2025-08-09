@@ -1,0 +1,104 @@
+#!/bin/bash
+# ansible/templates/traefik_start.sh.j2
+# Traefik startup script template
+
+set -euo pipefail
+
+# Script configuration
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+HOSTNAME="{{ inventory_hostname }}"
+DOMAIN="{{ domain }}"
+HTTP_PORT="{{ http_port | default(80) }}"
+HTTPS_PORT="{{ https_port | default(443) }}"
+
+# Logging
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"
+}
+
+log "Starting Traefik for domain: ${DOMAIN}"
+
+# Stop existing containers
+log "Stopping existing Traefik containers..."
+./stop.sh || true
+
+# Ensure required directories exist
+log "Creating required directories..."
+mkdir -p config logs
+
+# Set environment variables for docker-compose
+export HOSTNAME
+export DOMAIN
+export HTTP_PORT
+export HTTPS_PORT
+
+# Create or ensure ACME file exists with correct permissions
+ACME_FILE="config/acme.json"
+if [[ ! -f "${ACME_FILE}" ]]; then
+    log "Creating ACME file: ${ACME_FILE}"
+    touch "${ACME_FILE}"
+fi
+
+# Set strict permissions for ACME file
+chmod 600 "${ACME_FILE}"
+
+# Validate configuration file exists
+CONFIG_FILE="config/traefik.${DOMAIN}.yml"
+if [[ ! -f "${CONFIG_FILE}" ]]; then
+    log "ERROR: Configuration file not found: ${CONFIG_FILE}"
+    exit 1
+fi
+
+log "Using configuration: ${CONFIG_FILE}"
+
+# Create Docker network if it doesn't exist
+log "Ensuring Docker network exists..."
+docker network create pygeoapi-network 2>/dev/null || true
+
+# Start Traefik
+log "Starting Traefik container..."
+docker compose up -d
+
+# Wait for container to be healthy
+log "Waiting for Traefik to become healthy..."
+timeout=60
+counter=0
+
+while [ $counter -lt $timeout ]; do
+    if docker compose ps --format json | jq -e '.[] | select(.Service == "traefik" and .Health == "healthy")' >/dev/null 2>&1; then
+        log "✅ Traefik is healthy and running"
+        break
+    fi
+    
+    if [ $counter -eq 0 ]; then
+        log "Waiting for health check..."
+    fi
+    
+    sleep 2
+    counter=$((counter + 2))
+done
+
+if [ $counter -ge $timeout ]; then
+    log "⚠️  Warning: Traefik health check timeout after ${timeout}s"
+    log "Container status:"
+    docker compose ps
+    log "Container logs:"
+    docker compose logs traefik --tail=20
+else
+    log "✅ Traefik started successfully"
+fi
+
+# Display status
+log "=== Traefik Status ==="
+docker compose ps
+log "======================="
+
+log "Traefik startup completed"
+
+{% if traefik_dashboard | default(false) %}
+log "Dashboard available at: http{% if use_https | default(true) %}s{% endif %}://traefik.{{ domain }}"
+{% endif %}
+log "HTTP endpoint: http://{{ domain }}"
+{% if use_https | default(true) %}
+log "HTTPS endpoint: https://{{ domain }}"
+{% endif %}

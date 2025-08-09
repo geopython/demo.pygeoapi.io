@@ -18,16 +18,18 @@ services:
       - "traefik.enable=true"
       
       # HTTP router
-      - "traefik.http.routers.pygeoapi-master.rule=Host(`pygeoapi.terraops.net`) && PathPrefix(`/master`)"
+      - "traefik.http.routers.pygeoapi-master.rule=Host(`{{ domain }}`) && PathPrefix(`/master`)"
       - "traefik.http.routers.pygeoapi-master.entrypoints=web"
       - "traefik.http.routers.pygeoapi-master.priority=100"
       
+{% if use_https | default(true) %}
       # HTTPS router (SSL enabled)
-      - "traefik.http.routers.pygeoapi-master-secure.rule=Host(`pygeoapi.terraops.net`) && PathPrefix(`/master`)"
+      - "traefik.http.routers.pygeoapi-master-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/master`)"
       - "traefik.http.routers.pygeoapi-master-secure.entrypoints=websecure"
       - "traefik.http.routers.pygeoapi-master-secure.tls=true"
       - "traefik.http.routers.pygeoapi-master-secure.tls.certresolver=letsencrypt"
       - "traefik.http.routers.pygeoapi-master-secure.priority=100"
+{% endif %}
       
       # Service configuration
       - "traefik.http.services.pygeoapi-master.loadbalancer.server.port=80"

@@ -9,11 +9,22 @@ services:
     container_name: home
 
     labels:
-      - "traefik.backend=home_app"
       - "traefik.enable=true"
-      - "traefik.frontend.priority=5"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io; PathPrefixStrip:/"
-      - "traefik.docker.network=pygeoapi-network"
+
+      # HTTP router (root path)
+      - "traefik.http.routers.home.rule=Host(`{{ domain }}`)"
+      - "traefik.http.routers.home.entrypoints=web"
+      - "traefik.http.routers.home.priority=5"
+
+      # HTTPS router (root path)
+      - "traefik.http.routers.home-secure.rule=Host(`{{ domain }}`)"
+      - "traefik.http.routers.home-secure.entrypoints=websecure"
+      - "traefik.http.routers.home-secure.tls=true"
+      - "traefik.http.routers.home-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.home-secure.priority=5"
+
+      # Service configuration
+      - "traefik.http.services.home.loadbalancer.server.port=80"
 
 networks:
   default:

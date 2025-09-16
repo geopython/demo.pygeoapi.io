@@ -13,13 +13,7 @@ docker network create --driver bridge pygeoapi-network
 
 #SERVICES="dockerhub pygeoapi_master pygeoapi_stable pygeoapi_cite pygeoapi_covid-19 home traefik"
 # JMDJ disable dockerhub and automatic upgrade so test traefik upgrade
-<<<<<<< HEAD
 SERVICES="pygeoapi_master pygeoapi_stable pygeoapi_cite pygeoapi_covid-19 home traefik"
-
-=======
-#SERVICES="pygeoapi_master pygeoapi_stable pygeoapi_cite pygeoapi_covid-19 home traefik"
-SERVICES="pygeoapi_master traefik"
->>>>>>> 46748acf3a801ab93902826a8a2aefb61d7efcb3
 for SERVICE in ${SERVICES}
 do
 	pushd ${SCRIPT_DIR}/${SERVICE}

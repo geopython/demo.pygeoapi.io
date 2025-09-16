@@ -10,18 +10,18 @@ export ACME_FILE="config/acme.json"
 
 echo "Starting Traefik for domain: ${HOSTNAME}"
 echo "HTTP Port: ${HTTP_PORT}"
-echo "Config file: config/traefik.${HOSTNAME}.toml"
+echo "Config file: config/traefik.${HOSTNAME}.yml"
 
 # Check if hostname-specific config exists, fallback to default
-if [[ -f "config/traefik.${HOSTNAME}.toml" ]]; then
-    echo "Using domain-specific config: traefik.${HOSTNAME}.toml"
-elif [[ -f "config/traefik.default.toml" ]]; then
-    echo "Using default config: traefik.default.toml"
+if [[ -f "config/traefik.${HOSTNAME}.yml" ]]; then
+    echo "Using domain-specific config: traefik.${HOSTNAME}.yml"
+elif [[ -f "config/traefik.default.yml" ]]; then
+    echo "Using default config: traefik.default.yml"
     export HOSTNAME="default"
 else
     echo "Error: No Traefik config found for ${HOSTNAME}"
     echo "Available configs:"
-    ls -la config/traefik.*.toml 2>/dev/null || echo "No config files found"
+    ls -la config/traefik.*.yml 2>/dev/null || echo "No config files found"
     exit 1
 fi
 

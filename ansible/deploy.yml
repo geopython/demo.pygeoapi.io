@@ -11,7 +11,7 @@
 
   pre_tasks:
     - name: "Clone or Update Git Repo"
-      git: "repo={{ my_github_repo }} dest={{ my_git_home }} version=master clone=yes force=yes accept_hostkey=True"
+      git: "repo={{ my_github_repo }} dest={{ my_git_home }} version={{ my_git_branch | default('master') }} clone=yes force=yes accept_hostkey=True"
       tags: update
 
     - name: copy DockerHub env file

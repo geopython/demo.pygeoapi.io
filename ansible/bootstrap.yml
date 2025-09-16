@@ -55,7 +55,7 @@
       git: 
         repo: "{{ my_github_repo }}"
         dest: "{{ my_git_home }}"
-        version: "{{ git_branch | default('master') }}"
+        version: "{{ my_git_branch | default('master') }}"
         clone: yes
         force: yes
         accept_hostkey: true

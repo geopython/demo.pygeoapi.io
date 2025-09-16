@@ -1,33 +1,60 @@
 #!/bin/bash
+# ansible/templates/traefik_start.sh.j2
+# Updated Traefik start script for YAML configs
 
-# Stop and remove possibly old containers
-./stop.sh
+set -e
 
-# Set configuration from Ansible variables
-export HOSTNAME="{{ domain }}"
-export HTTP_PORT={{ http_port }}
+echo "Starting Traefik for domain: pygeoapi.terraops.net"
+
+# Stop existing containers first
+./stop.sh || true
+
+# Set environment variables
+export HOSTNAME="pygeoapi.terraops.net"
+export HTTP_PORT=80
 export ACME_FILE="config/acme.json"
 
-echo "Starting Traefik for domain: ${HOSTNAME}"
 echo "HTTP Port: ${HTTP_PORT}"
 echo "Config file: config/traefik.${HOSTNAME}.yml"
 
-# Check if hostname-specific config exists, fallback to default
-if [[ -f "config/traefik.${HOSTNAME}.yml" ]]; then
-    echo "Using domain-specific config: traefik.${HOSTNAME}.yml"
-elif [[ -f "config/traefik.default.yml" ]]; then
-    echo "Using default config: traefik.default.yml"
-    export HOSTNAME="default"
-else
-    echo "Error: No Traefik config found for ${HOSTNAME}"
+# Check if YAML config exists
+CONFIG_FILE="config/traefik.${HOSTNAME}.yml"
+if [[ ! -f "${CONFIG_FILE}" ]]; then
+    echo "ERROR: Configuration file not found: ${CONFIG_FILE}"
     echo "Available configs:"
-    ls -la config/traefik.*.yml 2>/dev/null || echo "No config files found"
+    ls -la config/traefik.*.yml 2>/dev/null || echo "No YAML config files found"
     exit 1
 fi
 
-# Create acme.json if it doesn't exist
-[[ -f ${ACME_FILE} ]] \
-  || { echo "${ACME_FILE} does not exist! creating..." && touch ${ACME_FILE}; }
+echo "Using YAML configuration: ${CONFIG_FILE}"
 
-chmod 600 ${ACME_FILE}
+# Create acme.json if it doesn't exist
+if [[ ! -f "${ACME_FILE}" ]]; then
+    echo "Creating ACME file: ${ACME_FILE}"
+    touch "${ACME_FILE}"
+fi
+
+chmod 600 "${ACME_FILE}"
+
+# Validate docker-compose syntax
+echo "Validating docker-compose configuration..."
+docker compose config > /dev/null
+
+# Start Traefik
+echo "Starting Traefik container..."
 docker compose up -d
+
+# Check if it started
+sleep 3
+if docker ps | grep -q traefik; then
+    echo "✅ Traefik started successfully"
+    docker ps | grep traefik
+else
+    echo "❌ Traefik failed to start"
+    docker compose logs
+    exit 1
+fi
+
+echo "Traefik startup completed"
+echo "HTTP endpoint: http://pygeoapi.terraops.net"
+echo "HTTPS endpoint: https://pygeoapi.terraops.net"

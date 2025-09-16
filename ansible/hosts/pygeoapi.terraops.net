@@ -1,5 +1,0 @@
-[pygeoapi_terraops]
-pygeoapi.terraops.net ansible_port=22 ansible_user=mende012 ansible_host=pygeoapi.terraops.net
-
-[pygeoapi_terraops:vars]
-ansible_python_interpreter=/usr/bin/python3

@@ -1,23 +1,99 @@
+# ansible/vars/vars.example.yml
 ---
-my_ssh_pubkey_file: ~/.ssh/id_rsa.pub
-my_email: you@domain.com
-my_admin_user: <admin username>
+# vars.example.yml - Example configuration for pygeoapi deployment
+# Copy this to vars/vars.yml and customize for your environment
+
+# =============================================================================
+# REQUIRED SETTINGS - You MUST customize these
+# =============================================================================
+
+# SSH and user settings
+my_ssh_pubkey_file: ~/.ssh/id_rsa.pub  # Path to your SSH public key
+my_email: admin@yourdomain.com         # Your email address
+my_admin_user: pygeo                   # Admin user to create on server
+
+# Git repository
+my_github_repo: https://github.com/geopython/demo.pygeoapi.io.git
+
+# =============================================================================
+# AUTOMATIC SETTINGS - Usually don't need to change
+# =============================================================================
+
+# Directory structure (automatically derived from my_admin_user)
 my_admin_home: "/home/{{ my_admin_user }}"
 my_git_home: "{{ my_admin_home }}/git"
-my_github_repo: https://github.com/geopython/demo.pygeoapi.io.git
 var_dir: /var/pygeoapi
 logs_dir: "{{ var_dir }}/log"
 services_home: "{{ my_git_home }}/services"
 platform_home: "{{ my_git_home }}/platform"
+
+# Git settings
+git_branch: master  # Can be overridden via command line
+
+# Network settings (automatically uses hostname from inventory)
+domain: "{{ inventory_hostname }}"  # Dynamic domain based on target host
+http_port: 80
+https_port: 443
+
+# =============================================================================
+# OPTIONAL SETTINGS - Customize as needed
+# =============================================================================
+
+# SSL/HTTPS configuration
+use_https: true                        # Set to false for development
+letsencrypt_email: "{{ my_email }}"   # Email for Let's Encrypt certificates
+
+# Traefik reverse proxy settings
+traefik_version: v2.10
+traefik_log_level: DEBUG               # DEBUG, INFO, WARN, ERROR
+
+# SystemD service settings
+systemd_restart_sec: 30               # Seconds to wait before restart
+
+# Docker settings
+docker_compose_version: "3.8"
+
+# Python packages to install
 pip_install_packages:
   - name: docker
-postfix_aliases:
-  - user: root
-    alias: <yourname>@gmail.com
-postfix_relayhost: smtp.gmail.com
-postfix_relaytls: true
-postfix_smtp_tls_cafile: /etc/ssl/certs/ca-certificates.crt
-postfix_sasl_user: '<yourname>@gmail.com'
-postfix_sasl_password: 'the gmail password in quotes'
-timezone: Europe/Amsterdam
-ufw_open_ports: ['22', '80', '443']
+
+# System settings
+timezone: Europe/Amsterdam             # Your timezone
+deployment_environment: production  # or 'development', 'staging'
+
+# Firewall settings
+ufw_open_ports: ['22', '80', '443']   # Ports to open in firewall
+
+# Environment settings (can be overridden in inventory)
+# B4 was environment but it is a restricted word
+
+# pygeoapi specific settings 
+pygeoapi_log_level: ERROR  # DEBUG, INFO, WARN, ERROR
+contact_name: "Jorge the Admin"
+country: "Netherlands"
+ 
+# =============================================================================
+# MAIL CONFIGURATION (Optional - remove if not using email)
+# =============================================================================
+
+# Email relay configuration (for system notifications)
+#postfix_aliases:
+#  - user: root
+#    alias: "{{ my_email }}"
+#postfix_relayhost: smtp.gmail.com
+#postfix_relaytls: true
+#postfix_smtp_tls_cafile: /etc/ssl/certs/ca-certificates.crt
+#postfix_sasl_user: "{{ my_email }}"
+#postfix_sasl_password: 'your-gmail-app-password'  # Use app-specific password
+
+# =============================================================================
+# DEVELOPMENT OVERRIDES (Uncomment for development environments)
+# =============================================================================
+
+# Development settings - uncomment these for local/dev environments:
+# use_https: false
+# http_port: 8000
+# traefik_dashboard: true
+# traefik_log_level: DEBUG
+# environment: development
+# ufw_open_ports: ['22', '8000', '8080']

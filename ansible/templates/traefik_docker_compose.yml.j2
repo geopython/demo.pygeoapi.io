@@ -1,3 +1,4 @@
+# ansible/templates/traefik_docker_compose.yml.j2
 services:
   proxy:
     image: traefik:v2.11.9
@@ -8,6 +9,7 @@ services:
 {% if use_https | default(true) %}
       - "443:443"
 {% endif %}
+      - "8090:8080"  # Dashboard on different external port, testing now
     labels:
       - "traefik.enable=false"
     volumes:

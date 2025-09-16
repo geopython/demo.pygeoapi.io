@@ -1,6 +1,6 @@
 services:
   proxy:
-    image: traefik:v2.10
+    image: traefik:v2.10.7
     container_name: traefik
     restart: unless-stopped
     ports:

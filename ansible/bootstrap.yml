@@ -1,3 +1,6 @@
+
+
+
 # bootrap.yml
 # Inspired from https://github.com/5car1z/ansible-debian-provisioning
 - name: "pygeoapi Ubuntu Server Setup"
@@ -8,6 +11,17 @@
 
   vars_files:
     - vars/vars.yml
+
+  # make it monkey/Jorge proof 
+  pre_tasks:
+    - name: "Validate required variables"
+      assert:
+        that:
+          - my_admin_user is defined
+          - my_ssh_pubkey_file is defined
+          - my_github_repo is defined
+          - domain is defined
+        fail_msg: "Required variables are missing. Check vars/vars.yml"
 
   roles:
     # https://github.com/justb4/ansible-users-and-groups
@@ -37,72 +51,156 @@
         - "{{ my_admin_user }}"
 
   tasks:
+    - name: "Clone or Update Git Repository"
+      git: 
+        repo: "{{ my_github_repo }}"
+        dest: "{{ my_git_home }}"
+        version: "{{ git_branch | default('master') }}"
+        clone: yes
+        force: yes
+        accept_hostkey: true
+      tags: git
+    #- name: "Clone or Update Git Repo"
+    #  git: "repo={{ my_github_repo }} dest={{ my_git_home }} version=master clone=yes force=yes accept_hostkey=True"
 
-    - name: "Clone or Update Git Repo"
-      git: "repo={{ my_github_repo }} dest={{ my_git_home }} version={{ my_git_branch | default('master') }} clone=yes force=yes accept_hostkey=True"
+    - name: "Setup directories and permissions"
+      file:
+        path: "{{ item }}"
+        state: directory
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0755'
+      loop:
+        - "{{ logs_dir }}"
+        - "{{ var_dir }}"
+        - "{{ services_home }}/traefik/config"
+      tags: directories
 
-    - name: "Setup dirs and ownerships"
-      shell: "mkdir -p {{ logs_dir }}; chown -R {{ my_admin_user }}:{{ my_admin_user }} {{ var_dir }} {{ my_git_home }}"
+    - name: "Set ownership of git directory"
+      file:
+        path: "{{ my_git_home }}"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        recurse: yes
+      tags: directories
 
-    # otherwise docker cant reach pypi, or it needs --network=host (test: docker run --rm --network=host alpine nslookup pypi.org)
-    - name: "Configure Docker daemon with DNS"
+    #- name: "Setup dirs and ownerships"
+    #  shell: "mkdir -p {{ logs_dir }}; chown -R {{ my_admin_user }}:{{ my_admin_user }} {{ var_dir }} {{ my_git_home }}"
+
+    #otherwise docker cant reach pypi, or it needs --network=host (test: docker run --rm --network=host alpine nslookup pypi.org)
+    - name: "Configure Docker daemon with DNS and logs"
       copy:
         content: |
           {
             "iptables": true,
-            "dns": ["8.8.8.8", "1.1.1.1"]
+            "dns": ["8.8.8.8", "1.1.1.1"],
+            "log-driver": "json-file",
+            "log-opts": {
+              "max-size": "10m",
+              "max-file": "3"
+            }
           }
+          
         dest: /etc/docker/daemon.json
         mode: '0644'
+        # Ansible to create a backup copy of an existing file before modifying or replacing it
+        backup: yes
       notify: restart docker
 
-    - name: "Restart Docker service"
-      systemd:
-        name: docker
-        state: restarted
-        daemon_reload: yes
+    #- name: "Restart Docker service"
+    #  systemd:
+    #    name: docker
+    #    state: restarted
+    #    daemon_reload: yes
+    - name: "Create Docker network"
+      docker_network:
+        name: pygeoapi-network
+        state: present
+      tags: docker
+
 
     # on server you can tail the docker build like this
     # sudo journalctl -fu docker.service 
-    - name: "Build All Docker Images"
-      shell: "cd {{ platform_home }}; ./build.sh"
+    - name: "Build Docker Images"
+      shell: "cd {{ platform_home }} && ./build.sh"
       become_user: "{{ my_admin_user }}"
+      tags: build
+
+    
+    #- name: "Build All Docker Images"
+    #  shell: "cd {{ platform_home }}; ./build.sh"
+    #  become_user: "{{ my_admin_user }}"
 
     - name: "Create pygeoapi systemd service file with correct paths"
       template:
         src: pygeoapi.service.j2
         dest: /usr/lib/systemd/system/pygeoapi.service
         mode: '0644'
+        backup: yes
       notify: reload systemd
+      tags: systemd
+    
 
-    # Remove TOML config generation - using YAML only for Traefik v2+
-
-    - name: "Configure Traefik 2.x YAML config for current hostname"
+    # New yaml no more toml - using YAML only for Traefik v2+
+    - name: "Create Traefik YAML configuration"
       template:
         src: traefik.config.yml.j2
         dest: "{{ services_home }}/traefik/config/traefik.{{ domain }}.yml"
         owner: "{{ my_admin_user }}"
         group: "{{ my_admin_user }}"
         mode: '0644'
+        backup: yes
+      tags: traefik
 
-    - name: "Configure Traefik 2.x docker-compose.yml"
+    - name: "Configure Traefik 2.x YAML config for current hostname"
       template:
         src: traefik_docker_compose.yml.j2
         dest: "{{ services_home }}/traefik/docker-compose.yml"
         owner: "{{ my_admin_user }}"
         group: "{{ my_admin_user }}"
         mode: '0644'
+        backup: yes
+      tags: traefik
 
-    - name: "Configure Traefik start script"
+
+    - name: "Create Traefik start script"
       template:
         src: traefik_start.sh.j2
         dest: "{{ services_home }}/traefik/start.sh"
         owner: "{{ my_admin_user }}"
         group: "{{ my_admin_user }}"
         mode: '0755'
+      tags: traefik
 
+    - name: "Create ACME file for SSL certificates"
+      file:
+        path: "{{ services_home }}/traefik/config/acme.json"
+        state: touch
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0600'
+      when: use_https | default(true)
+      tags: traefik
+    
+    - name: "Create pygeoapi_master configuration"
+      template:
+        src: local.config.yml.j2
+        dest: "{{ services_home }}/pygeoapi_master/local.config.yml"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0644'
+        backup: yes
+      tags: pygeoapi
 
-
+    - name: "Create pygeoapi_master docker-compose.yml"
+      template:
+        src: pygeoapi_master_docker_compose.yml.j2
+        dest: "{{ services_home }}/pygeoapi_master/docker-compose.yml"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0644'
+        backup: yes
+      tags: pygeoapi
 
     - name: "Enable and start pygeoapi service"
       systemd:
@@ -110,7 +208,7 @@
         enabled: yes
         state: started
         daemon_reload: yes
-
+      tags: systemd
       
 
   handlers:

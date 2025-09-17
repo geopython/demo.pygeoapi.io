@@ -28,7 +28,6 @@ providers:
     exposedByDefault: false
     network: "pygeoapi-network"
     watch: true
-    pollInterval: "5s"
 {% if domain.split('.') | length > 1 %}
     defaultRule: "Host(`{{ domain }}`)"
 {% endif %}

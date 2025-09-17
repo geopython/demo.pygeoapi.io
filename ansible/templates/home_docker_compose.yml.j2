@@ -1,4 +1,5 @@
 # Runs Home app
+version: '3.1'
 
 services:
   home:
@@ -11,13 +12,14 @@ services:
     labels:
       - "traefik.enable=true"
 
-      # HTTP router (root path)
+      # HTTP router (redirects to HTTPS)
       - "traefik.http.routers.home.rule=Host(`{{ domain }}`)"
       - "traefik.http.routers.home.entrypoints=web"
       - "traefik.http.routers.home.priority=5"
-
 {% if use_https | default(true) %}
-      # HTTPS router (root path)
+      - "traefik.http.routers.home.middlewares=redirect-to-https"
+
+      # HTTPS router (secure)
       - "traefik.http.routers.home-secure.rule=Host(`{{ domain }}`)"
       - "traefik.http.routers.home-secure.entrypoints=websecure"
       - "traefik.http.routers.home-secure.tls=true"
@@ -30,5 +32,5 @@ services:
 
 networks:
   default:
-    name: pygeoapi-network
-    external: true
+    external:
+      name: pygeoapi-network

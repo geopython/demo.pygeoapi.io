@@ -4,21 +4,22 @@
 
 set -e
 
-echo "Starting Traefik for domain: pygeoapi.terraops.net"
+echo "Starting Traefik for domain: {{ domain }}"
 
 # Stop existing containers first
 ./stop.sh || true
 
 # Set environment variables
-export HOSTNAME="pygeoapi.terraops.net"
+export HOSTNAME="{{ domain }}"
 export HTTP_PORT=80
 export ACME_FILE="config/acme.json"
 
 echo "HTTP Port: ${HTTP_PORT}"
-echo "Config file: config/traefik.${HOSTNAME}.yml"
+echo "Config file: config/traefik.{{ domain }}.yml"
 
 # Check if YAML config exists
-CONFIG_FILE="config/traefik.${HOSTNAME}.yml"
+CONFIG_FILE="config/traefik.{{ domain }}.yml"
+
 if [[ ! -f "${CONFIG_FILE}" ]]; then
     echo "ERROR: Configuration file not found: ${CONFIG_FILE}"
     echo "Available configs:"
@@ -56,5 +57,5 @@ else
 fi
 
 echo "Traefik startup completed"
-echo "HTTP endpoint: http://pygeoapi.terraops.net"
-echo "HTTPS endpoint: https://pygeoapi.terraops.net"
+echo "HTTP endpoint: http://{{ domain }}"
+echo "HTTPS endpoint: https://{{ domain }}"

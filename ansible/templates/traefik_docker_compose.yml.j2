@@ -5,16 +5,16 @@ services:
     container_name: traefik
     restart: unless-stopped
     ports:
-      - "${HTTP_PORT}:80"
+      - "80:80"
 {% if use_https | default(true) %}
       - "443:443"
 {% endif %}
-      - "8090:8080"  # Dashboard on different external port, testing now
+      - "8090:8080"  # Dashboard
     labels:
       - "traefik.enable=false"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./config/traefik.${HOSTNAME}.yml:/etc/traefik/traefik.yml:ro
+      - ./config/traefik.{{ domain }}.yml:/etc/traefik/traefik.yml:ro
       - ./config/acme.json:/acme.json
       - traefik_logs:/var/log/traefik
 

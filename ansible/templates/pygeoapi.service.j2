@@ -10,7 +10,7 @@ Group={{ my_admin_user }}
 ExecStart={{ platform_home }}/start.sh
 ExecStop={{ platform_home }}/stop.sh
 WorkingDirectory={{ platform_home }}
-Restart=always
+Restart=on-failure
 RestartSec=10
 
 [Install]

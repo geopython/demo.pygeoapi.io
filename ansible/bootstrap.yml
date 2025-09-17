@@ -232,6 +232,46 @@
         backup: yes
       tags: pygeoapi
 
+    - name: "Create home docker-compose.yml"
+      template:
+        src: home_docker_compose.yml.j2
+        dest: "{{ services_home }}/home/docker-compose.yml"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0644'
+        backup: yes
+      tags: pygeoapi
+
+    - name: "Create pygeoapi_stable docker-compose.yml"
+      template:
+        src: pygeoapi_stable_docker_compose.yml.j2
+        dest: "{{ services_home }}/pygeoapi_stable/docker-compose.yml"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0644'
+        backup: yes
+      tags: pygeoapi
+
+    - name: "Create pygeoapi_cite docker-compose.yml"
+      template:
+        src: pygeoapi_cite_docker_compose.yml.j2
+        dest: "{{ services_home }}/pygeoapi_cite/docker-compose.yml"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0644'
+        backup: yes
+      tags: pygeoapi
+
+    - name: "Create pygeoapi_covid19 docker-compose.yml"
+      template:
+        src: pygeoapi_covid19_docker_compose.yml.j2
+        dest: "{{ services_home }}/pygeoapi_covid-19/docker-compose.yml"
+        owner: "{{ my_admin_user }}"
+        group: "{{ my_admin_user }}"
+        mode: '0644'
+        backup: yes
+      tags: pygeoapi
+
     - name: "Enable and start pygeoapi service"
       systemd:
         name: pygeoapi.service

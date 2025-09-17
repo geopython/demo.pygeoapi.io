@@ -1,0 +1,47 @@
+services:
+
+  pygeoapi_stable:
+
+    image: geopython/pygeoapi:0.20.0
+
+    container_name: pygeoapi_stable
+
+    restart: unless-stopped
+
+    expose:
+      - "80"
+
+#    ports:
+#      - "5000:80"
+
+    volumes:
+      - ./local.config.yml:/pygeoapi/local.config.yml
+      - ./data:/pygeoapi/data
+
+    environment:
+     - SCRIPT_NAME=/stable
+
+    labels:
+      - "traefik.enable=true"
+
+      # HTTP router
+      - "traefik.http.routers.pygeoapi-stable.rule=Host(`{{ domain }}`) && PathPrefix(`/stable`)"
+      - "traefik.http.routers.pygeoapi-stable.entrypoints=web"
+      - "traefik.http.routers.pygeoapi-stable.priority=100"
+
+{% if use_https | default(true) %}
+      # HTTPS router (SSL enabled)
+      - "traefik.http.routers.pygeoapi-stable-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/stable`)"
+      - "traefik.http.routers.pygeoapi-stable-secure.entrypoints=websecure"
+      - "traefik.http.routers.pygeoapi-stable-secure.tls=true"
+      - "traefik.http.routers.pygeoapi-stable-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.pygeoapi-stable-secure.priority=100"
+{% endif %}
+
+      # Service configuration
+      - "traefik.http.services.pygeoapi-stable.loadbalancer.server.port=80"
+
+networks:
+  default:
+    name: pygeoapi-network
+    external: true

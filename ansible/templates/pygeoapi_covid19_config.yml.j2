@@ -56,3 +56,50 @@ metadata:
         role: pointOfContact
 
 resources:
+    cases:
+        type: collection
+        title: "Global - Cases by Country and Province - Coronavirus 2019 nCoV Cases"
+        description: "Current situation for the noval coronavirus starting from Wuhan, China"
+        keywords: [Daily, Cases, Country, Province, State]
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)
+              href: https://coronavirus.jhu.edu/map.html
+              hreflang: en-US
+            - type: text/html
+              rel: canonical
+              title: "ArcGIS instance with the current situation for the novel coronavirus starting from Wuhan, China"
+              href: https://www.arcgis.com/home/item.html?id=c0b356e20b30490c8b8b4c7bb9554e7c&view=list#overview
+              hreflang: en-US
+            - type: text/html
+              rel: download
+              title: "Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE"
+              href: https://github.com/CSSEGISandData/COVID-19
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180,-90,180,90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2020-01-01T00:00:00Z
+                end: null # or empty
+
+        providers:
+            - type: feature
+              name: OGR
+              data:
+                  source_type: ESRIJSON
+                  source: https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?where=objectid+%3D+objectid&outfields=*&orderByFields=OBJECTID+ASC&f=json
+                  source_capabilities:
+                      paging: True
+                  open_options:
+                      FEATURE_SERVER_PAGING: YES
+                  gdal_ogr_options:
+                      EMPTY_AS_NULL: NO
+                      GDAL_CACHEMAX: 64
+                      CPL_DEBUG: NO
+              id_field: OBJECTID
+              layer: ESRIJSON

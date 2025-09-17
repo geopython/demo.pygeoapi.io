@@ -4,14 +4,15 @@ After=docker.service
 Requires=docker.service
 
 [Service]
-Type=simple
+Type=oneshot
 User={{ my_admin_user }}
 Group={{ my_admin_user }}
+RemainAfterExit=yes
 ExecStart={{ platform_home }}/start.sh
 ExecStop={{ platform_home }}/stop.sh
 WorkingDirectory={{ platform_home }}
-Restart=on-failure
-RestartSec=10
+TimeoutStartSec=300
+TimeoutStopSec=300
 
 [Install]
 WantedBy=multi-user.target

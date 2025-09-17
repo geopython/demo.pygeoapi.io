@@ -1,7 +1,5 @@
 # pygeoapi_master Docker Compose Template
 # File: ansible/templates/pygeoapi_master_docker_compose.yml.j2
-version: '3.1'
-
 services:
   pygeoapi_master:
     image: geopython/pygeoapi_master:latest
@@ -37,5 +35,5 @@ services:
 
 networks:
   default:
-    external:
-      name: pygeoapi-network
+    name: pygeoapi-network
+    external: true

@@ -1,5 +1,3 @@
-version: '3.1'
-
 services:
 
   pygeoapi_cite:
@@ -42,5 +40,5 @@ services:
 
 networks:
   default:
-    external:
-      name: pygeoapi-network
+    name: pygeoapi-network
+    external: true

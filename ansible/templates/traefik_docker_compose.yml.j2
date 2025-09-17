@@ -1,6 +1,4 @@
 # ansible/templates/traefik_docker_compose.yml.j2
-version: '3.1'
-
 services:
   proxy:
     image: traefik:v3.5.2
@@ -25,5 +23,5 @@ volumes:
 
 networks:
   default:
-    external:
-      name: pygeoapi-network
+    name: pygeoapi-network
+    external: true

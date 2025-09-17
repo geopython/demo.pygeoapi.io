@@ -1,5 +1,3 @@
-version: "3"
-
 services:
 
   pygeoapi_stable:
@@ -45,5 +43,5 @@ services:
 
 networks:
   default:
-    external:
-      name: pygeoapi-network
+    name: pygeoapi-network
+    external: true

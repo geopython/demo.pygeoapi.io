@@ -32,7 +32,9 @@ services:
       - "traefik.http.routers.pygeoapi-cite-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/cite`)"
       - "traefik.http.routers.pygeoapi-cite-secure.entrypoints=websecure"
       - "traefik.http.routers.pygeoapi-cite-secure.tls=true"
-      - "traefik.http.routers.pygeoapi-cite-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.pygeoapi-cite-secure.tls.certresolver=le"
+      - "traefik.http.routers.pygeoapi-cite-secure.tls.options=my_default@file"
+      - "traefik.http.routers.pygeoapi-cite-secure.middlewares=secure-headers@file"
       - "traefik.http.routers.pygeoapi-cite-secure.priority=100"
 {% endif %}
 
@@ -41,5 +43,5 @@ services:
 
 networks:
   default:
-    name: pygeoapi-network
-    external: true
+    external:
+      name: pygeoapi-network

@@ -26,7 +26,9 @@ services:
       - "traefik.http.routers.pygeoapi-master-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/master`)"
       - "traefik.http.routers.pygeoapi-master-secure.entrypoints=websecure"
       - "traefik.http.routers.pygeoapi-master-secure.tls=true"
-      - "traefik.http.routers.pygeoapi-master-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.pygeoapi-master-secure.tls.certresolver=le"
+      - "traefik.http.routers.pygeoapi-master-secure.tls.options=my_default@file"
+      - "traefik.http.routers.pygeoapi-master-secure.middlewares=secure-headers@file"
       - "traefik.http.routers.pygeoapi-master-secure.priority=100"
 {% endif %}
       
@@ -35,5 +37,5 @@ services:
 
 networks:
   default:
-    name: pygeoapi-network
-    external: true
+    external:
+      name: pygeoapi-network

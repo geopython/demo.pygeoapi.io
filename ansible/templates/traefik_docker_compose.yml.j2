@@ -4,6 +4,14 @@ services:
     image: traefik:v3.5.2
     container_name: traefik
     restart: unless-stopped
+    command:
+      - --docker
+      - --logLevel={{ traefik_log_level | default('INFO') }}
+{% if use_https | default(true) %}
+      - --certificatesresolvers.le.acme.email={{ letsencrypt_email | default(my_email) }}
+      - --certificatesresolvers.le.acme.storage=/certificates/acme.json
+      - --certificatesresolvers.le.acme.tlschallenge=true
+{% endif %}
     ports:
       - "80:80"
 {% if use_https | default(true) %}
@@ -15,7 +23,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./config/traefik.{{ domain }}.yml:/etc/traefik/traefik.yml:ro
-      - ./config/acme.json:/acme.json
+      - ./config/tls_headers:/etc/traefik/tls_headers:ro
+      - ./config/acme.json:/certificates/acme.json
       - traefik_logs:/var/log/traefik
 
 volumes:
@@ -23,5 +32,5 @@ volumes:
 
 networks:
   default:
-    name: pygeoapi-network
-    external: true
+    external:
+      name: pygeoapi-network

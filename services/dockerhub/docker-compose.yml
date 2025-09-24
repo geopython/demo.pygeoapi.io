@@ -16,9 +16,14 @@ services:
 
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io;PathPrefixStrip:/dhubhook"
-      - "traefik.backend=dockerhub"
-      - "traefik.frontend.priority=100"
+      - "traefik.http.routers.dockerhub.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/dhubhook`)"
+      - "traefik.http.routers.dockerhub.entrypoints=http,https"
+      - "traefik.http.routers.dockerhub.tls.certresolver=le"
+      - "traefik.http.routers.dockerhub.tls.options=tls_default@file"
+      - "traefik.http.routers.dockerhub.priority=100"
+      - "traefik.http.routers.dockerhub.middlewares=dhubhook-stripprefix,secure-headers@file"
+      - "traefik.http.middlewares.dhubhook-stripprefix.stripprefix.prefixes=/dhubhook"
+      - "traefik.http.services.dockerhub.loadbalancer.server.port=3000"
       - "traefik.docker.network=pygeoapi-network"
 
     volumes:
@@ -30,6 +35,8 @@ services:
       - ./../pygeoapi_cite:/srv/pygeoapi_cite
       - ./../pygeoapi_covid-19:/srv/pygeoapi_covid-19
 
+
+    env_file: dockerhub.env
 
 networks:
   default:

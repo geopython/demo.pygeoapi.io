@@ -1,0 +1,17 @@
+http:
+  middlewares:
+    secure-headers:
+      headers:
+        stsIncludeSubdomains: true
+        stsPreload: true
+        stsSeconds: 63072000
+        contentTypeNosniff: true
+        accessControlAllowMethods:
+          - GET
+          - POST
+          - PUT
+        accessControlAllowOriginList: '*'
+        accessControlMaxAge: 100
+        addVaryheader: true
+        accessControlAllowHeaders: Authorization
+        hostsproxyheaders: X-Forwarded-Host

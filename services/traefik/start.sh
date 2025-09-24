@@ -9,6 +9,9 @@ export HOSTNAME
 export HTTP_PORT=80
 [[ ${HOSTNAME} != PYGEOAPI ]] && HTTP_PORT=8000
 
+# Set Let's Encrypt email - customize as needed
+export LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-"just@justobjects.nl"}
+
 export ACME_FILE="config/acme.json"
 
 [[ -f ${ACME_FILE} ]] \

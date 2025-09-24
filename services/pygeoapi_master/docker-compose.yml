@@ -19,9 +19,13 @@ services:
 
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/master"
-      - "traefik.backend=pygeoapi_master"
-      - "traefik.frontend.priority=100"
+      - "traefik.http.routers.pygeoapi_master.rule=(Host(`demo.pygeoapi.io`) || Host(`localhost`)) && PathPrefix(`/master`)"
+      - "traefik.http.routers.pygeoapi_master.entrypoints=http,https"
+      - "traefik.http.routers.pygeoapi_master.tls.certresolver=le"
+      - "traefik.http.routers.pygeoapi_master.tls.options=tls_default@file"
+      - "traefik.http.routers.pygeoapi_master.priority=100"
+      - "traefik.http.routers.pygeoapi_master.middlewares=secure-headers@file"
+      - "traefik.http.services.pygeoapi_master.loadbalancer.server.port=80"
       - "traefik.docker.network=pygeoapi-network"
 
 networks:

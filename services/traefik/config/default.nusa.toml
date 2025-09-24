@@ -1,18 +1,31 @@
-# defaultEntryPoints must be at the top because it should not be in any table below
-# Initial from:
-# https://github.com/containerize-my-server/reverse-proxy/blob/master/traefik.toml
-defaultEntryPoints = ["http"]
+# Traefik v3.x configuration - Nusa
+# Updated for v3.5.2 compatibility
 
 [entryPoints]
   [entryPoints.http]
-  address = ":80"
+    address = ":80"
 
-[retry]
+[providers]
+  [providers.docker]
+    endpoint = "unix:///var/run/docker.sock"
+    exposedByDefault = false
+    network = "pygeoapi-network"
+    watch = true
 
-[docker]
-endpoint = "unix:///var/run/docker.sock"
-watch = true
-exposedbydefault = false
+  [providers.file]
+    directory = "/etc/traefik/dynamic"
+    watch = true
+
+[log]
+  level = "INFO"
+  filePath = "/var/log/traefik/traefik.log"
 
 [accessLog]
   filePath = "/var/log/traefik/access.log"
+
+[api]
+  dashboard = false
+
+[global]
+  checkNewVersion = false
+  sendAnonymousUsage = false

@@ -14,7 +14,7 @@ The demo server runs the following apps/services:
 * [pygeoapi_stable](services/pygeoapi_stable) - (last stable version of) `pygeoapi` service with test data
 * [pygeoapi_cite](services/pygeoapi_cite) - (latest GitHub `master` version of) `pygeoapi` service with CITE configuration
 * [pygeoapi_covid-19](services/pygeoapi_covid-19) - (latest GitHub `master` version of) `pygeoapi` service with Covid-19 configuration
-* [traefik](services/traefik) - edge/proxy server routing incoming HTTP(S) and managing SSL-certificates (via Let's Encrypt)
+* [traefik](services/traefik) - Traefik v3.3.7 edge/proxy server with HTTP(S) routing, SSL certificate management (Let's Encrypt), security headers, and TLS optimization
 * [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi_master](services/pygeoapi_master)
 
 ## Auto Update
@@ -41,7 +41,6 @@ to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeo
 ## Common setup with Ansible
 
 ```
-
 # get code
 git clone https://github.com/geopython/demo.pygeoapi.io
 
@@ -103,3 +102,11 @@ sudo service pygeoapi status
 
 ```
 
+## New Traefik v3.3.7 Files
+
+This setup uses **Traefik v3.3.7** with enhanced security and modern configuration:
+
+### Key Files
+- `services/traefik/config/traefik.PYGEOAPI.yml` - Production configuration
+- `services/traefik/config/dynamic/tls.yml` - TLS security options
+- `services/traefik/config/dynamic/middlewares.yml` - HTTP security headers

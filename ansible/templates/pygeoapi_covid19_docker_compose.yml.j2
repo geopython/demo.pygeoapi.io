@@ -2,34 +2,25 @@ services:
 
   pygeoapi_cite:
     image: geopython/pygeoapi_covid-19:latest
-
     build: ./pygeoapi
-
     container_name: pygeoapi_covid-19
-
     restart: unless-stopped
-
     expose:
       - "80"
-
 #    ports:
 #      - "5000:80"
-
     environment:
      - SCRIPT_NAME=/covid-19
-
     labels:
       - "traefik.enable=true"
-
       # HTTP router
       - "traefik.http.routers.pygeoapi-covid19.rule=Host(`{{ domain }}`) && PathPrefix(`/covid-19`)"
-      - "traefik.http.routers.pygeoapi-covid19.entrypoints=web"
+      - "traefik.http.routers.pygeoapi-covid19.entrypoints=http"
       - "traefik.http.routers.pygeoapi-covid19.priority=100"
-
 {% if use_https | default(true) %}
       # HTTPS router (SSL enabled)
       - "traefik.http.routers.pygeoapi-covid19-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/covid-19`)"
-      - "traefik.http.routers.pygeoapi-covid19-secure.entrypoints=websecure"
+      - "traefik.http.routers.pygeoapi-covid19-secure.entrypoints=https"
       - "traefik.http.routers.pygeoapi-covid19-secure.tls=true"
       - "traefik.http.routers.pygeoapi-covid19-secure.tls.certresolver=le"
       - "traefik.http.routers.pygeoapi-covid19-secure.tls.options=my_default@file"

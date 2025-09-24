@@ -1,46 +1,33 @@
 services:
-
   pygeoapi_cite:
-
     image: geopython/pygeoapi_cite:latest
-
     build: ./pygeoapi
-
     container_name: pygeoapi_cite
-
     restart: unless-stopped
-
     expose:
       - "80"
-
 #    ports:
 #      - "5000:80"
-
     environment:
      - SCRIPT_NAME=/cite
-
     labels:
       - "traefik.enable=true"
-
       # HTTP router
       - "traefik.http.routers.pygeoapi-cite.rule=Host(`{{ domain }}`) && PathPrefix(`/cite`)"
-      - "traefik.http.routers.pygeoapi-cite.entrypoints=web"
+      - "traefik.http.routers.pygeoapi-cite.entrypoints=http"
       - "traefik.http.routers.pygeoapi-cite.priority=100"
-
 {% if use_https | default(true) %}
       # HTTPS router (SSL enabled)
       - "traefik.http.routers.pygeoapi-cite-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/cite`)"
-      - "traefik.http.routers.pygeoapi-cite-secure.entrypoints=websecure"
+      - "traefik.http.routers.pygeoapi-cite-secure.entrypoints=https"
       - "traefik.http.routers.pygeoapi-cite-secure.tls=true"
       - "traefik.http.routers.pygeoapi-cite-secure.tls.certresolver=le"
       - "traefik.http.routers.pygeoapi-cite-secure.tls.options=my_default@file"
       - "traefik.http.routers.pygeoapi-cite-secure.middlewares=secure-headers@file"
       - "traefik.http.routers.pygeoapi-cite-secure.priority=100"
 {% endif %}
-
       # Service configuration
       - "traefik.http.services.pygeoapi-cite.loadbalancer.server.port=80"
-
 networks:
   default:
     external:

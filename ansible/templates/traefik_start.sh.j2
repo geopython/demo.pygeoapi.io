@@ -48,10 +48,10 @@ docker compose up -d
 # Check if it started
 sleep 3
 if docker ps | grep -q traefik; then
-    echo "✅ Traefik started successfully"
+    echo "Traefik started successfully"
     docker ps | grep traefik
 else
-    echo "❌ Traefik failed to start"
+    echo "Traefik failed to start"
     docker compose logs
     exit 1
 fi

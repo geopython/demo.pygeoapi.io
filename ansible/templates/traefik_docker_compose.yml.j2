@@ -5,8 +5,20 @@ services:
     container_name: traefik
     restart: unless-stopped
     command:
-      - --docker
-      - --logLevel={{ traefik_log_level | default('INFO') }}
+      - --entrypoints.http.address=:80
+{% if use_https | default(true) %}
+      - --entrypoints.https.address=:443
+{% endif %}
+      - --providers.docker
+      - --providers.docker.watch=true
+      - --providers.docker.exposedbydefault=false
+      - --providers.file
+      - --providers.file.directory=/etc/traefik/tls_headers
+      - --accesslog
+      - --accesslog.filePath=/var/log/traefik/access.log
+      - --log
+      - --log.level={{ traefik_log_level | default('info') | lower }}
+      - --log.filePath=/var/log/traefik/traefik.log
 {% if use_https | default(true) %}
       - --certificatesresolvers.le.acme.email={{ letsencrypt_email | default(my_email) }}
       - --certificatesresolvers.le.acme.storage=/certificates/acme.json
@@ -19,7 +31,18 @@ services:
 {% endif %}
       - "8090:8080"  # Dashboard
     labels:
-      - "traefik.enable=false"
+      - "traefik.enable=true"
+
+{% if use_https | default(true) %}
+      # Permanent redirect http to https middleware
+      - "traefik.http.middlewares.https_redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.https_redirect.redirectscheme.permanent=true"
+
+      # Always redirect our main/production domain from http to https
+      - "traefik.http.routers.traefik_http.rule=Host(`{{ domain }}`)"
+      - "traefik.http.routers.traefik_http.entrypoints=http"
+      - "traefik.http.routers.traefik_http.middlewares=https_redirect@docker"
+{% endif %}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./config/traefik.{{ domain }}.yml:/etc/traefik/traefik.yml:ro

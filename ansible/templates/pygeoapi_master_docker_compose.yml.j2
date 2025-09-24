@@ -5,36 +5,29 @@ services:
     image: geopython/pygeoapi_master:latest
     container_name: pygeoapi_master
     restart: unless-stopped
-
     expose:
       - "80"
-
     environment:
       - SCRIPT_NAME=/master
-
     # Traefik v2.x labels with dynamic domain
     labels:
       - "traefik.enable=true"
-      
       # HTTP router
       - "traefik.http.routers.pygeoapi-master.rule=Host(`{{ domain }}`) && PathPrefix(`/master`)"
-      - "traefik.http.routers.pygeoapi-master.entrypoints=web"
+      - "traefik.http.routers.pygeoapi-master.entrypoints=http"
       - "traefik.http.routers.pygeoapi-master.priority=100"
-      
 {% if use_https | default(true) %}
       # HTTPS router (SSL enabled)
       - "traefik.http.routers.pygeoapi-master-secure.rule=Host(`{{ domain }}`) && PathPrefix(`/master`)"
-      - "traefik.http.routers.pygeoapi-master-secure.entrypoints=websecure"
+      - "traefik.http.routers.pygeoapi-master-secure.entrypoints=https"
       - "traefik.http.routers.pygeoapi-master-secure.tls=true"
       - "traefik.http.routers.pygeoapi-master-secure.tls.certresolver=le"
       - "traefik.http.routers.pygeoapi-master-secure.tls.options=my_default@file"
       - "traefik.http.routers.pygeoapi-master-secure.middlewares=secure-headers@file"
       - "traefik.http.routers.pygeoapi-master-secure.priority=100"
 {% endif %}
-      
       # Service configuration
       - "traefik.http.services.pygeoapi-master.loadbalancer.server.port=80"
-
 networks:
   default:
     external:

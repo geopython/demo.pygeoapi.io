@@ -3,34 +3,27 @@
 services:
   home:
     image: geopython/demo.pygeoapi.io:latest
-
     restart: unless-stopped
-
     container_name: home
-
     labels:
       - "traefik.enable=true"
-
       # HTTP router (redirects to HTTPS)
       - "traefik.http.routers.home.rule=Host(`{{ domain }}`)"
-      - "traefik.http.routers.home.entrypoints=web"
+      - "traefik.http.routers.home.entrypoints=http"
       - "traefik.http.routers.home.priority=5"
 {% if use_https | default(true) %}
       - "traefik.http.routers.home.middlewares=redirect-to-https"
-
       # HTTPS router (secure)
       - "traefik.http.routers.home-secure.rule=Host(`{{ domain }}`)"
-      - "traefik.http.routers.home-secure.entrypoints=websecure"
+      - "traefik.http.routers.home-secure.entrypoints=https"
       - "traefik.http.routers.home-secure.tls=true"
       - "traefik.http.routers.home-secure.tls.certresolver=le"
       - "traefik.http.routers.home-secure.tls.options=my_default@file"
       - "traefik.http.routers.home-secure.middlewares=secure-headers@file"
       - "traefik.http.routers.home-secure.priority=5"
 {% endif %}
-
       # Service configuration
       - "traefik.http.services.home.loadbalancer.server.port=80"
-
 networks:
   default:
     external:

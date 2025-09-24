@@ -1,5 +1,5 @@
 # Traefik v3.x configuration - Default/Development
-# Updated for v3.3.7 compatibility
+# Updated for v3.5.2 compatibility
 
 # Entry points
 entryPoints:

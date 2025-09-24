@@ -1,4 +1,4 @@
-# Traefik v3.3.7 Configuration
+# Traefik v3.5.2 Configuration
 
 This directory contains the Traefik v3.x configuration files and dynamic configurations.
 

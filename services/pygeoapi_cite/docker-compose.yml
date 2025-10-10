@@ -21,12 +21,18 @@ services:
 
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.pygeoapi_cite.rule=(Host(`demo.pygeoapi.io`) || Host(`localhost`)) && PathPrefix(`/cite`)"
-      - "traefik.http.routers.pygeoapi_cite.entrypoints=http,https"
+      # Production router (HTTPS with Let's Encrypt)
+      - "traefik.http.routers.pygeoapi_cite.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/cite`)"
+      - "traefik.http.routers.pygeoapi_cite.entrypoints=https"
       - "traefik.http.routers.pygeoapi_cite.tls.certresolver=le"
       - "traefik.http.routers.pygeoapi_cite.tls.options=tls_default@file"
       - "traefik.http.routers.pygeoapi_cite.priority=100"
       - "traefik.http.routers.pygeoapi_cite.middlewares=secure-headers@file"
+      # Localhost router (HTTP only)
+      - "traefik.http.routers.pygeoapi_cite_local.rule=Host(`localhost`) && PathPrefix(`/cite`)"
+      - "traefik.http.routers.pygeoapi_cite_local.entrypoints=http"
+      - "traefik.http.routers.pygeoapi_cite_local.priority=100"
+      # Common service definition
       - "traefik.http.services.pygeoapi_cite.loadbalancer.server.port=80"
       - "traefik.docker.network=pygeoapi-network"
 

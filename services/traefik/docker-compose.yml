@@ -40,12 +40,12 @@ services:
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./config/traefik.${HOSTNAME}.yml:/etc/traefik/traefik.yml:ro
       - ./config/dynamic:/etc/traefik/dynamic:ro
-      - ./config/acme.json:/certificates/acme.json
+      - acme_certificates:/certificates
       - traefik_logs:/var/log/traefik
 
 volumes:
+  acme_certificates:
   traefik_logs:
 
 networks:

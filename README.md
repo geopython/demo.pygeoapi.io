@@ -63,11 +63,9 @@ These are not in this repo for obvious reasons... You need to create/populate th
 Have a remote Ubuntu VM installed with root access via pub/private key.
 
 ```
-
 # Installs entire system
 cd ansible
-ansible-playbook -vv bootstrap.yml -i hosts/demo.pygeoapi.io
-
+ansible-playbook -vv bootstrap.yml -i hosts/demo.pygeoapi.io  --become
 
 ```
 
@@ -102,11 +100,17 @@ sudo service pygeoapi status
 
 ```
 
-## New Traefik v3.5.2 Files
+## Traefik v3.5.2 Configuration
 
 This setup uses **Traefik v3.5.2** with enhanced security and modern configuration:
 
+### Configuration Approach
+- **Static configuration**: Defined via command-line flags in `services/traefik/docker-compose.yml`
+- **Dynamic configuration**: File-based configs for TLS and middleware settings
+- **Certificates**: Stored in Docker volume `acme_certificates` (managed automatically by Let's Encrypt)
+- **Routing**: Separate routers for production (HTTPS) and localhost (HTTP only)
+
 ### Key Files
-- `services/traefik/config/traefik.PYGEOAPI.yml` - Production configuration
-- `services/traefik/config/dynamic/tls.yml` - TLS security options
-- `services/traefik/config/dynamic/middlewares.yml` - HTTP security headers
+- `services/traefik/docker-compose.yml` - Main Traefik configuration via command flags
+- `services/traefik/config/dynamic/tls.yml` - TLS security options (minimum TLS 1.2, cipher suites)
+- `services/traefik/config/dynamic/middlewares.yml` - HTTP security headers (HSTS, CORS, etc.)

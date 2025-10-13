@@ -1,27 +1,29 @@
 services:
-
   pygeoapi_master:
-    
     image: geopython/pygeoapi_master:latest
-
     container_name: pygeoapi_master
-
     restart: unless-stopped
-
     expose:
       - "80"
-
 #    ports:
 #     - "5000:80"
-
     environment:
      - SCRIPT_NAME=/master
-
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/master"
-      - "traefik.backend=pygeoapi_master"
-      - "traefik.frontend.priority=100"
+      # Production router (HTTPS with Let's Encrypt)
+      - "traefik.http.routers.pygeoapi_master.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/master`)"
+      - "traefik.http.routers.pygeoapi_master.entrypoints=https"
+      - "traefik.http.routers.pygeoapi_master.tls.certresolver=le"
+      - "traefik.http.routers.pygeoapi_master.tls.options=tls_default@file"
+      - "traefik.http.routers.pygeoapi_master.priority=100"
+      - "traefik.http.routers.pygeoapi_master.middlewares=secure-headers@file"
+      # Localhost router (HTTP only)
+      - "traefik.http.routers.pygeoapi_master_local.rule=Host(`localhost`) && PathPrefix(`/master`)"
+      - "traefik.http.routers.pygeoapi_master_local.entrypoints=http"
+      - "traefik.http.routers.pygeoapi_master_local.priority=100"
+      # Common service definition
+      - "traefik.http.services.pygeoapi_master.loadbalancer.server.port=80"
       - "traefik.docker.network=pygeoapi-network"
 
 networks:

@@ -14,7 +14,7 @@ The demo server runs the following apps/services:
 * [pygeoapi_stable](services/pygeoapi_stable) - (last stable version of) `pygeoapi` service with test data
 * [pygeoapi_cite](services/pygeoapi_cite) - (latest GitHub `master` version of) `pygeoapi` service with CITE configuration
 * [pygeoapi_covid-19](services/pygeoapi_covid-19) - (latest GitHub `master` version of) `pygeoapi` service with Covid-19 configuration
-* [traefik](services/traefik) - edge/proxy server routing incoming HTTP(S) and managing SSL-certificates (via Let's Encrypt)
+* [traefik](services/traefik) - Traefik v3.5.2 edge/proxy server with HTTP(S) routing, SSL certificate management (Let's Encrypt), security headers, and TLS optimization
 * [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi_master](services/pygeoapi_master)
 
 ## Auto Update
@@ -41,7 +41,6 @@ to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeo
 ## Common setup with Ansible
 
 ```
-
 # get code
 git clone https://github.com/geopython/demo.pygeoapi.io
 
@@ -64,11 +63,9 @@ These are not in this repo for obvious reasons... You need to create/populate th
 Have a remote Ubuntu VM installed with root access via pub/private key.
 
 ```
-
 # Installs entire system
 cd ansible
-ansible-playbook -vv bootstrap.yml -i hosts/demo.pygeoapi.io
-
+ansible-playbook -vv bootstrap.yml -i hosts/demo.pygeoapi.io  --become
 
 ```
 
@@ -103,3 +100,17 @@ sudo service pygeoapi status
 
 ```
 
+## Traefik v3.5.2 Configuration
+
+This setup uses **Traefik v3.5.2** with enhanced security and modern configuration:
+
+### Configuration Approach
+- **Static configuration**: Defined via command-line flags in `services/traefik/docker-compose.yml`
+- **Dynamic configuration**: File-based configs for TLS and middleware settings
+- **Certificates**: Stored in Docker volume `acme_certificates` (managed automatically by Let's Encrypt)
+- **Routing**: Separate routers for production (HTTPS) and localhost (HTTP only)
+
+### Key Files
+- `services/traefik/docker-compose.yml` - Main Traefik configuration via command flags
+- `services/traefik/config/dynamic/tls.yml` - TLS security options (minimum TLS 1.2, cipher suites)
+- `services/traefik/config/dynamic/middlewares.yml` - HTTP security headers (HSTS, CORS, etc.)

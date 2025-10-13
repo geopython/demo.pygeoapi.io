@@ -3,24 +3,30 @@ services:
   #  See https://github.com/maccyber/micro-dockerhub-hook
   dockerhub:
     image: maccyber/micro-dockerhub-hook
-
     container_name: dockerhub
-
     expose:
       - "3000"
-
 #    ports:
 #      - "3000:3000"
-
     env_file: dockerhub.env
-
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io;PathPrefixStrip:/dhubhook"
-      - "traefik.backend=dockerhub"
-      - "traefik.frontend.priority=100"
+      # Production router (HTTPS with Let's Encrypt)
+      - "traefik.http.routers.dockerhub.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/dhubhook`)"
+      - "traefik.http.routers.dockerhub.entrypoints=https"
+      - "traefik.http.routers.dockerhub.tls.certresolver=le"
+      - "traefik.http.routers.dockerhub.tls.options=tls_default@file"
+      - "traefik.http.routers.dockerhub.priority=100"
+      - "traefik.http.routers.dockerhub.middlewares=dhubhook-stripprefix,secure-headers@file"
+      # Localhost router (HTTP only)
+      - "traefik.http.routers.dockerhub_local.rule=Host(`localhost`) && PathPrefix(`/dhubhook`)"
+      - "traefik.http.routers.dockerhub_local.entrypoints=http"
+      - "traefik.http.routers.dockerhub_local.priority=100"
+      - "traefik.http.routers.dockerhub_local.middlewares=dhubhook-stripprefix"
+      # Common middleware and service
+      - "traefik.http.middlewares.dhubhook-stripprefix.stripprefix.prefixes=/dhubhook"
+      - "traefik.http.services.dockerhub.loadbalancer.server.port=3000"
       - "traefik.docker.network=pygeoapi-network"
-
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./scripts:/src/scripts
@@ -29,7 +35,6 @@ services:
       - ./../home:/srv/home
       - ./../pygeoapi_cite:/srv/pygeoapi_cite
       - ./../pygeoapi_covid-19:/srv/pygeoapi_covid-19
-
 
 networks:
   default:

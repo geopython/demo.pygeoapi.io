@@ -1,28 +1,45 @@
 services:
   proxy:
-    image: traefik:1.7.10-alpine
-
+    image: traefik:v3.5.2
     container_name: traefik
-
     restart: unless-stopped
-
-    command: --docker --logLevel=INFO
-
+    command:
+      - --entrypoints.http.address=:80
+      - --entrypoints.https.address=:443
+      - --providers.docker
+      - --providers.docker.watch=true
+      - --providers.docker.exposedbydefault=false
+      - --providers.docker.network=pygeoapi-network
+      - --providers.file
+      - --providers.file.directory=/etc/traefik/dynamic
+      - --accesslog
+      - --accesslog.filePath=/var/log/traefik/access.log
+      - --log
+      - --log.level=INFO
+      - --log.filePath=/var/log/traefik/traefik.log
+      - --certificatesresolvers.le.acme.email=${LETSENCRYPT_EMAIL}
+      - --certificatesresolvers.le.acme.storage=/certificates/acme.json
+      - --certificatesresolvers.le.acme.tlschallenge=true
+      - --api.dashboard=false
     ports:
       - "${HTTP_PORT}:80"
       - "443:443"
       # - "8080:8080"
-
     labels:
-      - "traefik.enable=false"
-
+      - "traefik.enable=true"
+      - "traefik.http.middlewares.https_redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.https_redirect.redirectscheme.permanent=true"
+      - "traefik.http.routers.traefik_http.rule=Host(`${HOSTNAME}`)"
+      - "traefik.http.routers.traefik_http.entrypoints=http"
+      - "traefik.http.routers.traefik_http.middlewares=https_redirect@docker"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./config/traefik.${HOSTNAME}.toml:/traefik.toml
-      - ./config/acme.json:/acme.json
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./config/dynamic:/etc/traefik/dynamic:ro
+      - acme_certificates:/certificates
       - traefik_logs:/var/log/traefik
 
 volumes:
+  acme_certificates:
   traefik_logs:
 
 networks:

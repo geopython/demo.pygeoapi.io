@@ -1,28 +1,31 @@
 services:
 
-  pygeoapi_cite:
+  pygeoapi_covid19:
     image: geopython/pygeoapi_covid-19:latest
-
     build: ./pygeoapi
-
     container_name: pygeoapi_covid-19
-
     restart: unless-stopped
-
     expose:
       - "80"
-
 #    ports:
 #      - "5000:80"
-
     environment:
      - SCRIPT_NAME=/covid-19
-
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost;PathPrefix:/covid-19"
-      - "traefik.backend=pygeoapi_covid-19"
-      - "traefik.frontend.priority=100"
+      # Production router (HTTPS with Let's Encrypt)
+      - "traefik.http.routers.pygeoapi_covid19.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/covid-19`)"
+      - "traefik.http.routers.pygeoapi_covid19.entrypoints=https"
+      - "traefik.http.routers.pygeoapi_covid19.tls.certresolver=le"
+      - "traefik.http.routers.pygeoapi_covid19.tls.options=tls_default@file"
+      - "traefik.http.routers.pygeoapi_covid19.priority=100"
+      - "traefik.http.routers.pygeoapi_covid19.middlewares=secure-headers@file"
+      # Localhost router (HTTP only)
+      - "traefik.http.routers.pygeoapi_covid19_local.rule=Host(`localhost`) && PathPrefix(`/covid-19`)"
+      - "traefik.http.routers.pygeoapi_covid19_local.entrypoints=http"
+      - "traefik.http.routers.pygeoapi_covid19_local.priority=100"
+      # Common service definition
+      - "traefik.http.services.pygeoapi_covid19.loadbalancer.server.port=80"
       - "traefik.docker.network=pygeoapi-network"
 
 networks:

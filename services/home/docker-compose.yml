@@ -3,11 +3,8 @@
 services:
   home:
     image: geopython/demo.pygeoapi.io:latest
-
     restart: unless-stopped
-
     container_name: home
-
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)

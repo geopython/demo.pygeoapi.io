@@ -3,17 +3,12 @@ services:
   #  See https://github.com/maccyber/micro-dockerhub-hook
   dockerhub:
     image: maccyber/micro-dockerhub-hook
-
     container_name: dockerhub
-
     expose:
       - "3000"
-
 #    ports:
 #      - "3000:3000"
-
     env_file: dockerhub.env
-
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)
@@ -32,7 +27,6 @@ services:
       - "traefik.http.middlewares.dhubhook-stripprefix.stripprefix.prefixes=/dhubhook"
       - "traefik.http.services.dockerhub.loadbalancer.server.port=3000"
       - "traefik.docker.network=pygeoapi-network"
-
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./scripts:/src/scripts
@@ -41,9 +35,6 @@ services:
       - ./../home:/srv/home
       - ./../pygeoapi_cite:/srv/pygeoapi_cite
       - ./../pygeoapi_covid-19:/srv/pygeoapi_covid-19
-
-
-    env_file: dockerhub.env
 
 networks:
   default:

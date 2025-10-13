@@ -2,22 +2,15 @@ services:
 
   pygeoapi_covid19:
     image: geopython/pygeoapi_covid-19:latest
-
     build: ./pygeoapi
-
     container_name: pygeoapi_covid-19
-
     restart: unless-stopped
-
     expose:
       - "80"
-
 #    ports:
 #      - "5000:80"
-
     environment:
      - SCRIPT_NAME=/covid-19
-
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)

@@ -1,26 +1,18 @@
 services:
 
   pygeoapi_stable:
-    
     image: geopython/pygeoapi:0.20.0
-
     container_name: pygeoapi_stable
-
     restart: unless-stopped
-
     expose:
       - "80"
-
 #    ports:
 #      - "5000:80"
-
     volumes:
       - ./local.config.yml:/pygeoapi/local.config.yml
       - ./data:/pygeoapi/data
-
     environment:
      - SCRIPT_NAME=/stable
-
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)

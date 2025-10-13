@@ -21,7 +21,7 @@ logging:
 
 metadata:
     identification:
-        title: pygeoapi Demo instance - running latest stable 0.20.0 pygeoapi version
+        title: pygeoapi Demo instance - running latest stable 0.21.0 pygeoapi version
         description: pygeoapi provides an API to geospatial data
         keywords:
             - geospatial

@@ -22,9 +22,6 @@ services:
       - "traefik.http.routers.pygeoapi_master_local.rule=Host(`localhost`) && PathPrefix(`/master`)"
       - "traefik.http.routers.pygeoapi_master_local.entrypoints=http"
       - "traefik.http.routers.pygeoapi_master_local.priority=100"
-      # Common service definition
-      - "traefik.http.services.pygeoapi_master.loadbalancer.server.port=80"
-      - "traefik.docker.network=pygeoapi-network"
 
 networks:
   default:

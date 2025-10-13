@@ -18,9 +18,6 @@ services:
       - "traefik.http.routers.home_local.rule=Host(`localhost`) && Path(`/`)"
       - "traefik.http.routers.home_local.entrypoints=http"
       - "traefik.http.routers.home_local.priority=5"
-      # Common service definition
-      - "traefik.http.services.home.loadbalancer.server.port=5000"
-      - "traefik.docker.network=pygeoapi-network"
 
 networks:
   default:

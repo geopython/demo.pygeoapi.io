@@ -24,9 +24,6 @@ services:
       - "traefik.http.routers.pygeoapi_covid19_local.rule=Host(`localhost`) && PathPrefix(`/covid-19`)"
       - "traefik.http.routers.pygeoapi_covid19_local.entrypoints=http"
       - "traefik.http.routers.pygeoapi_covid19_local.priority=100"
-      # Common service definition
-      - "traefik.http.services.pygeoapi_covid19.loadbalancer.server.port=80"
-      - "traefik.docker.network=pygeoapi-network"
 
 networks:
   default:

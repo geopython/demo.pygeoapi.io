@@ -1,8 +1,12 @@
 services:
-  proxy:
+
+  traefik:
     image: traefik:v3.5.2
+
     container_name: traefik
+
     restart: unless-stopped
+
     command:
       - --entrypoints.http.address=:80
       - --entrypoints.https.address=:443
@@ -21,17 +25,31 @@ services:
       - --certificatesresolvers.le.acme.storage=/certificates/acme.json
       - --certificatesresolvers.le.acme.tlschallenge=true
       - --api.dashboard=false
+
     ports:
       - "${HTTP_PORT}:80"
       - "443:443"
       # - "8080:8080"
+
     labels:
       - "traefik.enable=true"
+      # Define the http-->https redirect middleware
       - "traefik.http.middlewares.https_redirect.redirectscheme.scheme=https"
       - "traefik.http.middlewares.https_redirect.redirectscheme.permanent=true"
-      - "traefik.http.routers.traefik_http.rule=Host(`${HOSTNAME}`)"
+
+      # Always redirect our prod deploy domain from http to https
+      - "traefik.http.routers.traefik_http.rule=Host(`${SITE_DOMAIN}`)"
       - "traefik.http.routers.traefik_http.entrypoints=http"
       - "traefik.http.routers.traefik_http.middlewares=https_redirect@docker"
+
+      # https router main entry
+      - "traefik.http.routers.traefik_https.rule=Host(`${SITE_DOMAIN}`)"
+      - "traefik.http.routers.traefik_https.entrypoints=https"
+      - "traefik.http.routers.traefik_https.tls=true"
+      - "traefik.http.routers.traefik_https.tls.certresolver=le"
+      - "traefik.http.routers.traefik_https.tls.options=my_default@file"
+      - "traefik.http.routers.traefik_https.middlewares=secure-headers@file"
+
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./config/dynamic:/etc/traefik/dynamic:ro

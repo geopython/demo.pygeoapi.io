@@ -42,14 +42,6 @@ services:
       - "traefik.http.routers.traefik_http.entrypoints=http"
       - "traefik.http.routers.traefik_http.middlewares=https_redirect@docker"
 
-      # https router main entry
-      - "traefik.http.routers.traefik_https.rule=Host(`${SITE_DOMAIN}`)"
-      - "traefik.http.routers.traefik_https.entrypoints=https"
-      - "traefik.http.routers.traefik_https.tls=true"
-      - "traefik.http.routers.traefik_https.tls.certresolver=le"
-      - "traefik.http.routers.traefik_https.tls.options=my_default@file"
-      - "traefik.http.routers.traefik_https.middlewares=secure-headers@file"
-
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./config/dynamic:/etc/traefik/dynamic:ro

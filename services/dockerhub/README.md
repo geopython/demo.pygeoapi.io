@@ -7,3 +7,5 @@ For now this applies to DockerHub Images:
 
 * [geopython/pygeoapi:latest](https://cloud.docker.com/u/geopython/repository/docker/geopython/pygeoapi)
 * [geopython/demo.pygeoapi.io:latest](https://cloud.docker.com/u/geopython/repository/docker/geopython/demo.pygeoapi.io) - the `home` app
+
+The file [env.sh](../env.sh) is sourced in start/stop scripts to populate deploy-host-dependent vars.

@@ -14,7 +14,7 @@ services:
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)
-      - "traefik.http.routers.pygeoapi_covid19.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/covid-19`)"
+      - "traefik.http.routers.pygeoapi_covid19.rule=Host(`${SITE_DOMAIN}`) && PathPrefix(`/covid-19`)"
       - "traefik.http.routers.pygeoapi_covid19.entrypoints=https"
       - "traefik.http.routers.pygeoapi_covid19.tls.certresolver=le"
       - "traefik.http.routers.pygeoapi_covid19.tls.options=tls_default@file"

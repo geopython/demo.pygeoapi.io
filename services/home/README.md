@@ -14,3 +14,5 @@ to the `master` branch of https://github.com/geopython/demo.pygeoapi.io.
 
 On DockerHub a WebHook triggers a refresh of this service via the
 [dockerhub webhook service](../dockerhub).
+
+The file [env.sh](../env.sh) is sourced in start/stop scripts to populate deploy-host-dependent vars.

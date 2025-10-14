@@ -8,7 +8,7 @@ services:
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)
-      - "traefik.http.routers.home.rule=Host(`demo.pygeoapi.io`) && Path(`/`)"
+      - "traefik.http.routers.home.rule=Host(`${SITE_DOMAIN}`) && Path(`/`)"
       - "traefik.http.routers.home.entrypoints=https"
       - "traefik.http.routers.home.tls.certresolver=le"
       - "traefik.http.routers.home.tls.options=tls_default@file"

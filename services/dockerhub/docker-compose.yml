@@ -11,8 +11,10 @@ services:
     env_file: dockerhub.env
     labels:
       - "traefik.enable=true"
+      # Common middleware and service
+      - "traefik.http.middlewares.dhubhook-stripprefix.stripprefix.prefixes=/dhubhook"
       # Production router (HTTPS with Let's Encrypt)
-      - "traefik.http.routers.dockerhub.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/dhubhook`)"
+      - "traefik.http.routers.dockerhub.rule=Host(`${SITE_DOMAIN}`) && PathPrefix(`/dhubhook`)"
       - "traefik.http.routers.dockerhub.entrypoints=https"
       - "traefik.http.routers.dockerhub.tls.certresolver=le"
       - "traefik.http.routers.dockerhub.tls.options=tls_default@file"
@@ -23,10 +25,6 @@ services:
       - "traefik.http.routers.dockerhub_local.entrypoints=http"
       - "traefik.http.routers.dockerhub_local.priority=100"
       - "traefik.http.routers.dockerhub_local.middlewares=dhubhook-stripprefix"
-      # Common middleware and service
-      - "traefik.http.middlewares.dhubhook-stripprefix.stripprefix.prefixes=/dhubhook"
-      - "traefik.http.services.dockerhub.loadbalancer.server.port=3000"
-      - "traefik.docker.network=pygeoapi-network"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./scripts:/src/scripts

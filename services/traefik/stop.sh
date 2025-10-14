@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source ./env.sh
+source ../env.sh
 
 docker compose down --remove-orphans

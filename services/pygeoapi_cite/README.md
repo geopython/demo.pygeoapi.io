@@ -14,3 +14,5 @@ This service is restarted pulling the latest `pygeoapi` Docker Image whenever a 
 the [pygeoapi GitHub master](https://github.com/geopython/pygeoapi) commit or explicitly).
 
 There is also a [stable](../pygeoapi_stable) version that runs the latest `pygeoapi` version also from DockerHub.
+
+The file [env.sh](../env.sh) is sourced in start/stop scripts to populate deploy-host-dependent vars.

@@ -12,7 +12,7 @@ services:
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)
-      - "traefik.http.routers.pygeoapi_master.rule=Host(`demo.pygeoapi.io`) && PathPrefix(`/master`)"
+      - "traefik.http.routers.pygeoapi_master.rule=Host(`${SITE_DOMAIN}`) && PathPrefix(`/master`)"
       - "traefik.http.routers.pygeoapi_master.entrypoints=https"
       - "traefik.http.routers.pygeoapi_master.tls.certresolver=le"
       - "traefik.http.routers.pygeoapi_master.tls.options=tls_default@file"

@@ -2,7 +2,7 @@ services:
 
   pygeoapi_stable:
     
-    image: geopython/pygeoapi:0.21.0
+    image: geopython/pygeoapi:0.22.0
 
     container_name: pygeoapi_stable
     restart: unless-stopped

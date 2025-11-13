@@ -2,22 +2,34 @@
 
 services:
   home:
-    image: geopython/demo.pygeoapi.io:latest
-    restart: unless-stopped
+
+    image: nginx:stable-alpine
+
     container_name: home
+    restart: unless-stopped
+
+#    ports:
+#      - "8085:80"
+
     labels:
       - "traefik.enable=true"
+
       # Production router (HTTPS with Let's Encrypt)
-      - "traefik.http.routers.home.rule=Host(`${SITE_DOMAIN}`) && Path(`/`)"
+      - "traefik.http.routers.home.rule=Host(`${SITE_DOMAIN}`) && PathPrefix(`/`)"
       - "traefik.http.routers.home.entrypoints=https"
       - "traefik.http.routers.home.tls.certresolver=le"
       - "traefik.http.routers.home.tls.options=tls_default@file"
       - "traefik.http.routers.home.priority=5"
       - "traefik.http.routers.home.middlewares=secure-headers@file"
+
       # Localhost router (HTTP only)
-      - "traefik.http.routers.home_local.rule=Host(`localhost`) && Path(`/`)"
+      - "traefik.http.routers.home_local.rule=Host(`localhost`) && PathPrefix(`/`)"
       - "traefik.http.routers.home_local.entrypoints=http"
       - "traefik.http.routers.home_local.priority=5"
+
+    volumes:
+      - ./app:/usr/share/nginx/html:ro
+      - ./etc/nginx.conf:/etc/nginx/conf.d/default.conf:rw
 
 networks:
   default:

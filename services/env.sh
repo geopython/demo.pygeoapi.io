@@ -5,7 +5,7 @@ export HOSTNAME
 
 # Default is localhost, no SITE_DOMAIN SSL.
 export HTTP_PORT=8000
-export SITE_DOMAIN=null
+export SITE_DOMAIN="NONE"
 
 # Set Let's Encrypt email - customize as needed
 export LETSENCRYPT_EMAIL="just@justobjects.nl"
@@ -22,6 +22,12 @@ case "${HOSTNAME}" in
     "TERRAOPS")
         SITE_DOMAIN="pygeoapi.terraops.net"
         HTTP_PORT=80
+        ;;
+
+    # TODO: other server with SSL based on HOSTNAME
+    "savu")
+        # SITE_DOMAIN="localhost"
+        HTTP_PORT=8000
         ;;
 
     *)

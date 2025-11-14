@@ -8,14 +8,14 @@ services:
     labels:
       - "traefik.enable=true"
       # Production router (HTTPS with Let's Encrypt)
-      - "traefik.http.routers.home.rule=Host(`${SITE_DOMAIN}`) && Path(`/`)"
+      - "traefik.http.routers.home.rule=Host(`${SITE_DOMAIN}`) && PathPrefix(`/`)"
       - "traefik.http.routers.home.entrypoints=https"
       - "traefik.http.routers.home.tls.certresolver=le"
       - "traefik.http.routers.home.tls.options=tls_default@file"
       - "traefik.http.routers.home.priority=5"
       - "traefik.http.routers.home.middlewares=secure-headers@file"
       # Localhost router (HTTP only)
-      - "traefik.http.routers.home_local.rule=Host(`localhost`) && Path(`/`)"
+      - "traefik.http.routers.home_local.rule=Host(`localhost`) && PathPrefix(`/`)"
       - "traefik.http.routers.home_local.entrypoints=http"
       - "traefik.http.routers.home_local.priority=5"
 

@@ -10,7 +10,7 @@ script_name=${0##*/}
 script_dir=${0%/*}
 
 DOCKER_HOME=${script_dir}/../services
-DOCKERS="home pygeoapi"
+DOCKERS="pygeoapi"
 
 for DOCK in ${DOCKERS}
 do

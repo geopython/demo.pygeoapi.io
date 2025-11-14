@@ -25,7 +25,7 @@
 
   tasks:
     - name: "home"
-      shell: "cd {{ services_home }}/home && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+      shell: "cd {{ services_home }}/home && ./start.sh"
       tags: home
 
     - name: "dockerhub"

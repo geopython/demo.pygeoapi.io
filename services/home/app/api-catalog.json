@@ -1,0 +1,72 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://demo.pygeoapi.io/master",
+      "service-desc": [
+        {
+          "href": "https://demo.pygeoapi.io/master/openapi?f=json",
+          "title": "pygeoapi - latest GitHub 'master' version (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://demo.pygeoapi.io/master/openapi?f=html",
+          "title": "pygeoapi - latest GitHub 'master' version (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.pygeoapi.io/stable",
+      "service-desc": [
+        {
+          "href": "https://demo.pygeoapi.io/stable/openapi?f=json",
+          "title": "pygeoapi - latest stable version (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://demo.pygeoapi.io/stable/openapi?f=html",
+          "title": "pygeoapi - latest stable version (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.pygeoapi.io/cite",
+      "service-desc": [
+        {
+          "href": "https://demo.pygeoapi.io/cite/openapi?f=json",
+          "title": "pygeoapi - CITE endpoint - latest GitHub 'master' version (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://demo.pygeoapi.io/cite/openapi?f=html",
+          "title": "pygeoapi - CITE endpoint - latest GitHub 'master' version (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.pygeoapi.io/covid-19",
+      "service-desc": [
+        {
+          "href": "https://demo.pygeoapi.io/covid-19/openapi?f=json",
+          "title": "pygeoapi - COVID-19 endpoint - latest GitHub 'master' version (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://demo.pygeoapi.io/covid-19/openapi?f=html",
+          "title": "pygeoapi - COVID-19 endpoint - latest GitHub 'master' version (HTML)",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}

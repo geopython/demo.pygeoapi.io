@@ -4,4 +4,5 @@ The `Home App` provides the landing page for the demo server.
 
 ## Architecture
 
-The image contains a simple HTML webappwith static webpages.
+Simple HTML webapp via nginx HTTP server Docker Image 
+with static webpages and config mounted into the Container.

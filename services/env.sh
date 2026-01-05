@@ -13,7 +13,7 @@ export LETSENCRYPT_EMAIL="just@justobjects.nl"
 # Set host-dependent vars
 case "${HOSTNAME}" in
     # main server
-    "PYGEOAPI")
+    "PYGEOAPI" | "demo")
         SITE_DOMAIN="demo.pygeoapi.io"
         HTTP_PORT=80
         ;;

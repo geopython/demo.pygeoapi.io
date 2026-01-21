@@ -9,9 +9,8 @@ but it had complications. The 'pull' model here is more lean.
 
 Note that Updater only runs on production servers.
 
-## Important Scripts
+## Scripts
 
-The `config/dynamic` directory contains:
 - [cron job](pygeoapi_update.cron) cronjob
 - [cron.sh](cron.sh) - script called from cronjob
 - [check.sh](check.sh) - checks for new version on DockerHub (compares digest values)

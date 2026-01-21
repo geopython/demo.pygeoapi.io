@@ -1,6 +1,6 @@
 services:
   pygeoapi_cite:
-    image: geopython/pygeoapi_cite:latest
+    image: geopython/pygeoapi:latest
     container_name: pygeoapi_cite
     restart: unless-stopped
     expose:

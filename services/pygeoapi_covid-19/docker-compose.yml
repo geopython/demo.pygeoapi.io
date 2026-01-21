@@ -1,7 +1,7 @@
 services:
 
   pygeoapi_covid19:
-    image: geopython/pygeoapi_covid-19:latest
+    image: geopython/pygeoapi:latest
     container_name: pygeoapi_covid-19
     restart: unless-stopped
     expose:

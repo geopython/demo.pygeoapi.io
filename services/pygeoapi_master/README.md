@@ -8,6 +8,11 @@ The file [env.sh](../env.sh) is sourced in start/stop scripts to populate deploy
 
 There is also a [stable](../pygeoapi_stable) version that runs the latest `pygeoapi` version also from DockerHub.
 
+## Auto-deploy
+
+Via the [Updater](../update) service this service gets redeployed when a new image is available 
+on Dockerhub.
+
 ## Deploy manually
 For example if the Dockerfile here, or the config has changed:
 

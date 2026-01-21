@@ -21,6 +21,11 @@ So no data is stored nor cached by our service.
 
 Contact: [https://gitter.im/geopython/pygeoapi](https://gitter.im/geopython/pygeoapi) or via main website: [https://pygeoapi.io](https://pygeoapi.io)
 
+## Auto-deploy
+
+Via the [Updater](../update) service this service gets redeployed when a new image is available 
+on Dockerhub.
+
 ## Datasources
 
 ### Global

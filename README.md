@@ -3,7 +3,7 @@
 Demo setup for https://demo.pygeoapi.io. Includes Ansible playbooks for bootstrapping (provisioning)
 an empty Ubuntu server, installing all (Docker) services.
 
-All services can be started/stopped as a Ubuntu system service named `pygeoapi` on the server as well.
+All services can be started/stopped with an Ubuntu system service named `pygeoapi` on the server as well.
 
 ## Services
 
@@ -14,29 +14,14 @@ The demo server runs the following apps/services:
 * [pygeoapi_stable](services/pygeoapi_stable) - (last stable version of) `pygeoapi` service with test data
 * [pygeoapi_cite](services/pygeoapi_cite) - (latest GitHub `master` version of) `pygeoapi` service with CITE configuration
 * [pygeoapi_covid-19](services/pygeoapi_covid-19) - (latest GitHub `master` version of) `pygeoapi` service with Covid-19 configuration
-* [traefik](services/traefik) - Traefik v3.5.2 edge/proxy server with HTTP(S) routing, SSL certificate management (Let's Encrypt), security headers, and TLS optimization
-* [dockerhub listener](services/dockerhub) - listens to webhooks from DockerHub to redeploy [home](services/home) and [pygeoapi_master](services/pygeoapi_master)
+* [traefik](services/traefik) - Traefik edge/proxy server with HTTP(S) routing, SSL certificate management (Let's Encrypt), security headers, and TLS optimization
+* [update](services/update) - pulls and redeploys if new `pygeoapi:latest` Docker Image on DockerHub available (#73 #75 cron-check) 
 
 ## Auto Update
 
-The [home](services/home), [pygeoapi_master](services/pygeoapi_master), [pygeoapi_cite](services/pygeoapi_cite)
-and [pygeoapi_covid-19](services/pygeoapi_covid-19) services are automatically redeployed by [dockerhub listener](services/dockerhub). The full chain is:
-
-```
- (git push to GitHub master) --> (DockerHub Image autobuild) --> (demo server redeploy by dockerhub listener)
-
-```
-
-The [home](services/home) app is redeployed after any git push to the `master` of this GitHub repo.
-
-The [pygeoapi_master](services/pygeoapi_master) service is redeployed after any git push
-to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
-
-The [pygeoapi_cite](services/pygeoapi_cite) service is redeployed after any git push
-to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
-
-The [pygeoapi_covid19](services/pygeoapi_covid-19) service is redeployed after any git push
-to the `master` of the [pygeoapi GitHub repo](https://github.com/geopython/pygeoapi).
+The [pygeoapi_master](services/pygeoapi_master), [pygeoapi_cite](services/pygeoapi_cite)
+and [pygeoapi_covid-19](services/pygeoapi_covid-19) services are automatically redeployed by [update service](services/update) when
+a new pygeoapi:latest Docker image is available. 
 
 ## Common setup with Ansible
 
@@ -56,7 +41,6 @@ ansible-galaxy install --roles-path ./roles -r requirements.yml
 These are not in this repo for obvious reasons... You need to create/populate these locally.
 
 * `ansible/vars/vars.yml` (see [example](ansible/vars/vars.example.yml))
-* `service/dockerhub/docker.env` dockerhub env file with your `TOKEN` set in DockerHub  (see [example](services/dockerhub/dockerhub.example.env))
 
 ## Remote Setup with Ansible.
 
@@ -100,9 +84,9 @@ sudo service pygeoapi status
 
 ```
 
-## Traefik v3.5.2 Configuration
+## Traefik Frontend-Proxy
 
-This setup uses **Traefik v3.5.2** with enhanced security and modern configuration:
+This setup uses **Traefik v3.6+** with enhanced security and modern configuration:
 
 ### Configuration Approach
 - **Static configuration**: Defined via command-line flags in `services/traefik/docker-compose.yml`

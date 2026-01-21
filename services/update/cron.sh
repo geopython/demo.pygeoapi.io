@@ -5,6 +5,8 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Do check: exit code 0 if no new image, else 1.
 ${DIR}/check.sh
 
-[[ $? == 1 ]] && echo "UPDATE"
+# Do update if check indicates new image (exit code 1).
+[[ $? == 1 ]] && ${DIR}/update.sh

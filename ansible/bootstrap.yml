@@ -36,15 +36,16 @@
 
   tasks:
 
+    - name: "Install commonly used packages"
+      apt:
+        pkg:
+        - jq
+
     - name: "Clone or Update Git Repo"
       git: "repo={{ my_github_repo }} dest={{ my_git_home }} version={{ my_git_branch | default('master') }} clone=yes force=yes accept_hostkey=True"
 
     - name: "Setup dirs and ownerships"
       shell: "mkdir -p {{ logs_dir }}; chown -R {{ my_admin_user }}:{{ my_admin_user }} {{ var_dir }} {{ my_git_home }}"
-
-    - name: "Build All Docker Images"
-      shell: "cd {{ platform_home }}; ./build.sh"
-      become_user: "{{ my_admin_user }}"
 
     - name: "Install pygeoapi System Service"
       shell: "{{ platform_home }}/install.sh"

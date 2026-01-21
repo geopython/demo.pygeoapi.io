@@ -2,7 +2,6 @@ services:
 
   pygeoapi_covid19:
     image: geopython/pygeoapi_covid-19:latest
-    build: ./pygeoapi
     container_name: pygeoapi_covid-19
     restart: unless-stopped
     expose:
@@ -24,6 +23,9 @@ services:
       - "traefik.http.routers.pygeoapi_covid19_local.rule=Host(`localhost`) && PathPrefix(`/covid-19`)"
       - "traefik.http.routers.pygeoapi_covid19_local.entrypoints=http"
       - "traefik.http.routers.pygeoapi_covid19_local.priority=100"
+
+    volumes:
+      - ./covid-19.config.yml:/pygeoapi/local.config.yml:ro
 
 networks:
   default:

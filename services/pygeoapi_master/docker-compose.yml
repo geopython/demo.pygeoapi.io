@@ -1,6 +1,6 @@
 services:
   pygeoapi_master:
-    image: geopython/pygeoapi_master:latest
+    image: geopython/pygeoapi:latest
     container_name: pygeoapi_master
     restart: unless-stopped
     expose:
@@ -22,6 +22,11 @@ services:
       - "traefik.http.routers.pygeoapi_master_local.rule=Host(`localhost`) && PathPrefix(`/master`)"
       - "traefik.http.routers.pygeoapi_master_local.entrypoints=http"
       - "traefik.http.routers.pygeoapi_master_local.priority=100"
+
+    volumes:
+      - ./local.config.yml:/pygeoapi/local.config.yml:ro
+      - ./data:/pygeoapi/data:ro
+      - ./demo.pygeoapi.io.cron:/etc/cron.d/demo.pygeoapi.io.cron:ro
 
 networks:
   default:

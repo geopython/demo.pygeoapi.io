@@ -1,7 +1,6 @@
 services:
   pygeoapi_cite:
     image: geopython/pygeoapi_cite:latest
-    build: ./pygeoapi
     container_name: pygeoapi_cite
     restart: unless-stopped
     expose:
@@ -23,6 +22,9 @@ services:
       - "traefik.http.routers.pygeoapi_cite_local.rule=Host(`localhost`) && PathPrefix(`/cite`)"
       - "traefik.http.routers.pygeoapi_cite_local.entrypoints=http"
       - "traefik.http.routers.pygeoapi_cite_local.priority=100"
+
+    volumes:
+      - ./cite.config.yml:/pygeoapi/local.config.yml:ro
 
 networks:
   default:

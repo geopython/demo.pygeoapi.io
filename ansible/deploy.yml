@@ -33,7 +33,7 @@
       tags: dockerhub
 
     - name: "pygeoapi_master"
-      shell: "cd {{ services_home }}/pygeoapi_master && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+      shell: "cd {{ services_home }}/pygeoapi_master && ./stop.sh && ./start.sh"
       tags: pygeoapi_master
 
     - name: "pygeoapi_stable"
@@ -41,11 +41,11 @@
       tags: pygeoapi_stable
 
     - name: "pygeoapi_cite"
-      shell: "cd {{ services_home }}/pygeoapi_cite && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+      shell: "cd {{ services_home }}/pygeoapi_cite && ./stop.sh && ./start.sh"
       tags: pygeoapi_cite
 
     - name: "pygeoapi_covid-19"
-      shell: "cd {{ services_home }}/pygeoapi_covid-19 && ./build.sh --no-cache && ./stop.sh && ./start.sh"
+      shell: "cd {{ services_home }}/pygeoapi_covid-19 && ./stop.sh && ./start.sh"
       tags: pygeoapi_covid-19
 
     - name: "traefik"

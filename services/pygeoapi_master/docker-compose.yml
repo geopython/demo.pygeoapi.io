@@ -26,7 +26,7 @@ services:
     volumes:
       - ./local.config.yml:/pygeoapi/local.config.yml:ro
       - ./data:/pygeoapi/data:rw
-      - ./demo.pygeoapi.io.cron:/etc/cron.d/demo.pygeoapi.io.cron:ro
+      - ./demo_pygeoapi_io.cron:/etc/cron.d/demo_pygeoapi_io:ro
 
 networks:
   default:

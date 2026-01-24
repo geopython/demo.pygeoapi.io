@@ -11,7 +11,7 @@ Note that Updater only runs on production servers.
 
 ## Scripts
 
-- [cron job](pygeoapi_update.cron) cronjob
+- [cron job](pygeoapi_update) cronjob
 - [cron.sh](cron.sh) - script called from cronjob
 - [check.sh](check.sh) - checks for new version on DockerHub (compares digest values)
 - [update.sh](update.sh) - the actual update script (can be run standalone/manually)

@@ -8,6 +8,13 @@ The file [env.sh](../env.sh) is sourced in start/stop scripts to populate deploy
 
 There is also a [stable](../pygeoapi_stable) version that runs the latest `pygeoapi` version also from DockerHub.
 
+## Processes Cleanup
+
+To clean up resources (files) within the Docker container created via Processes,
+a local cronjob is run (production server only).
+
+- [cron job](process_cleanup.cron) cronjob - logs to `~/process_cleanup.log`
+
 ## Auto-deploy
 
 Via the [Updater](../update) service this service gets redeployed when a new image is available 

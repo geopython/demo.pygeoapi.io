@@ -1,0 +1,3 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+0 1 * * *   padmin    /home/padmin/git/services/pygeoapi_master/process_cleanup.sh > /home/padmin/process_cleanup.log 2>&1
